@@ -38,11 +38,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -62,40 +62,54 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked fullcontent">
+<body class="nav-sidebar docked nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">QuantLab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/quantlab" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/quantilab/sharezone/tree/main" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      QuantLab
-      </li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">QuantLab</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
@@ -148,24 +162,14 @@ ul.task-list li input[type="checkbox"] {
   <div class="about-entity">
     <img src="profile.png" class="about-image
   round " style="height: 20em; width: 20em;">
-    <div class="about-links">
-  <a href="https://twitter.com" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="https://github.com/quantilab/sharezone/tree/main" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
   </div>
   <div class="about-contents"><div id="hero-heading">
 <section id="welcome" class="level1">
 <h1>Welcome!</h1>
 <p><em>Quantlab</em> is a new network group aiming to bring together social scientists at the <a href="https://arts.unimelb.edu.au/school-of-social-and-political-sciences">University of Melbourne</a> and beyond to share insights in quantitative methods and research.</p>
-<p>Co-founders: Seraphine F. Maerz <a href="https://sites.google.com/view/seraphinemaerz/about">Seraphine F. Maerz</a> (Political Science) and Irma Mooi-Reci <a href="https://irmamooireci.com/">Irma Mooi-Reci</a> (Sociology).</p>
-<p>We are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer <a href="./seminars24/index.html">learning seminars</a> as well as <a href="./blog.html">online tutorials</a> about innovations in data management and analysis, and a platform for <a href="./gitlink.html">code sharing</a> (R, Stata, Python, R Markdown, LaTeX, Quarto).</p>
-<p>Come join us for our bi-weekly <em>Quantlunches</em>, <a href="mailto:seraphine.maerz@unimelb.edu.au">RSVP here!</a></p>
+<p>Co-founders: <a href="https://sites.google.com/view/seraphinemaerz/about">Seraphine F. Maerz</a> (Political Science) and <a href="https://irmamooireci.com/">Irma Mooi-Reci</a> (Sociology).</p>
+<p>We are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer <a href="./seminars24/index.html">learning seminars</a> as well as <a href="./blog.html">online tutorials</a> about innovations in data management and analysis, and a platform for project-related <a href="./gitlink.html">code sharing</a> (R, Stata, Python, R Markdown, LaTeX, Quarto).</p>
+<p>Come and join us for our bi-weekly <em>QuantLunches</em>, <a href="mailto:seraphine.maerz@unimelb.edu.au">RSVP here!</a></p>
 </section>
 </div></div>
 </div>
@@ -176,39 +180,47 @@ ul.task-list li input[type="checkbox"] {
 <table class="table">
 <thead>
 <tr class="header">
-<th style="text-align: center;">Date/Time</th>
+<th style="text-align: center;">Date</th>
+<th>Time</th>
 <th style="text-align: center;">Topic</th>
 <th style="text-align: center;">Presenter</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">05/08/24, <strong>11:30</strong>-13:00 (free lunch included)</td>
-<td style="text-align: center;"><a href="./seminars24/index.html">Launch of QuantLab, Intro to R and R Markdown for more efficient workflows</a></td>
+<td style="text-align: center;">05/08/24</td>
+<td><strong>11:30</strong>-13:00 (lunch included)</td>
+<td style="text-align: center;"><p><strong>Launch of QuantLab</strong> <strong>🎉</strong></p>
+<p><a href="./seminars24/project_1/index.html">Intro to R and R Markdown</a></p></td>
 <td style="text-align: center;">Seraphine F. Maerz, Irma Mooi-Reci</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">26/08/24, 12:00-13:00 (free lunch included)</td>
-<td style="text-align: center;"><a href="./seminars24/index.html">Using Stata for advanced analyses of panel data</a></td>
+<td style="text-align: center;">26/08/24</td>
+<td>12:00-13:00 (lunch included)</td>
+<td style="text-align: center;"><a href="./seminars24/index.html">Using Stata for panel data</a></td>
 <td style="text-align: center;">Irma Mooi-Reci</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">09/09/24, 12:00-13:00 (free lunch included)</td>
+<td style="text-align: center;">09/09/24</td>
+<td>12:00-13:00 (lunch included)</td>
 <td style="text-align: center;"><a href="./seminars24/index.html">Online experiments and quasi-experimental designs</a></td>
 <td style="text-align: center;">Aaron Martin, Ed Goldring (tbc)</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">tbc</td>
-<td style="text-align: center;"><a href="./seminars24/index.html">Simulation models (co-presentation as part of the Social Science weeks)</a></td>
+<td>tbc</td>
+<td style="text-align: center;"><a href="./seminars24/index.html">Simulation models (co-presentation with Social Science weeks)</a></td>
 <td style="text-align: center;">Jason Thompson (<a href="https://science.unimelb.edu.au/mcds">MCDS</a>)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">14/10/24, 12:00-13:00 (free lunch included)</td>
-<td style="text-align: center;"><a href="./seminars24/index.html">The basics of quantitative text analysis in R</a></td>
+<td style="text-align: center;">14/10/24</td>
+<td>12:00-13:00 (lunch included)</td>
+<td style="text-align: center;"><a href="./seminars24/index.html">Quantitative text analysis in R</a></td>
 <td style="text-align: center;">Seraphine F. Maerz</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">28/10/24, 12:00-13:00 (free lunch included)</td>
+<td style="text-align: center;">28/10/24</td>
+<td>12:00-13:00 (lunch included)</td>
 <td style="text-align: center;"><a href="./seminars24/index.html">Structural Equation Modeling (SEM) in Stata</a></td>
 <td style="text-align: center;">Harry Ganzeboom</td>
 </tr>

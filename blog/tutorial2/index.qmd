@@ -1,0 +1,12 @@
+---
+title: "Coming soon: How to use GitHub for collaborative research projects"
+author: "Seraphine F. Maerz"
+date: "09/01/2024"
+categories: [news]
+---
+
+In this second tutorial, we will provide a focused guide on how to use the online platform GitHub for collaborative projects, i.e., to share code, data, and replication material. No previous knowledge required.
+
+![](thumbnail.png)
+
+

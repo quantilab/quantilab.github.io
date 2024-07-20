@@ -1,10 +1,10 @@
 ---
 title: "Online tutorials"
 description: |
-  We invite you to contribute developping this section further.
+  We warmly invite you to contribute to this section, please [contact us](mailto:seraphine.maerz@unimelb.edu.au) if you would like to publish your tutorials, suggestions, and tips here.
 listing:
   contents: blog
-  sort: "date desc"
+  sort: "date asc"
   type: default
   categories: false
   sort-ui: false

@@ -6,7 +6,7 @@ title: ""
 
 ## Code sharing 
 
-The QuantLab [github repository](https://github.com/quantilab/sharezone/tree/main) is our platform to share code. 
+The QuantLab [github repository](https://github.com/quantilab/sharezone/tree/main) is our platform to share project-related code, scripts, and replication data. 
 
 :::
 

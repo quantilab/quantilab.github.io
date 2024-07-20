@@ -4,69 +4,90 @@
     "href": "blog.html",
     "title": "Online tutorials",
     "section": "",
-    "text": "Welcome to our blog section\n\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\nOur group\n\n\n\n\n\n\nNo matching items"
+    "text": "Coming soon: How to code your own personal website with Quarto in less than 30 minutes\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2024\n\n\nSeraphine F. Maerz\n\n\n\n\n\n\n  \n\n\n\n\nComing soon: How to use GitHub for collaborative research projects\n\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2024\n\n\nSeraphine F. Maerz\n\n\n\n\n\n\n  \n\n\n\n\nComing soon: How to use R Markdown to ‘knit’ nice papers ready for submission in whatever format\n\n\n\n\n\n\n\n\n\n\n\n\nOct 1, 2024\n\n\nSeraphine F. Maerz\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "seminars25/index.html",
     "href": "seminars25/index.html",
     "title": "QuantLab",
     "section": "",
-    "text": "How to build a ShinyApp for transparent and efficient data sharing\nStructural Equation Modeling in R (with the R lavaan package)\nHow to use AI in research\n… and many more (please contact us if you would like to share your knowledge and skills with us!)"
+    "text": "How to build a ShinyApp for transparent and efficient data sharing\nStructural Equation Modeling in R (with the R lavaan package)\nNew matching methods for panel data\nHow to use AI in research\n… and many more (please contact us if you would like to share your knowledge and skills with us!)"
   },
   {
     "objectID": "seminars25/index.html#ideas-and-plans-for-upcoming-seminars-in-2025",
     "href": "seminars25/index.html#ideas-and-plans-for-upcoming-seminars-in-2025",
     "title": "QuantLab",
     "section": "",
-    "text": "How to build a ShinyApp for transparent and efficient data sharing\nStructural Equation Modeling in R (with the R lavaan package)\nHow to use AI in research\n… and many more (please contact us if you would like to share your knowledge and skills with us!)"
+    "text": "How to build a ShinyApp for transparent and efficient data sharing\nStructural Equation Modeling in R (with the R lavaan package)\nNew matching methods for panel data\nHow to use AI in research\n… and many more (please contact us if you would like to share your knowledge and skills with us!)"
   },
   {
     "objectID": "gitlink.html",
     "href": "gitlink.html",
     "title": "QuantLab",
     "section": "",
-    "text": "The QuantLab github repository is our platform to share code."
+    "text": "The QuantLab github repository is our platform to share project-related code, scripts, and replication data."
   },
   {
     "objectID": "gitlink.html#code-sharing",
     "href": "gitlink.html#code-sharing",
     "title": "QuantLab",
     "section": "",
-    "text": "The QuantLab github repository is our platform to share code."
+    "text": "The QuantLab github repository is our platform to share project-related code, scripts, and replication data."
   },
   {
     "objectID": "seminars24/index.html",
     "href": "seminars24/index.html",
     "title": "Learning seminars in 2024",
     "section": "",
-    "text": "Title of first seminar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle of second seminar\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Intro to R and R Markdown\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle of seminar\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "seminars24/project_2/index.html",
     "href": "seminars24/project_2/index.html",
-    "title": "Title of second seminar",
+    "title": "Title of seminar",
     "section": "",
-    "text": "In this seminar we talked about…"
+    "text": "More information about further seminars will follow…"
   },
   {
     "objectID": "seminars24/project_1/index.html",
     "href": "seminars24/project_1/index.html",
-    "title": "Title of first seminar",
+    "title": "Intro to R and R Markdown",
     "section": "",
-    "text": "In this seminar we talked about…"
+    "text": "Please bring your laptops and have R and R Studio installed!\nThis seminar will be a brief hands-on tutorial on how to get started in R (e.g., by doing a simple regression analysis and some diagnostics) and how to integrate this R code into a R Markdown file for an efficient, all-in-one workflow of writing research papers. Be ready to get your hands dirty!"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Twitter\n  \n  \n    \n     Github\n  \n\n  \n  \n\nWelcome!\nQuantlab is a new network group aiming to bring together social scientists at the University of Melbourne and beyond to share insights in quantitative methods and research.\nCo-founders: Seraphine F. Maerz Seraphine F. Maerz (Political Science) and Irma Mooi-Reci Irma Mooi-Reci (Sociology).\nWe are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer learning seminars as well as online tutorials about innovations in data management and analysis, and a platform for code sharing (R, Stata, Python, R Markdown, LaTeX, Quarto).\nCome join us for our bi-weekly Quantlunches, RSVP here!\n\n\n\n\n\nSchedule for 2024\nWe meet in Arts West Research Lounge. Lunch is kindly sponsored by the School of Social and Political Science.\n\n\n\nDate/Time\nTopic\nPresenter\n\n\n\n\n05/08/24, 11:30-13:00 (free lunch included)\nLaunch of QuantLab, Intro to R and R Markdown for more efficient workflows\nSeraphine F. Maerz, Irma Mooi-Reci\n\n\n26/08/24, 12:00-13:00 (free lunch included)\nUsing Stata for advanced analyses of panel data\nIrma Mooi-Reci\n\n\n09/09/24, 12:00-13:00 (free lunch included)\nOnline experiments and quasi-experimental designs\nAaron Martin, Ed Goldring (tbc)\n\n\ntbc\nSimulation models (co-presentation as part of the Social Science weeks)\nJason Thompson (MCDS)\n\n\n14/10/24, 12:00-13:00 (free lunch included)\nThe basics of quantitative text analysis in R\nSeraphine F. Maerz\n\n\n28/10/24, 12:00-13:00 (free lunch included)\nStructural Equation Modeling (SEM) in Stata\nHarry Ganzeboom"
+    "text": "Welcome!\nQuantlab is a new network group aiming to bring together social scientists at the University of Melbourne and beyond to share insights in quantitative methods and research.\nCo-founders: Seraphine F. Maerz (Political Science) and Irma Mooi-Reci (Sociology).\nWe are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer learning seminars as well as online tutorials about innovations in data management and analysis, and a platform for project-related code sharing (R, Stata, Python, R Markdown, LaTeX, Quarto).\nCome and join us for our bi-weekly QuantLunches, RSVP here!\n\n\n\n\n\nSchedule for 2024\nWe meet in Arts West Research Lounge. Lunch is kindly sponsored by the School of Social and Political Science.\n\n\n\nDate\nTime\nTopic\nPresenter\n\n\n\n\n05/08/24\n11:30-13:00 (lunch included)\nLaunch of QuantLab 🎉\nIntro to R and R Markdown\nSeraphine F. Maerz, Irma Mooi-Reci\n\n\n26/08/24\n12:00-13:00 (lunch included)\nUsing Stata for panel data\nIrma Mooi-Reci\n\n\n09/09/24\n12:00-13:00 (lunch included)\nOnline experiments and quasi-experimental designs\nAaron Martin, Ed Goldring (tbc)\n\n\ntbc\ntbc\nSimulation models (co-presentation with Social Science weeks)\nJason Thompson (MCDS)\n\n\n14/10/24\n12:00-13:00 (lunch included)\nQuantitative text analysis in R\nSeraphine F. Maerz\n\n\n28/10/24\n12:00-13:00 (lunch included)\nStructural Equation Modeling (SEM) in Stata\nHarry Ganzeboom"
   },
   {
     "objectID": "blog/welcome/index.html",
     "href": "blog/welcome/index.html",
-    "title": "Welcome to our blog section",
+    "title": "Coming soon: How to code your own personal website in less than 30 minutes",
     "section": "",
-    "text": "This is a place to share online tutorials, experiences, suggestions, and tips, etc."
+    "text": "In this first tutorial, we will provide a focused guide on how to code and publish your own personal website with Quarto and GitHub. No previous knowledge required. Shouldn’t take longer than 30 minutes (basic version)."
+  },
+  {
+    "objectID": "blog/tutorial2/index.html",
+    "href": "blog/tutorial2/index.html",
+    "title": "Coming soon: How to use GitHub for collaborative research projects",
+    "section": "",
+    "text": "In this second tutorial, we will provide a focused guide on how to use the online platform GitHub for collaborative projects, i.e., to share code, data, and replication material. No previous knowledge required."
+  },
+  {
+    "objectID": "blog/tutorial1/index.html",
+    "href": "blog/tutorial1/index.html",
+    "title": "Coming soon: How to code your own personal website with Quarto in less than 30 minutes",
+    "section": "",
+    "text": "Coming soon: How to code your own personal website with Quarto in less than 30 minutes\nIn this first tutorial, we will provide a focused guide on how to code and publish your own personal website with Quarto and GitHub. No previous knowledge required. Shouldn’t take longer than 30 minutes (basic version)."
+  },
+  {
+    "objectID": "blog/tutorial3/index.html",
+    "href": "blog/tutorial3/index.html",
+    "title": "Coming soon: How to use R Markdown to ‘knit’ nice papers ready for submission in whatever format",
+    "section": "",
+    "text": "In this third tutorial, we will provide a focused guide on how to make use of the efficient and coder-friendly workflow in R Markdown and pandoc to produce papers ready for submission in the required formats. No previous knowledge required."
   }
 ]

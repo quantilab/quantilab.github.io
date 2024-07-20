@@ -1,7 +1,7 @@
 ---
-title: "Title of second seminar"
-categories: [news, code, analysis]
+title: "Title of seminar"
+categories: [news]
 image: "image.jpg"
 ---
 
-In this seminar we talked about...
+More information about further seminars will follow...

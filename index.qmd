@@ -5,13 +5,6 @@ about:
   id: hero-heading
   template: trestles
   image-shape: round
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
-    - icon: github
-      text: Github
-      href: https://github.com/quantilab/sharezone/tree/main
 ---
 
 ::: {#hero-heading}
@@ -19,21 +12,31 @@ about:
 
 *Quantlab* is a new network group aiming to bring together social scientists at the [University of Melbourne](https://arts.unimelb.edu.au/school-of-social-and-political-sciences) and beyond to share insights in quantitative methods and research.
 
-Co-founders: Seraphine F. Maerz [Seraphine F. Maerz](https://sites.google.com/view/seraphinemaerz/about) (Political Science) and Irma Mooi-Reci [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology).
+Co-founders: [Seraphine F. Maerz](https://sites.google.com/view/seraphinemaerz/about) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology).
 
-We are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars](seminars24/index.qmd) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for [code sharing](gitlink.qmd) (R, Stata, Python, R Markdown, LaTeX, Quarto).
+We are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars](seminars24/index.qmd) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for project-related [code sharing](gitlink.qmd) (R, Stata, Python, R Markdown, LaTeX, Quarto).
 
-Come join us for our bi-weekly *Quantlunches*, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au)
+Come and join us for our bi-weekly *QuantLunches*, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au)
 :::
+
 # Schedule for 2024
 
 We meet in **Arts West Research Lounge**. Lunch is kindly sponsored by the [School of Social and Political Science](https://arts.unimelb.edu.au/school-of-social-and-political-sciences).
 
-|                    Date/Time                    |                                               Topic                                                |                          Presenter                           |
-|:-----------------:|:----------------------------------:|:-----------------:|
-| 05/08/24, **11:30**-13:00 (free lunch included) | [Launch of QuantLab, Intro to R and R Markdown for more efficient workflows](seminars24/index.qmd) |              Seraphine F. Maerz, Irma Mooi-Reci              |
-|   26/08/24, 12:00-13:00 (free lunch included)   |              [Using Stata for advanced analyses of panel data](seminars24/index.qmd)               |                        Irma Mooi-Reci                        |
-|   09/09/24, 12:00-13:00 (free lunch included)   |             [Online experiments and quasi-experimental designs](seminars24/index.qmd)              |               Aaron Martin, Ed Goldring (tbc)                |
-|                       tbc                       |  [Simulation models (co-presentation as part of the Social Science weeks)](seminars24/index.qmd)   | Jason Thompson ([MCDS](https://science.unimelb.edu.au/mcds)) |
-|   14/10/24, 12:00-13:00 (free lunch included)   |               [The basics of quantitative text analysis in R](seminars24/index.qmd)                |                      Seraphine F. Maerz                      |
-|   28/10/24, 12:00-13:00 (free lunch included)   |                [Structural Equation Modeling (SEM) in Stata](seminars24/index.qmd)                 |                       Harry Ganzeboom                        |
++----------+----------------------------------+---------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| Date     | Time                             | Topic                                                                                 | Presenter                                                    |
++:========:+==================================+:=====================================================================================:+:============================================================:+
+| 05/08/24 | **11:30**-13:00 (lunch included) | **Launch of QuantLab** **🎉**                                                         | Seraphine F. Maerz, Irma Mooi-Reci                           |
+|          |                                  |                                                                                       |                                                              |
+|          |                                  | [Intro to R and R Markdown](seminars24/project_1/index.qmd)                           |                                                              |
++----------+----------------------------------+---------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| 26/08/24 | 12:00-13:00 (lunch included)     | [Using Stata for panel data](seminars24/index.qmd)                                    | Irma Mooi-Reci                                               |
++----------+----------------------------------+---------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| 09/09/24 | 12:00-13:00 (lunch included)     | [Online experiments and quasi-experimental designs](seminars24/index.qmd)             | Aaron Martin, Ed Goldring (tbc)                              |
++----------+----------------------------------+---------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| tbc      | tbc                              | [Simulation models (co-presentation with Social Science weeks)](seminars24/index.qmd) | Jason Thompson ([MCDS](https://science.unimelb.edu.au/mcds)) |
++----------+----------------------------------+---------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| 14/10/24 | 12:00-13:00 (lunch included)     | [Quantitative text analysis in R](seminars24/index.qmd)                               | Seraphine F. Maerz                                           |
++----------+----------------------------------+---------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| 28/10/24 | 12:00-13:00 (lunch included)     | [Structural Equation Modeling (SEM) in Stata](seminars24/index.qmd)                   | Harry Ganzeboom                                              |
++----------+----------------------------------+---------------------------------------------------------------------------------------+--------------------------------------------------------------+

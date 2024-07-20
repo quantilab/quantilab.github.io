@@ -11,8 +11,9 @@ description: |
 
 - How to build a ShinyApp for transparent and efficient data sharing
 - Structural Equation Modeling in R (with the R *lavaan* package)
+- New matching methods for panel data
 - How to use AI in research
-- ... and many more (please [contact us]() if you would like to share your knowledge and skills with us!)
+- ... and many more (please [contact us](mailto:seraphine.maerz@unimelb.edu.au) if you would like to share your knowledge and skills with us!)
 
 
 
