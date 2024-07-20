@@ -1,0 +1,7 @@
+---
+title: "Title of first seminar"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+In this seminar we talked about...

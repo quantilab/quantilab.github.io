@@ -1,0 +1,19 @@
+---
+title: "Seminars in 2025"
+description: |
+  
+
+---
+
+
+
+## Ideas and plans for upcoming seminars in 2025
+
+- How to build a ShinyApp for transparent and efficient data sharing
+- Structural Equation Modeling in R (with the R *lavaan* package)
+- How to use AI in research
+- ... and many more (please [contact us]() if you would like to share your knowledge and skills with us!)
+
+
+
+

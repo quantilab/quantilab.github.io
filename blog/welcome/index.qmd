@@ -1,0 +1,12 @@
+---
+title: "Welcome to our blog section"
+author: "Our group"
+date: "2024"
+categories: [news]
+---
+
+This is a place to share online tutorials, experiences, suggestions, and tips, etc.
+
+![](thumbnail.jpg)
+
+

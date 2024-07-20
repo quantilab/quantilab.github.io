@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "QuantLab"
+
+  page-footer:
+    left: "&copy; Copyright 2024, Seraphine F. Maerz"
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+
+  sidebar:
+    pinned: true
+    align: center
+    style: "docked"
+    collapse-level: 1
+    contents:
+
+      - section: "Learning seminars"
+        contents:
+         - text: "Seminars in 2024"
+           href: seminars24/index.qmd
+
+         - text: "Seminars in 2025"
+           href: seminars25/index.qmd
+
+      - text: "Online tutorials"
+        href: blog.qmd
+
+      - text: "Code sharing"
+        href: gitlink.qmd
+
+
+
+format:
+  html:
+    theme: cerulean
+    css: styles.css
+    toc: false
+
+

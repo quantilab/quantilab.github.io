@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/seminars24/index.html",
+    "items": [
+      "/seminars24/project_1/index.html",
+      "/seminars24/project_2/index.html"
+    ]
+  }
+]

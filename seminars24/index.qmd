@@ -1,0 +1,28 @@
+---
+title: "Learning seminars in 2024"
+description: |
+  This page provides some details about scheduled seminars.
+listing:
+  - id: ehr
+    max-description-length: 500
+    image-height: 150px
+    fields: [image, title, description]
+    contents: 
+      - project_1
+      - project_2
+    type: grid
+    grid-item-border: false
+    
+---
+
+
+
+
+
+
+
+
+
+
+
+
