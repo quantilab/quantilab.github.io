@@ -45,6 +45,7 @@ format:
   html:
     theme: cerulean
     css: styles.css
-    toc: false
+    toc: true
+    page-layout: full
 
 

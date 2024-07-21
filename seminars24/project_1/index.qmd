@@ -1,5 +1,5 @@
 ---
-title: "Intro to R and R Markdown"
+title: "Intro to R and Quarto"
 categories: [R, R Markdown, academic, research, workflow, cod, analysis]
 image: "image.png"
 ---

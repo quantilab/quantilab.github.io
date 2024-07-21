@@ -46,7 +46,7 @@
     "href": "seminars24/index.html",
     "title": "Learning seminars in 2024",
     "section": "",
-    "text": "Intro to R and R Markdown\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle of seminar\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Intro to R and Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle of seminar\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "seminars24/project_2/index.html",
@@ -58,7 +58,7 @@
   {
     "objectID": "seminars24/project_1/index.html",
     "href": "seminars24/project_1/index.html",
-    "title": "Intro to R and R Markdown",
+    "title": "Intro to R and Quarto",
     "section": "",
     "text": "Please bring your laptops and have R and R Studio installed!\nThis seminar will be a brief hands-on tutorial on how to get started in R (e.g., by doing a simple regression analysis and some diagnostics) and how to integrate this R code into a R Markdown file for an efficient, all-in-one workflow of writing research papers. Be ready to get your hands dirty!"
   },
@@ -67,7 +67,7 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Welcome!\nQuantlab is a new network group aiming to bring together social scientists at the University of Melbourne and beyond to share insights in quantitative methods and research.\nCo-founders: Seraphine F. Maerz (Political Science) and Irma Mooi-Reci (Sociology).\nWe are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer learning seminars as well as online tutorials about innovations in data management and analysis, and a platform for project-related code sharing (R, Stata, Python, R Markdown, LaTeX, Quarto).\nCome and join us for our bi-weekly QuantLunches, RSVP here!\n\n\n\n\n\nSchedule for 2024\nWe meet in Arts West Research Lounge. Lunch is included and kindly sponsored by the School of Social and Political Science.\n\n\n\nDate\nTime\nTopic\nPresenter\n\n\n\n\n05/08/24\n11:30-13:00\nLaunch of QuantLab 🎉 Intro to R and Quarto\nSeraphine F. Maerz, Irma Mooi-Reci\n\n\n26/08/24\n12:00-13:00\nUsing Stata for panel data\nIrma Mooi-Reci\n\n\n09/09/24\n12:00-13:00\nOnline experiments and quasi-experimental designs\nAaron Martin, Ed Goldring (tbc)\n\n\ntbc\ntbc\nSimulation models (co-presentation with Social Science weeks)\nJason Thompson (MCDS)\n\n\n14/10/24\n12:00-13:00\nQuantitative text analysis in R\nSeraphine F. Maerz\n\n\n28/10/24\n12:00-13:00\nStructural Equation Modeling (SEM) in Stata\nHarry Ganzeboom"
+    "text": "Welcome!\nQuantLab is a new network group aiming to bring together social scientists at the University of Melbourne and beyond to share insights in quantitative methods and research.\nCo-founded by Seraphine F. Maerz (Political Science) and Irma Mooi-Reci (Sociology), QuantLab an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer learning seminars as well as online tutorials about innovations in data management and analysis, and a platform for project-related code sharing (R, Stata, Python, R Markdown, LaTeX, Quarto).\nCome and join us for our bi-weekly QuantLunches, RSVP here!\n\n\n\n\n\nSchedule for 2024\nWe meet in Arts West Research Lounge. Lunch is included and kindly sponsored by the School of Social and Political Science.\n\n\n\nDate\nTime\nTopic\nPresenter\n\n\n\n\n05/08/24\n11:30-13:00\nLaunch of QuantLab 🎉 Intro to R and Quarto\nSeraphine F. Maerz, Irma Mooi-Reci\n\n\n26/08/24\n12:00-13:00\nUsing Stata for panel data\nIrma Mooi-Reci\n\n\n09/09/24\n12:00-13:00\nOnline experiments and quasi-experimental designs\nAaron Martin, Ed Goldring (tbc)\n\n\ntbc\ntbc\nSimulation models (co-presentation with Social Science weeks)\nJason Thompson (MCDS)\n\n\n14/10/24\n12:00-13:00\nQuantitative text analysis in R\nSeraphine F. Maerz\n\n\n28/10/24\n12:00-13:00\nStructural Equation Modeling (SEM) in Stata\nHarry Ganzeboom"
   },
   {
     "objectID": "blog/tutorial3/index.html",

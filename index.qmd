@@ -10,11 +10,9 @@ about:
 ::: {#hero-heading}
 # Welcome!
 
-*Quantlab* is a new network group aiming to bring together social scientists at the [University of Melbourne](https://arts.unimelb.edu.au/school-of-social-and-political-sciences) and beyond to share insights in quantitative methods and research.
+*QuantLab* is a new network group aiming to bring together social scientists at the [University of Melbourne](https://arts.unimelb.edu.au/school-of-social-and-political-sciences) and beyond to share insights in quantitative methods and research.
 
-Co-founders: [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology).
-
-We are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars](seminars24/index.qmd) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for project-related [code sharing](gitlink.qmd) (R, Stata, Python, R Markdown, LaTeX, Quarto).
+Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), *QuantLab* an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars](seminars24/index.qmd) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for project-related [code sharing](gitlink.qmd) (R, Stata, Python, R Markdown, LaTeX, Quarto).
 
 Come and join us for our bi-weekly *QuantLunches*, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au)
 :::
