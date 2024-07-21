@@ -4,7 +4,14 @@
     "href": "blog.html",
     "title": "Online tutorials",
     "section": "",
-    "text": "Coming soon: How to code your own personal website with Quarto in less than 30 minutes\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2024\n\n\nSeraphine F. Maerz\n\n\n\n\n\n\n  \n\n\n\n\nComing soon: How to use GitHub for collaborative research projects\n\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2024\n\n\nSeraphine F. Maerz\n\n\n\n\n\n\n  \n\n\n\n\nComing soon: How to use R Markdown to ‘knit’ nice papers ready for submission in whatever format\n\n\n\n\n\n\n\n\n\n\n\n\nOct 1, 2024\n\n\nSeraphine F. Maerz\n\n\n\n\n\n\nNo matching items"
+    "text": "Coming soon: How to use GitHub for collaborative research projects\n\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2024\n\n\nSeraphine F. Maerz\n\n\n\n\n\n\n  \n\n\n\n\nComing soon: How to use R Markdown to ‘knit’ nice papers ready for submission in whatever format\n\n\n\n\n\n\n\n\n\n\n\n\nOct 1, 2024\n\n\nSeraphine F. Maerz\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/tutorial2/index.html",
+    "href": "blog/tutorial2/index.html",
+    "title": "Coming soon: How to use GitHub for collaborative research projects",
+    "section": "",
+    "text": "In this second tutorial, we will provide a focused guide on how to use the online platform GitHub for collaborative projects, i.e., to share code, data, and replication material. No previous knowledge required."
   },
   {
     "objectID": "seminars25/index.html",
@@ -60,28 +67,7 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Welcome!\nQuantlab is a new network group aiming to bring together social scientists at the University of Melbourne and beyond to share insights in quantitative methods and research.\nCo-founders: Seraphine F. Maerz (Political Science) and Irma Mooi-Reci (Sociology).\nWe are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer learning seminars as well as online tutorials about innovations in data management and analysis, and a platform for project-related code sharing (R, Stata, Python, R Markdown, LaTeX, Quarto).\nCome and join us for our bi-weekly QuantLunches, RSVP here!\n\n\n\n\n\nSchedule for 2024\nWe meet in Arts West Research Lounge. Lunch is kindly sponsored by the School of Social and Political Science.\n\n\n\nDate\nTime\nTopic\nPresenter\n\n\n\n\n05/08/24\n11:30-13:00 (lunch included)\nLaunch of QuantLab 🎉\nIntro to R and R Markdown\nSeraphine F. Maerz, Irma Mooi-Reci\n\n\n26/08/24\n12:00-13:00 (lunch included)\nUsing Stata for panel data\nIrma Mooi-Reci\n\n\n09/09/24\n12:00-13:00 (lunch included)\nOnline experiments and quasi-experimental designs\nAaron Martin, Ed Goldring (tbc)\n\n\ntbc\ntbc\nSimulation models (co-presentation with Social Science weeks)\nJason Thompson (MCDS)\n\n\n14/10/24\n12:00-13:00 (lunch included)\nQuantitative text analysis in R\nSeraphine F. Maerz\n\n\n28/10/24\n12:00-13:00 (lunch included)\nStructural Equation Modeling (SEM) in Stata\nHarry Ganzeboom"
-  },
-  {
-    "objectID": "blog/welcome/index.html",
-    "href": "blog/welcome/index.html",
-    "title": "Coming soon: How to code your own personal website in less than 30 minutes",
-    "section": "",
-    "text": "In this first tutorial, we will provide a focused guide on how to code and publish your own personal website with Quarto and GitHub. No previous knowledge required. Shouldn’t take longer than 30 minutes (basic version)."
-  },
-  {
-    "objectID": "blog/tutorial2/index.html",
-    "href": "blog/tutorial2/index.html",
-    "title": "Coming soon: How to use GitHub for collaborative research projects",
-    "section": "",
-    "text": "In this second tutorial, we will provide a focused guide on how to use the online platform GitHub for collaborative projects, i.e., to share code, data, and replication material. No previous knowledge required."
-  },
-  {
-    "objectID": "blog/tutorial1/index.html",
-    "href": "blog/tutorial1/index.html",
-    "title": "Coming soon: How to code your own personal website with Quarto in less than 30 minutes",
-    "section": "",
-    "text": "Coming soon: How to code your own personal website with Quarto in less than 30 minutes\nIn this first tutorial, we will provide a focused guide on how to code and publish your own personal website with Quarto and GitHub. No previous knowledge required. Shouldn’t take longer than 30 minutes (basic version)."
+    "text": "Welcome!\nQuantlab is a new network group aiming to bring together social scientists at the University of Melbourne and beyond to share insights in quantitative methods and research.\nCo-founders: Seraphine F. Maerz (Political Science) and Irma Mooi-Reci (Sociology).\nWe are an inclusive network and welcome everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer learning seminars as well as online tutorials about innovations in data management and analysis, and a platform for project-related code sharing (R, Stata, Python, R Markdown, LaTeX, Quarto).\nCome and join us for our bi-weekly QuantLunches, RSVP here!\n\n\n\n\n\nSchedule for 2024\nWe meet in Arts West Research Lounge. Lunch is included and kindly sponsored by the School of Social and Political Science.\n\n\n\nDate\nTime\nTopic\nPresenter\n\n\n\n\n05/08/24\n11:30-13:00\nLaunch of QuantLab 🎉 Intro to R and Quarto\nSeraphine F. Maerz, Irma Mooi-Reci\n\n\n26/08/24\n12:00-13:00\nUsing Stata for panel data\nIrma Mooi-Reci\n\n\n09/09/24\n12:00-13:00\nOnline experiments and quasi-experimental designs\nAaron Martin, Ed Goldring (tbc)\n\n\ntbc\ntbc\nSimulation models (co-presentation with Social Science weeks)\nJason Thompson (MCDS)\n\n\n14/10/24\n12:00-13:00\nQuantitative text analysis in R\nSeraphine F. Maerz\n\n\n28/10/24\n12:00-13:00\nStructural Equation Modeling (SEM) in Stata\nHarry Ganzeboom"
   },
   {
     "objectID": "blog/tutorial3/index.html",

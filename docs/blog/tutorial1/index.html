@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Seraphine F. Maerz">
-<meta name="dcterms.date" content="2024-08-01">
+<meta name="dcterms.date" content="2024-07-21">
 
-<title>QuantLab - Coming soon: How to code your own personal website with Quarto in less than 30 minutes</title>
+<title>QuantLab - How to code your own personal website with Quarto in less than 30 minutes and for free!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -65,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed fullcontent">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -103,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Coming soon: How to code your own personal website with Quarto in less than 30 minutes</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">How to code your own personal website with Quarto in less than 30 minutes and for free!</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -113,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Coming soon: How to code your own personal website with Quarto in less than 30 minutes</h1>
+      <h1 class="title">How to code your own personal website with Quarto in less than 30 minutes and for free!</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">news</div>
                 <div class="quarto-category">website</div>
@@ -137,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 1, 2024</p>
+        <p class="date">July 21, 2024</p>
       </div>
     </div>
     
@@ -190,17 +224,93 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-to-code-your-own-personal-website-with-quarto-in-less-than-30-minutes-and-for-free" id="toc-how-to-code-your-own-personal-website-with-quarto-in-less-than-30-minutes-and-for-free" class="nav-link active" data-scroll-target="#how-to-code-your-own-personal-website-with-quarto-in-less-than-30-minutes-and-for-free">How to code your own personal website with Quarto in less than 30 minutes and for free!</a></li>
+  <li><a href="#create-a-github-account-and-a-repository" id="toc-create-a-github-account-and-a-repository" class="nav-link" data-scroll-target="#create-a-github-account-and-a-repository"><span class="header-section-number">1</span> Create a GitHub account and a repository</a></li>
+  <li><a href="#install-r-and-r-studio" id="toc-install-r-and-r-studio" class="nav-link" data-scroll-target="#install-r-and-r-studio"><span class="header-section-number">2</span> Install R and R Studio</a></li>
+  <li><a href="#install-the-qtwacademic-package" id="toc-install-the-qtwacademic-package" class="nav-link" data-scroll-target="#install-the-qtwacademic-package"><span class="header-section-number">3</span> Install the qtwAcademic package</a></li>
+  <li><a href="#create-a-r-project-for-your-website" id="toc-create-a-r-project-for-your-website" class="nav-link" data-scroll-target="#create-a-r-project-for-your-website"><span class="header-section-number">4</span> Create a R project for your website</a></li>
+  <li><a href="#adjust-and-personalize-the-template" id="toc-adjust-and-personalize-the-template" class="nav-link" data-scroll-target="#adjust-and-personalize-the-template"><span class="header-section-number">5</span> Adjust and personalize the template</a></li>
+  <li><a href="#click-render-and-have-a-first-look-at-your-future-website" id="toc-click-render-and-have-a-first-look-at-your-future-website" class="nav-link" data-scroll-target="#click-render-and-have-a-first-look-at-your-future-website"><span class="header-section-number">6</span> Click <code>Render</code> and have a first look at your future website</a></li>
+  <li><a href="#upload-your-r-project-to-github" id="toc-upload-your-r-project-to-github" class="nav-link" data-scroll-target="#upload-your-r-project-to-github"><span class="header-section-number">7</span> Upload your R project to GitHub</a></li>
+  <li><a href="#publish-it" id="toc-publish-it" class="nav-link" data-scroll-target="#publish-it"><span class="header-section-number">8</span> Publish it!</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="coming-soon-how-to-code-your-own-personal-website-with-quarto-in-less-than-30-minutes" class="level1">
-<h1>Coming soon: How to code your own personal website with Quarto in less than 30 minutes</h1>
-<p>In this first tutorial, we will provide a focused guide on how to code and publish your own personal website with Quarto and GitHub. No previous knowledge required. Shouldn’t take longer than 30 minutes (basic version).</p>
+<section id="how-to-code-your-own-personal-website-with-quarto-in-less-than-30-minutes-and-for-free" class="level1 unnumbered">
+<h1 class="unnumbered">How to code your own personal website with Quarto in less than 30 minutes and for free!</h1>
+<p><em>This tutorial provides a focused guide on how to code and publish your own personal website with Quarto and GitHub. No previous knowledge required. Shouldn’t take longer than 30 minutes (basic version).</em></p>
 <p><img src="thumbnail.png" class="img-fluid"></p>
+<p><br>
+</p>
+<p>As an academic, I often feel like I am working as a freelancer. While I am not really a fan of self-promotion, it seems to be an important part of the job. Many successful academics have personal websites. By following the 8 steps below, you can create one, too.</p>
+</section>
+<section id="create-a-github-account-and-a-repository" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Create a GitHub account and a repository</h1>
+<p><a href="https://github.com/">GitHub</a> is a great platform for code sharing and collaborative research projects. You can also use it to host your personal website for free without having any previous experience with handling GitHub. It is very easy. Simply register as a new user. <strong>Be mindful when selecting your username</strong> as this will also become part of your website address. For example, my username is <em>SeraphineM</em>, so my personal website lives at <a href="https://seraphinem.github.io" class="uri">https://seraphinem.github.io</a>. Once you created your GitHub account, click on the left side the green button labelled <code>Create repository</code> (see screenshot below). Give this repository the exact same name you used as username and add <code>.github.io</code>. For example, in my case I called the repository <code>SeraphineM/SeraphineM.github.io</code>.</p>
+<p><img src="rep1.png" class="img-fluid" style="width:30.0%"></p>
+</section>
+<section id="install-r-and-r-studio" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Install R and R Studio</h1>
+<p>Install <a href="https://www.r-project.org/">R</a> and <a href="https://posit.co/downloads">R Studio</a> on your laptop.</p>
+</section>
+<section id="install-the-qtwacademic-package" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Install the qtwAcademic package</h1>
+<p>Open R Studio and install the <a href="https://github.com/andreaczhang/qtwAcademic">gtwAcademic package</a> by copying the following command into your “Console” (the window at the bottom left):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'qtwAcademic'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If you had an older version of R Studio already installed on your laptop, you might need to install also <a href="https://quarto.org/docs/get-started/hello/rstudio.html">Quarto</a> (latest R Studio versions have Quarto included).</p>
+</section>
+<section id="create-a-r-project-for-your-website" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Create a R project for your website</h1>
+<p>In R Studio go to,</p>
+<ol type="1">
+<li><p>File &gt; New Project &gt; New Directory</p></li>
+<li><p>Scroll down and choose <code>Quarto Website using qtwAcademic templates</code></p></li>
+<li><p>Give your project a directory name, pick a location on your laptop, and select the template <code>Personal</code> from the drop-down menu.</p></li>
+</ol>
+<p><img src="proj1.png" class="img-fluid" style="width:30.0%"> <img src="proj2.png" class="img-fluid" style="width:30.0%"></p>
+</section>
+<section id="adjust-and-personalize-the-template" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Adjust and personalize the template</h1>
+<p>In order to adjust and personalize your website, the most important files for you to look at are:</p>
+<ul>
+<li><code>index.qmd</code></li>
+<li><code>_quarto.yml</code></li>
+<li>the <code>index.qmd</code> files in the subfolders for the different sections of your website.</li>
+</ul>
+<p>The structure of these files is generally quite intuitive and adjusting/adding content is fairly straightforward. All <code>.qmd</code> files give you the choice between <code>source</code> or <code>visual</code> mode (top left menu), the latter being similar to a word.doc environment. One first thing you should probably do is replacing the <code>profile.png</code> picture with a nice pic of youself.</p>
+<p>For some more instructions including how to add additional pages, look for example <a href="https://andreaczhang.github.io/qtwAcademic/articles/qtwAcademic.html">here</a>. For changing the style of your website, change in the <code>_quarto.yml</code> the name of the <code>theme</code> (scroll down to the end of the script). <a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto provides many themes</a> and offers a lot of flexibility to tailor your website to your needs. It is also a good idea to check out the source code of other quarto websites, for example look <a href="https:github.com/seraphinem/seraphinem.github.io">here</a>. I also find <a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">this more detailed tutorial</a> very helpful.</p>
+</section>
+<section id="click-render-and-have-a-first-look-at-your-future-website" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Click <code>Render</code> and have a first look at your future website</h1>
+<p>Once you have done some adjustments to the <code>index.qmd</code> files and picked your theme in the <code>_quarto.yml</code> file, go to the main <code>index.qmd</code> file and click <code>Render</code> (top middle menu). This will build a local version of your new website via your browser. Looks nice, doesn’t it?</p>
+</section>
+<section id="upload-your-r-project-to-github" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Upload your R project to GitHub</h1>
+<p>Clicking <code>Render</code> in your R Studio project builds your website only locally. In order to get it published online, you need to upload it to your previously created GitHub repository. However, it is really imortant that you do the following:</p>
+<ul>
+<li>click one last time <code>Render</code> before uploading it to make sure you have the latest version of your website online (GitHub cannot render).</li>
+<li>select the <code>Terminal</code> (bottom left in your R Studio project), add the line <code>touch .nojekyll</code> here and press enter. This tells GitHub not to mess with your already configured website.</li>
+</ul>
+<p>Then, go to your repository and click on <code>uploading an existing file</code> (see screenshot below). Drag all the files in your main website folder (all!) into the field on GitHub and, after they are all uploaded, click <code>commit changes</code> at the bottom of the page.</p>
+<p><img src="rep2.png" class="img-fluid" style="width:50.0%"></p>
+</section>
+<section id="publish-it" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Publish it!</h1>
+<p>One last step before your website goes online: once you commited the changes to your GitHub repository, click on <code>settings</code> (top menu), then <code>pages</code> (side menu), and configure in the section Branch <code>main</code> and <code>/docs</code> (see screenshot below) and click <code>Save</code>. After a few minutes, you should be able to see your website deployed in the first section. Click on <code>visit site</code> to have a look and enjoy, well done! 🎉</p>
+<p><img src="rep3.png" class="img-fluid" style="width:50.0%"></p>
 
 
 </section>
