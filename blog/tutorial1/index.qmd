@@ -4,7 +4,7 @@ descritpion: "A short tutorial"
 author: "Seraphine F. Maerz"
 date: "07/21/2024"
 categories: [news, website, tech, quarto, academic]
-draft: true
+draft: false
 number-sections: true
 toc: true
 ---
