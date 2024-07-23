@@ -25,7 +25,7 @@ We meet in [Arts West Research Lounge](https://link.mazemap.com/C7N0Gq3W). **Lun
 |:-------:|-----------|:--------------------------------:|:----------------:|
 | 05/08/24 | **11:30**-13:00 | **Launch of QuantLab** **🎉** [Intro to R and Quarto ](seminars24/project_1/index.qmd) |               [Seraphine F. Maerz](https://seraphinem.github.io), [Irma Mooi-Reci](https://irmamooireci.com/)              |
 | 26/08/24 | 12:00-13:00     |                   [Using Stata for panel data](seminars24/index.qmd)                   |                        [Irma Mooi-Reci](https://irmamooireci.com/)                        |
-| 09/09/24 | 12:00-13:00     |       [Quasi-experimental designs](seminars24/index.qmd)        |                [Ed Goldring](https://www.edwardgoldring.com/) (tbc)                |
+| 09/09/24 | 12:00-13:00     |       [Spatial Econometrics: An Introduction](seminars24/index.qmd)        |                [Ed Goldring](https://www.edwardgoldring.com/)                |
 |   tbc    | tbc             | [Simulation models (co-presentation with Social Science weeks)](seminars24/index.qmd)  | [Jason Thompson](https://findanexpert.unimelb.edu.au/profile/769805-jason-thompson) ([MCDS](https://science.unimelb.edu.au/mcds)) |
 | 14/10/24 | 12:00-13:00     |                [Quantitative text analysis in R](seminars24/index.qmd)                 |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
 | 28/10/24 | 12:00-13:00     |          [Structural Equation Modeling (SEM) in Stata](seminars24/index.qmd)           |                       [Harry Ganzeboom](http://www.harryganzeboom.nl/index.htm)                        |
