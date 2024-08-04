@@ -39,7 +39,7 @@ install.packages('qtwAcademic')
 
 If you had an older version of R Studio already installed on your laptop, you might need to install also [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html) (latest R Studio versions have Quarto included).
 
-# Create a R project for your website
+# Create an R project for your website
 
 In R Studio go to,
 

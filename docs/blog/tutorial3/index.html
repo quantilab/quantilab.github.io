@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Seraphine F. Maerz">
-<meta name="dcterms.date" content="2024-10-01">
+<meta name="dcterms.date" content="2024-08-04">
 
-<title>QuantLab - Coming soon: How to use R Markdown to ‘knit’ nice papers ready for submission in whatever format</title>
+<title>QuantLab - How to use R Studio with Quarto to write nice papers ready for submission in whatever format</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -103,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Coming soon: How to use R Markdown to ‘knit’ nice papers ready for submission in whatever format</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">How to use R Studio with Quarto to write nice papers ready for submission in whatever format</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -112,10 +146,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-right">
-      <h1 class="title">Coming soon: How to use R Markdown to ‘knit’ nice papers ready for submission in whatever format</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">How to use R Studio with Quarto to write nice papers ready for submission in whatever format</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">news</div>
+                <div class="quarto-category">paper</div>
+                <div class="quarto-category">tech</div>
+                <div class="quarto-category">quarto</div>
+                <div class="quarto-category">academic</div>
+                <div class="quarto-category">pandoc</div>
+                <div class="quarto-category">workflow</div>
+                <div class="quarto-category">R Markdown</div>
               </div>
                   </div>
   </div>
@@ -133,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 1, 2024</p>
+        <p class="date">August 4, 2024</p>
       </div>
     </div>
     
@@ -186,19 +227,180 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-to-use-r-studio-with-quarto-to-write-nice-papers-ready-for-submission-in-whatever-format" id="toc-how-to-use-r-studio-with-quarto-to-write-nice-papers-ready-for-submission-in-whatever-format" class="nav-link active" data-scroll-target="#how-to-use-r-studio-with-quarto-to-write-nice-papers-ready-for-submission-in-whatever-format">How to use R Studio with Quarto to write nice papers ready for submission in whatever format</a></li>
+  <li><a href="#install-r-and-r-studio" id="toc-install-r-and-r-studio" class="nav-link" data-scroll-target="#install-r-and-r-studio"><span class="header-section-number">1</span> Install R and R Studio</a></li>
+  <li><a href="#create-an-r-project-for-your-paper" id="toc-create-an-r-project-for-your-paper" class="nav-link" data-scroll-target="#create-an-r-project-for-your-paper"><span class="header-section-number">2</span> Create an R project for your paper</a></li>
+  <li><a href="#start-writing-your-paper-in-the-file-with-the-ending-.qmd" id="toc-start-writing-your-paper-in-the-file-with-the-ending-.qmd" class="nav-link" data-scroll-target="#start-writing-your-paper-in-the-file-with-the-ending-.qmd"><span class="header-section-number">3</span> Start writing your paper in the file with the ending .qmd</a>
+  <ul class="collapse">
+  <li><a href="#configuring-the-yaml-header" id="toc-configuring-the-yaml-header" class="nav-link" data-scroll-target="#configuring-the-yaml-header"><span class="header-section-number">3.1</span> Configuring the <code>YAML</code> header</a></li>
+  <li><a href="#writing-text" id="toc-writing-text" class="nav-link" data-scroll-target="#writing-text"><span class="header-section-number">3.2</span> Writing text</a></li>
+  <li><a href="#citing-others-and-adding-a-list-of-references" id="toc-citing-others-and-adding-a-list-of-references" class="nav-link" data-scroll-target="#citing-others-and-adding-a-list-of-references"><span class="header-section-number">3.3</span> Citing others and adding a list of references</a></li>
+  <li><a href="#adding-a-plot-created-in-r" id="toc-adding-a-plot-created-in-r" class="nav-link" data-scroll-target="#adding-a-plot-created-in-r"><span class="header-section-number">3.4</span> Adding a plot created in <code>R</code></a></li>
+  <li><a href="#adding-a-results-table-from-estimations-in-r" id="toc-adding-a-results-table-from-estimations-in-r" class="nav-link" data-scroll-target="#adding-a-results-table-from-estimations-in-r"><span class="header-section-number">3.5</span> Adding a results table from estimations in <code>R</code></a></li>
+  </ul></li>
+  <li><a href="#click-render-and-enjoy-your-nice-paper-in-pdf-.docx-or-html" id="toc-click-render-and-enjoy-your-nice-paper-in-pdf-.docx-or-html" class="nav-link" data-scroll-target="#click-render-and-enjoy-your-nice-paper-in-pdf-.docx-or-html"><span class="header-section-number">4</span> Click <code>Render</code> and enjoy your nice paper in <code>pdf</code>, <code>.docx</code>, or <code>html</code></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 
 
 
 
-<p>In this third tutorial, we will provide a focused guide on how to make use of the efficient and coder-friendly workflow in R Markdown and pandoc to produce papers ready for submission in the required formats. No previous knowledge required.</p>
+<section id="how-to-use-r-studio-with-quarto-to-write-nice-papers-ready-for-submission-in-whatever-format" class="level1 unnumbered">
+<h1 class="unnumbered">How to use R Studio with Quarto to write nice papers ready for submission in whatever format</h1>
+<p><em>This is a short and fun tutorial on how to create beautiful Quarto documents that effectively combine code, analysis, and narrative. No previous knowledge required. The tutorial covers only the very basics to get started with writing nice papers using Quarto. For further tutorials, hints, and tips, see for example <a href="https://quarto.org/docs/get-started/hello/rstudio.html">here</a>.</em></p>
 <p><img src="thumbnail.png" class="img-fluid"></p>
+<p><br>
+</p>
+<p>As a researcher, I love collaborative paper writing processes with efficient workflows. Quarto is the <a href="https://quarto.org/docs/get-started/hello/rstudio.html">next-generation version of R Markdown from Posit</a> and is really a great tool for this. Follow the four steps below to get started with you own first Quarto paper.</p>
+</section>
+<section id="install-r-and-r-studio" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Install R and R Studio</h1>
+<p>Install <a href="https://www.r-project.org/">R</a> and <a href="https://posit.co/downloads">R Studio</a> on your laptop. All recent version of R Studio come along with Quarto already being included.</p>
+</section>
+<section id="create-an-r-project-for-your-paper" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Create an R project for your paper</h1>
+<p>In R Studio go to,</p>
+<ol type="1">
+<li><p>File &gt; New Project &gt; New Directory</p></li>
+<li><p>Scroll down and choose <code>Quarto Project</code></p></li>
+<li><p>Give your project a directory name, pick a location on your laptop.</p></li>
+</ol>
+<p><img src="projpaper.png" class="img-fluid" style="width:30.0%"></p>
+</section>
+<section id="start-writing-your-paper-in-the-file-with-the-ending-.qmd" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Start writing your paper in the file with the ending .qmd</h1>
+<section id="configuring-the-yaml-header" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="configuring-the-yaml-header"><span class="header-section-number">3.1</span> Configuring the <code>YAML</code> header</h2>
+<p>In this header, you tell Quarto how to <code>Render</code> your paper in the formats <code>pdf</code>, <code>docx</code>, and <code>html</code>. A lot can be added to this <code>YAML</code> header (see <a href="https://quarto.org/docs/get-started/hello/rstudio.html">here</a>, for example), I recommend you the following minimal set up to get started:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Some compelling title"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> name<span class="sc">:</span> Seraphine F. Maerz</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  affiliations<span class="sc">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> University of Melbourne, Australia</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  pdf<span class="sc">:</span> </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    pdf<span class="sc">-</span>engine<span class="sc">:</span> pdflatex</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    colorlinks<span class="sc">:</span> true</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    link<span class="sc">-</span>citations<span class="sc">:</span> true</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    header<span class="sc">-</span>includes<span class="sc">:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> \usepackage{float}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> \floatplacement{table}{H}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span> default</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  docx<span class="sc">:</span> default</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>prefer<span class="sc">-</span>html<span class="sc">:</span> true</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>bibliography<span class="sc">:</span> references.bib</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>thanks<span class="sc">:</span> <span class="st">"Please do not circulate."</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>abstract<span class="sc">:</span> <span class="st">"Here, we can add an informative and concise abstract."</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>keywords<span class="sc">:</span> <span class="st">"List some keywords here."</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Give your paper a title, add your name, affiliation, etc. Before you can get started with the actual writing of your paper, two more things you need to do:</p>
+<ol type="1">
+<li><p>Add a <code>.bib file</code> to your project folder and call it references.bib. For more information about .bib files and how you get the papers and books you want to cite in bibtex format from Mendeley, Zotero, etc., see [here](<a href="https://bibtex.eu/quarto/" class="uri">https://bibtex.eu/quarto/</a>).</p></li>
+<li><p>Install <code>tinytex</code> via the Terminal (bottom left in R Studio) for pdf compilation with the following command line: <code>Quarto install tinytex</code>.</p></li>
+</ol>
+</section>
+<section id="writing-text" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="writing-text"><span class="header-section-number">3.2</span> Writing text</h2>
+<p>Just below the header (end of it is marked with <code>---</code>) you can now start with the text of your paper. Formatting in Quarto documents is simple and very similar to Markdown. For example, you can start with your first header by writing <code># Introduction</code>. If you prefer to write in a similar environment as .docx, click on <code>Visual</code> in the top left corner. In the <code>Visual</code> mode, formatting and inserting images or tables is straightforward and similar to .docx.</p>
+</section>
+<section id="citing-others-and-adding-a-list-of-references" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="citing-others-and-adding-a-list-of-references"><span class="header-section-number">3.3</span> Citing others and adding a list of references</h2>
+<p>Citing others is easy as soon as you have these resources saved in your <code>.bib</code> file (see above). Simply write @ in front of the <code>.bib</code> citation key, e.g., <span class="citation" data-cites="Maerz2023">@Maerz2023</span>. The list of references is automatically added to the end of your paper.</p>
+</section>
+<section id="adding-a-plot-created-in-r" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="adding-a-plot-created-in-r"><span class="header-section-number">3.4</span> Adding a plot created in <code>R</code></h2>
+<p>You can add an <code>R code snippet</code> creating a plot or other figures and also reference it in the text with <code>@fig-name</code>. Here is a simple example to get started:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-name</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: FALSE</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: FALSE</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: FALSE</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Our nice plot"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># with #| you tell Quarto how to deal with your plot</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># For example, use the V-Dem dataset, offering 500 indicators on democracy</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># more info about the dataset: https://www.v-dem.net/</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># load the dataset via the R package vdemdata on the vdeminstitute github</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># install devtools package, then use this command:</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github("vdeminstitute/vdemdata")</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># load packages</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vdemdata)  </span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modelsummary)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># prepare data (check out the V-Dem Codebook for more info about variables)</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>vdem <span class="ot">&lt;-</span> vdemdata<span class="sc">::</span>vdem <span class="sc">%&gt;%</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(v2x_regime <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="co"># this variable goes from 0-3, all countries above 1 are democracies</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(country_name, year, v2x_polyarchy, v2smgovdom, v2smgovab, e_gdppc, v2x_regime) <span class="sc">%&gt;%</span> <span class="co"># democracy, disinformation variables, GDP per capita, regime type</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Democracy =</span> v2x_polyarchy, <span class="co"># rename variables</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>         <span class="at">Disinformation =</span> <span class="fu">pmax</span>(v2smgovdom, v2smgovab), <span class="co"># construct new variables by maximum values per obs.</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>         <span class="at">Disinformation =</span> <span class="dv">0</span><span class="sc">-</span>Disinformation) <span class="sc">%&gt;%</span> <span class="co"># flip variables</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>()</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="co"># do some simple plot</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(vdem, <span class="fu">aes</span>(<span class="at">x =</span> Disinformation, <span class="at">y =</span> Democracy)) <span class="sc">+</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="adding-a-results-table-from-estimations-in-r" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="adding-a-results-table-from-estimations-in-r"><span class="header-section-number">3.5</span> Adding a results table from estimations in <code>R</code></h2>
+<p>You can add an <code>R code snippet</code> showing a results table summarizing your analysis and also reference it in the text with <code>@tbl-results</code>. Here is an example to get started:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-results</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: FALSE</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: FALSE</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: FALSE</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Results table"</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># with #| you tell Quarto how to deal with your table</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># For example, use the V-Dem dataset, offering 500 indicators on democracy</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># more info about the dataset: https://www.v-dem.net/</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># load the dataset via the R package vdemdata on the vdeminstitute github</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># install devtools package, then use this command:</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github("vdeminstitute/vdemdata")</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># load packages</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vdemdata)  </span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modelsummary)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># prepare data (check out the V-Dem Codebook for more info about variables)</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>vdem <span class="ot">&lt;-</span> vdemdata<span class="sc">::</span>vdem <span class="sc">%&gt;%</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(v2x_regime <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span> <span class="co"># this variable goes from 0-3, all countries above 1 are democracies</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(country_name, year, v2x_polyarchy, v2smgovdom, v2smgovab, e_gdppc, v2x_regime) <span class="sc">%&gt;%</span> <span class="co"># democracy, disinformation variables, GDP per capita, regime type</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Democracy =</span> v2x_polyarchy, <span class="co"># rename variables</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>         <span class="at">Disinformation =</span> <span class="fu">pmax</span>(v2smgovdom, v2smgovab), <span class="co"># construct new variables by maximum values per obs.</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>         <span class="at">Disinformation =</span> <span class="dv">0</span><span class="sc">-</span>Disinformation) <span class="sc">%&gt;%</span> <span class="co"># flip variables</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>()</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co"># do some simple OLS </span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>m1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(Democracy <span class="sc">~</span> Disinformation <span class="sc">+</span> v2x_regime <span class="sc">+</span> e_gdppc, <span class="at">data =</span> vdem) <span class="co"># DV: Democracy, IV: Disinformation, plus controls: GDP per capita, regime type</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="fu">modelsummary</span>(m1, <span class="at">estimate =</span> <span class="st">"{estimate}{stars}"</span>) <span class="co"># for getting a nice table with stars</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="click-render-and-enjoy-your-nice-paper-in-pdf-.docx-or-html" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Click <code>Render</code> and enjoy your nice paper in <code>pdf</code>, <code>.docx</code>, or <code>html</code></h1>
+<p>After these four basic steps, you might like to adjust your paper further. For example, you can add a <code>.csl</code> file to your folder and add it to the <code>YAML</code> header to automatically get journal-specific formatting and citation styles for your paper. You can also format your <code>pdf</code> file differently than your <code>.docx</code> (yes, some journals still accept only <code>.docx</code> files in old-fashioned formatting, don’t ask me why). Quarto has a lot to offer for us academics and clicking <code>Render</code> and looking at your nice paper is fun!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
