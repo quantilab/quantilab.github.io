@@ -16,7 +16,7 @@ toc: true
 
 \
 
-As a researcher, I love collaborative paper writing processes with efficient workflows. Quarto is the [next-generation version of R Markdown from Posit](https://quarto.org/docs/get-started/hello/rstudio.html) and is really a great tool for this. Follow the four steps below to get started with you own first Quarto paper.
+As a researcher, I love collaborative paper writing processes with efficient workflows. Quarto is the [next-generation version of R Markdown from Posit](https://quarto.org/docs/get-started/hello/rstudio.html) and is really a great tool for this. Follow the four steps below to get started with your own first Quarto paper.
 
 # Install R and R Studio
 
@@ -32,7 +32,7 @@ In R Studio go to,
 
 3.  Give your project a directory name, pick a location on your laptop.
 
-![](projpaper.png){width="30%"}
+![](projpaper.png){width="40%"}
 
 # Start writing your paper in the file with the ending .qmd
 
@@ -42,7 +42,7 @@ In this header, you tell Quarto how to `Render` your paper in the formats `pdf`,
 
 ```{r, eval=FALSE}
 ---
-title: "Some compelling title"
+title: "Democracy and Disinformation"
 author: 
 - name: Seraphine F. Maerz
   affiliations:
@@ -163,3 +163,5 @@ modelsummary(m1, estimate = "{estimate}{stars}") # for getting a nice table with
 # Click `Render` and enjoy your nice paper in `pdf`, `.docx`, or `html`
 
 After these four basic steps, you might like to adjust your paper further. For example, you can add a `.csl` file to your folder and add it to the `YAML` header to automatically get journal-specific formatting and citation styles for your paper. You can also format your `pdf` file differently than your `.docx` (yes, some journals still accept only `.docx` files in old-fashioned formatting, don't ask me why). Quarto has a lot to offer for us academics and clicking `Render` and looking at your nice paper is fun!
+
+![](examples.png)
