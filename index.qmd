@@ -15,6 +15,8 @@ about:
 Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), *QuantLab* an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars]() (schedule below) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for [exchange](https://github.com/quantilab/sharezone/issues) and [code sharing](https://github.com/quantilab/sharezone) (R, Stata, Python, R Markdown, LaTeX, Quarto).
 
 Come and join us for our bi-weekly *QuantLunches*, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au) 
+
+Please let us know if you want to [contribute](https://github.com/quantilab/sharezone/issues/1) a seminar during one of our future *QuantLunches*!
 :::
 
 # Schedule for 2024 {#sec-schedule}
