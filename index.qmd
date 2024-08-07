@@ -12,20 +12,20 @@ about:
 
 *QuantLab* is a new network group aiming to bring together social scientists at the [University of Melbourne](https://arts.unimelb.edu.au/school-of-social-and-political-sciences) and beyond to share insights in quantitative methods and research.
 
-Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), *QuantLab* an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars](seminars24/index.qmd) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for project-related [code sharing](gitlink.qmd) (R, Stata, Python, R Markdown, LaTeX, Quarto).
+Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), *QuantLab* an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars]() (schedule below) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for [exchange](https://github.com/quantilab/sharezone/issues) and [code sharing](https://github.com/quantilab/sharezone) (R, Stata, Python, R Markdown, LaTeX, Quarto).
 
-Come and join us for our bi-weekly *QuantLunches*, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au)
+Come and join us for our bi-weekly *QuantLunches*, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au) 
 :::
 
-# Schedule for 2024
+# Schedule for 2024 {#sec-schedule}
 
 We meet in [Arts West Research Lounge](https://link.mazemap.com/C7N0Gq3W). **Lunch is included** and kindly sponsored by the [School of Social and Political Science](https://arts.unimelb.edu.au/school-of-social-and-political-sciences).
 
 |   Date   | Time            |                                         Topic                                          |                          Presenter                           |
 |:-------:|-----------|:--------------------------------:|:----------------:|
-| 05/08/24 | **11:30**-13:00 | **Launch of QuantLab** **🎉** [Intro to R and Quarto ](seminars24/project_1/index.qmd) |               [Seraphine F. Maerz](https://seraphinem.github.io), [Irma Mooi-Reci](https://irmamooireci.com/)              |
-| 26/08/24 | 12:00-13:00     |                   [Using Stata for panel data](seminars24/index.qmd)                   |                        [Irma Mooi-Reci](https://irmamooireci.com/)                        |
-| 09/09/24 | 12:00-13:00     |       [Spatial Econometrics: An Introduction](seminars24/index.qmd)        |                [Ed Goldring](https://www.edwardgoldring.com/)                |
-|   tbc    | tbc             | [Simulation models (co-presentation with Social Science weeks)](seminars24/index.qmd)  | [Jason Thompson](https://findanexpert.unimelb.edu.au/profile/769805-jason-thompson) ([MCDS](https://science.unimelb.edu.au/mcds)) |
-| 14/10/24 | 12:00-13:00     |                [Quantitative text analysis in R](seminars24/index.qmd)                 |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
-| 28/10/24 | 12:00-13:00     |          [Structural Equation Modeling (SEM) in Stata](seminars24/index.qmd)           |                       [Harry Ganzeboom](http://www.harryganzeboom.nl/index.htm)                        |
+| 05/08/24 | **11:30**-13:00 | **Launch of QuantLab** **🎉** [Intro to R and Quarto ](blog/tutorial3/index.qmd) |               [Seraphine F. Maerz](https://seraphinem.github.io), [Irma Mooi-Reci](https://irmamooireci.com/)              |
+| 26/08/24 | 12:00-13:00     |                   Using Stata for panel data                   |                        [Irma Mooi-Reci](https://irmamooireci.com/)                        |
+| 09/09/24 | 12:00-13:00     |       Spatial econometrics: An introduction       |                [Ed Goldring](https://www.edwardgoldring.com/)                |
+|   tbc    | tbc             | Simulation models (co-presentation with Social Science weeks  | [Jason Thompson](https://findanexpert.unimelb.edu.au/profile/769805-jason-thompson) ([MCDS](https://science.unimelb.edu.au/mcds)) |
+| 14/10/24 | 12:00-13:00     |                Quantitative text analysis in R               |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
+| 28/10/24 | 12:00-13:00     |          Structural Equation Modeling (SEM) in Stataa           |                       [Harry Ganzeboom](http://www.harryganzeboom.nl/index.htm)                        |

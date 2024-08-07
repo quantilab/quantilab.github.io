@@ -8,36 +8,28 @@ website:
 
   page-footer:
     left: "&copy; Copyright 2024, Seraphine F. Maerz"
+    center: "We acknowledge and pay respect to the Traditional Owners of the unceded lands on which we work, learn, and live."
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
  
   navbar:
     pinned: true
     right:
+      - text: "Online Tutorials"
+        href: blog.qmd
+      - text: "Sharezone"
+        href: https://github.com/quantilab/sharezone/tree/main
+      - text: "Contribute"
+        href: https://github.com/quantilab/sharezone/issues
       - icon: twitter
         href: https://x.com/lab_quant92738
       - icon: github
-        href: https://github.com/quantilab/sharezone/tree/main
+        href: https://github.com/quantilab
     
-  sidebar:
-    pinned: true
-    align: center
-    style: "docked"
-    collapse-level: 1
-    contents:
+ 
 
-      - section: "Learning seminars"
-        contents:
-         - text: "Seminars in 2024"
-           href: seminars24/index.qmd
+      
 
-         - text: "Seminars in 2025"
-           href: seminars25/index.qmd
-
-      - text: "Online tutorials"
-        href: blog.qmd
-
-      - text: "Code sharing"
-        href: gitlink.qmd
+      
 
 
 
