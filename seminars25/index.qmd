@@ -1,5 +1,5 @@
 ---
-title: "Seminars in 2025"
+title: "Quick survey"
 description: |
   
 
@@ -7,13 +7,9 @@ description: |
 
 
 
-## Ideas and plans for upcoming seminars in 2025
+## Quick survey, thanks for participating!
 
-- How to build a ShinyApp for transparent and efficient data sharing
-- Structural Equation Modeling in R (with the R *lavaan* package)
-- New matching methods for panel data
-- How to use AI in research
-- ... and many more (please [contact us](mailto:seraphine.maerz@unimelb.edu.au) if you would like to share your knowledge and skills with us!)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLIgDzTLCYjN9mEpGgb8Z2wKV0QOWwkfrvj3pzmJvpKE740Q/viewform?embedded=true" width="640" height="2737" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
 
