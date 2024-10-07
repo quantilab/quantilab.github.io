@@ -1,38 +1,72 @@
 ---
-title: ""
-image: profile.png
-about:
-  id: hero-heading
-  template: trestles
-  image-shape: round
+title: "How to use GitHub for collaborative RStudio projects"
+author: "Seraphine F. Maerz"
+date: "10/03/2024"
+categories: [news, paper, tech, academic, workflow, RStudio, R, Git, GitHub, version control]
+draft: false
+number-sections: true
+toc: true
 ---
 
-::: {#hero-heading}
+# How to use GitHub for collaborative RStudio projects {.unnumbered}
 
-**Thank you for participating in our [quick survey here](seminars25/index.qmd).**
+*In this highly simplified 3-step tutorial, we will provide a **minimal guide** on how to use the online platform GitHub for collaborative RStudio projects, i.e., to share code, data, and replication material or to collectively work on a research paper project. No previous knowledge required. For further tutorials, hints, and tips, see for example [here](https://happygitwithr.com/).*
 
-# Welcome!
+**Keep in mind: Git is a very powerful version control tool and we only scratch on the surface here! Using GitHub is not always very intuitive - especially as beginner - but it is a great and highly efficient collaboration experience once you are all set!**
 
-*QuantLab* is a new network group aiming to bring together social scientists at the [University of Melbourne](https://arts.unimelb.edu.au/school-of-social-and-political-sciences) and beyond to share insights in quantitative methods and research.
+![](thumbnail.png)
 
-Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), *QuantLab* is an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars]() (schedule below) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for [exchange](https://github.com/quantilab/sharezone/issues) and [code sharing](https://github.com/quantilab/sharezone) (R, Stata, Python, R Markdown, LaTeX, Quarto).
+# Mastering the prerequisites on/with GitHub and Git
 
-Come and join us for our bi-weekly *QuantLunches*, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au) 
+1.1.  Sign up at [GitHub](https://github.com/), it is for free (choose your user name wisely, see why [here](https://happygitwithr.com/github-acct))
+
+1.2.  Create a [new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) (and [invite](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) potential collaborators) 
+
+1.3.  [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your local machine
 
 
-Please let us know if you want to [contribute](https://github.com/quantilab/sharezone/issues/1) a seminar during one of our future *QuantLunches*!
-:::
+# Set up an R project with version control
 
-# Schedule for 2024 {#sec-schedule}
+2.1.  If not already done, install [R](https://www.r-project.org/) and [R Studio](https://posit.co/downloads) on your laptop
 
-We meet in [Arts West Research Lounge](https://link.mazemap.com/C7N0Gq3W). **Lunch is included** and kindly sponsored by the [School of Social and Political Science](https://arts.unimelb.edu.au/school-of-social-and-political-sciences).
+2.2. Set up your credentials for interacting with GitHub
 
-|   Date   | Time            |                                         Topic                                          |                          Presenter                           |
-|:-------:|-----------|:--------------------------------:|:----------------:|
-| 05/08/24 | **11:30**-13:00 | **Launch of QuantLab** **🎉** [Intro to R and Quarto ](blog/tutorial3/index.qmd) |               [Seraphine F. Maerz](https://seraphinem.github.io), [Irma Mooi-Reci](https://irmamooireci.com/)              |
-| 26/08/24 | 12:00-13:00     |                  [Using Stata for panel data](sessions/QuantLunch_Mooi.pdf)                  |                        [Irma Mooi-Reci](https://irmamooireci.com/)                        |
-| 09/09/24 | 12:00-13:00     |       [Spatial econometrics: An introduction](sessions/QuantLunch_Goldring.pdf)       |                [Ed Goldring](https://www.edwardgoldring.com/)                |
-|   10/09/24    | 10:00-11:30| An Introduction to Computational Social Science (**online event** within Social Science weeks, [register here)](https://socialsciencesweek.org.au/event/an-introduction-to-computational-social-science/)  | [Jason Thompson](https://findanexpert.unimelb.edu.au/profile/769805-jason-thompson) ([MCDS](https://science.unimelb.edu.au/mcds)) |
-| 07/10/24 | 10:00-16:00     |                Quarto in RStudio: Writing Reproducible & Dynamic Research Papers (**online event** with *Instats*, [register here](https://instats.org/seminar/quarto-in-r-studio-writing-reproducible2), free of charge for all people from UniMelb)             |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
-| 14/10/24 | 12:00-13:00     |                [Quantitative text analysis in R](sessions/QuantLunch4.pdf)               |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
-| 28/10/24 | 12:00-13:00     |          Structural Equation Modeling (SEM) in Stata           |                       [Harry Ganzeboom](http://www.harryganzeboom.nl/index.htm)                        |
+Open RStudio and in your RStudio Console, execute:
+
+`usethis::create_github_token()`
+
+- Scroll down in the git browser window and click “Generate token”
+- Copy the generated PAT to your clipboard
+- to store the PAT, execute `gitcreds::gitcreds_set()` and paste your PAT to the console and click `Enter`
+- Now, you should be all set to pull and push from RStudio to GitHub
+
+
+2.3.  Create an R project for your collaborative project with version control:
+
+In R Studio go to,
+
+-   File \> New Project \> `Version Control`
+
+-   Choose `git`
+
+-   Give your project a directory name, indicate the `url` of your newly created GitHub repository (or, alternatively, the `url` of your collaborator's repository)
+
+- Click `Ok` to `clone` the repository to your local RStudio project.
+
+![](projversion.png){width="60%"}
+
+
+# Commit and track changes in RStudio (Pull/Push to GitHub)
+
+3.1. In the top right corner of your RStudio project, go to the `git` panel
+
+![](projgit.png){width="80%"}
+
+3.2. **ALWAYS** click `Pull` first to clone and track changes previously pushed to your GitHub repository (e.g., from collaborators)
+
+3.3. Once you are done with your most recent changes, click on `Commit`, review your changes, `Stage` them by clicking all boxes for accepted changes, and confirm with `Commit`.
+
+3.4. Once `Commit` is done, you still have to push changes (click `Push`). Only then, your changes are sent to your GitHub repository.
+
+**🎉** **Well done, you are set to enter the next level of co-authoring workflows!**
+

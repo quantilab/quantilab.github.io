@@ -29,7 +29,19 @@ toc: true
 
 2.1.  If not already done, install [R](https://www.r-project.org/) and [R Studio](https://posit.co/downloads) on your laptop
 
-2.2.  Create an R project for your collaborative project with version control:
+2.2. Set up your credentials for interacting with GitHub
+
+Open RStudio and in your RStudio Console, execute:
+
+`usethis::create_github_token()`
+
+- Scroll down in the git browser window and click “Generate token”
+- Copy the generated PAT to your clipboard
+- to store the PAT, execute `gitcreds::gitcreds_set()` and paste your PAT to the console and click `Enter`
+- Now, you should be all set to pull and push from RStudio to GitHub
+
+
+2.3.  Create an R project for your collaborative project with version control:
 
 In R Studio go to,
 
@@ -42,17 +54,6 @@ In R Studio go to,
 - Click `Ok` to `clone` the repository to your local RStudio project.
 
 ![](projversion.png){width="60%"}
-
-2.3. Set up your credentials for interacting with GitHub
-
-In your RStudio Console, execute:
-
-`usethis::create_github_token()`
-
-- Scroll down in the git browser window and click “Generate token”
-- Copy the generated PAT to your clipboard
-- to store the PAT, execute `gitcreds::gitcreds_set()` and paste your PAT to the console and click `Enter`
-- Now, you should be all set to pull and push from RStudio to GitHub
 
 
 # Commit and track changes in RStudio (Pull/Push to GitHub)

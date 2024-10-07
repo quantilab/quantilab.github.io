@@ -196,7 +196,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="set-up-an-r-project-with-version-control" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Set up an R project with version control</h1>
 <p>2.1. If not already done, install <a href="https://www.r-project.org/">R</a> and <a href="https://posit.co/downloads">R Studio</a> on your laptop</p>
-<p>2.2. Create an R project for your collaborative project with version control:</p>
+<p>2.2. Set up your credentials for interacting with GitHub</p>
+<p>Open RStudio and in your RStudio Console, execute:</p>
+<p><code>usethis::create_github_token()</code></p>
+<ul>
+<li>Scroll down in the git browser window and click “Generate token”</li>
+<li>Copy the generated PAT to your clipboard</li>
+<li>to store the PAT, execute <code>gitcreds::gitcreds_set()</code> and paste your PAT to the console and click <code>Enter</code></li>
+<li>Now, you should be all set to pull and push from RStudio to GitHub</li>
+</ul>
+<p>2.3. Create an R project for your collaborative project with version control:</p>
 <p>In R Studio go to,</p>
 <ul>
 <li><p>File &gt; New Project &gt; <code>Version Control</code></p></li>
@@ -205,15 +214,6 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Click <code>Ok</code> to <code>clone</code> the repository to your local RStudio project.</p></li>
 </ul>
 <p><img src="projversion.png" class="img-fluid" style="width:60.0%"></p>
-<p>2.3. Set up your credentials for interacting with GitHub</p>
-<p>In your RStudio Console, execute:</p>
-<p><code>usethis::create_github_token()</code></p>
-<ul>
-<li>Scroll down in the git browser window and click “Generate token”</li>
-<li>Copy the generated PAT to your clipboard</li>
-<li>to store the PAT, execute <code>gitcreds::gitcreds_set()</code> and paste your PAT to the console and click <code>Enter</code></li>
-<li>Now, you should be all set to pull and push from RStudio to GitHub</li>
-</ul>
 </section>
 <section id="commit-and-track-changes-in-rstudio-pullpush-to-github" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Commit and track changes in RStudio (Pull/Push to GitHub)</h1>
