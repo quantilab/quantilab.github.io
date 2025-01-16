@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a78bc22c21c5275f96438b53095d57b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -217,7 +217,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,website,tech,quarto,academic" data-listing-date-sort="1721484000000" data-listing-file-modified-sort="1722731943713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="769">
+<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ3dlYnNpdGUlMkN0ZWNoJTJDcXVhcnRvJTJDYWNhZGVtaWM=" data-listing-date-sort="1721484000000" data-listing-file-modified-sort="1722731943713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="769">
 <div class="thumbnail">
 <p><a href="./blog/tutorial1/index.html" class="no-external"></a></p><a href="./blog/tutorial1/index.html" class="no-external">
 <p class="card-img-top"><img src="blog/tutorial1/thumbnail.png"  class="thumbnail-image card-img"/></p>
@@ -245,7 +245,7 @@ Seraphine F. Maerz
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="news,paper,tech,quarto,academic,pandoc,workflow,R Markdown" data-listing-date-sort="1722693600000" data-listing-file-modified-sort="1722763653556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1063">
+<div class="quarto-post image-right" data-index="1" data-categories="bmV3cyUyQ3BhcGVyJTJDdGVjaCUyQ3F1YXJ0byUyQ2FjYWRlbWljJTJDcGFuZG9jJTJDd29ya2Zsb3clMkNSJTIwTWFya2Rvd24=" data-listing-date-sort="1722693600000" data-listing-file-modified-sort="1722763653556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1063">
 <div class="thumbnail">
 <p><a href="./blog/tutorial3/index.html" class="no-external"></a></p><a href="./blog/tutorial3/index.html" class="no-external">
 <p class="card-img-top"><img src="blog/tutorial3/thumbnail.png"  class="thumbnail-image card-img"/></p>
@@ -273,7 +273,7 @@ Seraphine F. Maerz
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="news,paper,tech,academic,workflow,RStudio,R,Git,GitHub,version control" data-listing-date-sort="1727877600000" data-listing-file-modified-sort="1728277660234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="394">
+<div class="quarto-post image-right" data-index="2" data-categories="bmV3cyUyQ3BhcGVyJTJDdGVjaCUyQ2FjYWRlbWljJTJDd29ya2Zsb3clMkNSU3R1ZGlvJTJDUiUyQ0dpdCUyQ0dpdEh1YiUyQ3ZlcnNpb24lMjBjb250cm9s" data-listing-date-sort="1727877600000" data-listing-file-modified-sort="1728277660234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="394">
 <div class="thumbnail">
 <p><a href="./blog/tutorial2/index.html" class="no-external"></a></p><a href="./blog/tutorial2/index.html" class="no-external">
 <p class="card-img-top"><img src="blog/tutorial2/thumbnail.png"  class="thumbnail-image card-img"/></p>
@@ -388,8 +388,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -500,7 +498,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -730,7 +727,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2024, Seraphine F. Maerz</p>
+<p>© Copyright 2025, Seraphine F. Maerz</p>
 </div>   
     <div class="nav-footer-center">
 <p>We acknowledge and pay respect to the Traditional Owners of the unceded lands on which we work, learn, and live.</p>
