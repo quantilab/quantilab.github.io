@@ -20,8 +20,6 @@ website:
         href: https://github.com/quantilab/sharezone/tree/main
       - text: "Contribute"
         href: https://github.com/quantilab/sharezone/issues
-      - icon: twitter
-        href: https://x.com/lab_quant92738
       - icon: github
         href: https://github.com/quantilab
     
