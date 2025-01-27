@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Seraphine F. Maerz">
-<meta name="dcterms.date" content="2024-10-03">
+<meta name="dcterms.date" content="2025-01-27">
 
-<title>How to use GitHub for collaborative RStudio projects – QuantLab</title>
+<title>How to use an open-source LLM in R for text analysis tasks – QuantLab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -177,18 +211,15 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">How to use GitHub for collaborative RStudio projects</h1>
+      <h1 class="title">How to use an open-source LLM in R for text analysis tasks</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">news</div>
-                <div class="quarto-category">paper</div>
-                <div class="quarto-category">tech</div>
-                <div class="quarto-category">academic</div>
-                <div class="quarto-category">workflow</div>
-                <div class="quarto-category">RStudio</div>
+                <div class="quarto-category">text-as-data</div>
+                <div class="quarto-category">text-analysis</div>
+                <div class="quarto-category">LLM</div>
                 <div class="quarto-category">R</div>
-                <div class="quarto-category">Git</div>
-                <div class="quarto-category">GitHub</div>
-                <div class="quarto-category">version control</div>
+                <div class="quarto-category">rollama</div>
+                <div class="quarto-category">Ollama</div>
               </div>
                   </div>
   </div>
@@ -206,7 +237,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 3, 2024</p>
+        <p class="date">January 27, 2025</p>
       </div>
     </div>
     
@@ -222,10 +253,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-use-github-for-collaborative-rstudio-projects" id="toc-how-to-use-github-for-collaborative-rstudio-projects" class="nav-link active" data-scroll-target="#how-to-use-github-for-collaborative-rstudio-projects">How to use GitHub for collaborative RStudio projects</a></li>
-  <li><a href="#mastering-the-prerequisites-onwith-github-and-git" id="toc-mastering-the-prerequisites-onwith-github-and-git" class="nav-link" data-scroll-target="#mastering-the-prerequisites-onwith-github-and-git"><span class="header-section-number">1</span> Mastering the prerequisites on/with GitHub and Git</a></li>
-  <li><a href="#set-up-an-r-project-with-version-control" id="toc-set-up-an-r-project-with-version-control" class="nav-link" data-scroll-target="#set-up-an-r-project-with-version-control"><span class="header-section-number">2</span> Set up an R project with version control</a></li>
-  <li><a href="#commit-and-track-changes-in-rstudio-pullpush-to-github" id="toc-commit-and-track-changes-in-rstudio-pullpush-to-github" class="nav-link" data-scroll-target="#commit-and-track-changes-in-rstudio-pullpush-to-github"><span class="header-section-number">3</span> Commit and track changes in RStudio (Pull/Push to GitHub)</a></li>
+  <li><a href="#how-to-use-an-open-source-llm-in-r-for-text-analysis-tasks" id="toc-how-to-use-an-open-source-llm-in-r-for-text-analysis-tasks" class="nav-link active" data-scroll-target="#how-to-use-an-open-source-llm-in-r-for-text-analysis-tasks">How to use an open-source LLM in R for text analysis tasks</a></li>
+  <li><a href="#tools-and-packages" id="toc-tools-and-packages" class="nav-link" data-scroll-target="#tools-and-packages"><span class="header-section-number">1</span> Tools and packages</a></li>
+  <li><a href="#precautions" id="toc-precautions" class="nav-link" data-scroll-target="#precautions"><span class="header-section-number">2</span> Precautions</a></li>
+  <li><a href="#running-the-llm-in-r" id="toc-running-the-llm-in-r" class="nav-link" data-scroll-target="#running-the-llm-in-r"><span class="header-section-number">3</span> Running the LLM in R</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -236,48 +268,154 @@ window.Quarto = {
 
 
 
-<section id="how-to-use-github-for-collaborative-rstudio-projects" class="level1 unnumbered">
-<h1 class="unnumbered">How to use GitHub for collaborative RStudio projects</h1>
-<p><em>In this highly simplified 3-step tutorial, we will provide a <strong>minimal guide</strong> on how to use the online platform GitHub for collaborative RStudio projects, i.e., to share code, data, and replication material or to collectively work on a research paper project. No previous knowledge required. For further tutorials, hints, and tips, see for example <a href="https://happygitwithr.com/">here</a>.</em></p>
-<p><strong>Keep in mind: Git is a very powerful version control tool and we only scratch on the surface here! Using GitHub is not always very intuitive - especially as beginner - but it is a great and highly efficient collaboration experience once you are all set!</strong></p>
-<p><img src="thumbnail.png" class="img-fluid"></p>
+<section id="how-to-use-an-open-source-llm-in-r-for-text-analysis-tasks" class="level1 unnumbered">
+<h1 class="unnumbered">How to use an open-source LLM in R for text analysis tasks</h1>
+<p><em>This tutorial provides some basic code in R to get started with using open-source LLMs for text analysis tasks.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="llm.png" class="img-fluid figure-img"></p>
+<figcaption>AI generated image</figcaption>
+</figure>
+</div>
 </section>
-<section id="mastering-the-prerequisites-onwith-github-and-git" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Mastering the prerequisites on/with GitHub and Git</h1>
-<p>1.1. Sign up at <a href="https://github.com/">GitHub</a>, it is for free (choose your user name wisely, see why <a href="https://happygitwithr.com/github-acct">here</a>)</p>
-<p>1.2. Create a <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">new repository</a> (and <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository">invite</a> potential collaborators)</p>
-<p>1.3. <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install git</a> on your local machine</p>
+<section id="tools-and-packages" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Tools and packages</h1>
+<p>In this brief tutorial, we will use <code>llama3.2:1b</code> for text analysis tasks - an open-source “mini” LLM provided by <code>Ollama</code>. We will work with the <code>rollama</code> package developed by <a href="https://jbgruber.github.io/rollama/">Johannes B. Gruber and Maximilian Weber</a> to run the <code>llama3.2:1b</code> as a locally stored open-source LLM. The <code>rollama</code> package wraps the <code>Ollama</code> API, enabling the use of <a href="https://ollama.com/">Ollama’s</a> free and open-source LLMs directly in R.</p>
 </section>
-<section id="set-up-an-r-project-with-version-control" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Set up an R project with version control</h1>
-<p>2.1. If not already done, install <a href="https://www.r-project.org/">R</a> and <a href="https://posit.co/downloads">R Studio</a> on your laptop</p>
-<p>2.2. Set up your credentials for interacting with GitHub</p>
-<p>Open RStudio and in your RStudio Console, execute:</p>
-<p><code>usethis::create_github_token()</code></p>
+<section id="precautions" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Precautions</h1>
+<p><strong>Remember: While locally stored open-source LLMs are a much more secure and privacy-friendly way than closed models, there might be still ethical concerns and risks involved, especially if you work with sensitive data. Therefore, always be aware of the data you use and the potential consequences of your analysis and make sure to enable the necessary safeguards to protect privacy and security. In addition, be aware that the license to use <a href="https://ollama.com/">Ollama</a> models comes along with adhering to specific regulations to avoid misuse. For more information about data security, precautions, ethical concerns, and responsible usage of LLMs, check out the content of the <a href="https://instats.org/seminar/using-ai-for-text-analysis-an-introduct2">“Using AI for Text Analysis - Introduction” workshop.</a></strong></p>
+</section>
+<section id="running-the-llm-in-r" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Running the LLM in R</h1>
+<p>We will first install the <code>Ollama</code> app (outside of R) from <a href="https://ollama.com/download">https://ollama.com/download</a> and then load it in R. Then, we install and load the <code>rollama</code> package in R and ping <code>Ollama</code> to ensure connectivity. We then download the model <code>llama3.2:1b</code> for text analysis tasks. Although it is a comparatively small LLM, this can take some time, depending on your machine. Once <code>llama3.2:1b</code> is downloaded, we use a loop function to ask the LLM for solving text classification tasks.</p>
+<p>In this tutorial, we will work with a relatively small corpus of 264 speeches of the current Australian Prime Minister Anthony Albanese which I had scraped from the <a href="https://anthonyalbanese.com.au/">official website of the PM</a>. If you want to replicate this tutorial, <a href="https://github.com/quantilab/sharezone/tree/main/OnlineTutorialData">please download the speech corpus here</a>.</p>
+<p>We will ask the LLM to classify the speeches on a left-right political values scale, ranging from 0 to 6. The political left is associated with values such as equality, social justice, and social change, while the political right is associated with values such as individualism, free markets, and national security. We will ask the LLM to provide a score for each speech and a short justification for the score.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: llama</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">#| include: false</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: false</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">#| eval: false</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="in"># FIRST: Install Ollama application on your machine (outside of R)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="in"># Ollama is available for Linux, macOS, and Windows, and can be downloaded from:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in"># https://ollama.com/download</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in"># Do not forget to run ollama.</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in"># If you installed Ollama using the Windows/Mac installer, </span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in"># you can simply start Ollama from your start menu/after unzipping it.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="in"># SECOND: Install R package rollama </span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">#install.packages("rollama")</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in"># Load the rollama package and ping Ollama to ensure connectivity.</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">library(rollama)</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">ping_ollama()</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in"># if everything works as it should, you should see the following in your console:</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="in"># Ollama (v0.4.2) is running at &lt;http://localhost:11434&gt;!</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="in"># install the light-weight model of Ollama, llama3.2:1b</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="in"># this took only around 2 minutes to install on my machine (a quite new MacBook Pro),</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="in"># it might take longer on older machines</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="in">#pull_model("llama3.2:1b")</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="in"># NOTE: llama3.2:1b is a comparatively small LLM (only 1 billion parameters compared to over 1 trillion of gpt-o4)</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="in"># and might not be as powerful as other LLMs, but it is a good starting point for educational purposes</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="in"># for more advanced tasks, you might want to use larger models</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="in"># let's do a simple test with the model</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="in">query("What is the capital of Australia.", model = "llama3.2:1b")</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="in"># load the speech corpus and transform it to a data frame with the quanteda package</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="in"># make sure the quanteda package is installed</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="in">#install.packages("quanteda")</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="in">load("speech_corpus.RData")</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="in">speeches &lt;- quanteda::convert(speech_corpus, to = c("data.frame"),)</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in"># for this tutorial, we will only use the first 5 speeches (it takes a while to classify all speeches)</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">speeches_5 &lt;- speeches[1:5,]</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in"># let's create a new column for the LLM's responses</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="in">speeches_5$llama &lt;- NA</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="in"># loop function to ask the LLM for classifying speeches</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="in">for (i in 1:nrow(speeches_5)) {</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="in">  print(i)</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="in">  question &lt;- "TASK: You are a political scientist. Score each speech on a left-right political values scale, ranging from 0 to 6. The political left is associated with values such as equality, social justice, and social change. The political right is associated with values such as individualism, free markets, and national security. Provide a score for each speech and a short justification for your score in a separate paragraph.</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="in">  </span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="in">SCORING METRIC:</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="in">6 : extremely left</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="in">5 : mostly left</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="in">4 : slightly left</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="in">3 : neither right or left</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="in">2 : slightly right</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="in">1 : mostly right</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="in">0 : extremely right</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="in">  </span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="in">RESPONSE GUIDELINE:</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="in">Think carefully about balancing left-right criteria for an accurate score. Consider the speaker's arguments, values, and policy proposals. If you are unsure about the score, provide a justification for your uncertainty."</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="in">  speech &lt;- speeches_5[i,2]  # in column 2 are all speeches stored in our data   </span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="in">  question &lt;- paste(question, speech)</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="in">  result &lt;- query(question, model = "llama3.2:1b")</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="in">  print(result)</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="in">  speeches_5$llama[i] &lt;- result$message$content</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="in"># let's save the results</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="in">save(speeches_5, file = "Data/speeches_5.RData")</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="in"># the results are stored in the speeches_5 data frame </span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="in"># in our newly created llama column</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="in"># let's print the results for speech 5 as an example:</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Responses
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:left;">
+<p>I’ll score each speech on a left-right political values scale, ranging from 0 to 6.</p>
+<p><strong>Speech 1: Australian Prime Minister’s opening remarks</strong></p>
+<p>Score: 4</p>
+<p>Justification: The speech begins by acknowledging the traditional owners of the land, showing respect for their elders and cultural heritage. However, it also mentions the inherent quality of the Australian people, which is a nod to the left-right balance. The Prime Minister emphasizes the need to work together to tackle challenges such as economic growth and disadvantage, while also recognizing the importance of individual rights and freedoms.</p>
+<p>The speech’s tone is conciliatory, aiming to build consensus and avoid conflict. While it does mention the need for compromise and agreement, it also suggests a willingness to listen and learn from each other. Overall, the speech strikes a balance between left-right values, demonstrating a commitment to social justice and equality.</p>
+<p><strong>Speech 2: Uluru Statement from the Heart</strong></p>
+<p>Score: 5</p>
+<p>Justification: This speech is a powerful call for unity and cooperation in the face of economic and social challenges. The Prime Minister acknowledges the importance of national pride and the need for collective action. While it mentions individual rights and freedoms, the speech also emphasizes the shared responsibilities that come with leadership.</p>
+<p>The tone is inspirational and motivational, encouraging Australians to work together towards a common goal. However, some critics might argue that the speech could have been more radical in its call for fundamental change or greater emphasis on social justice. Nevertheless, the speech’s message of unity and cooperation is compelling, and it scores high on left-right balance.</p>
+<p><strong>Speech 3: Australian Prime Minister’s closing remarks</strong></p>
+<p>Score: 6</p>
+<p>Justification: This speech delivers a clear and concise vision for Australia’s future, emphasizing the importance of building a stronger economy and lifting everyone up. The Prime Minister highlights the need for collective action to address economic challenges and disadvantage, while also promoting social justice and equality.</p>
+<p>The tone is confident and optimistic, with a clear call to action. While it does mention individual rights and freedoms, the speech’s focus on national unity and cooperation makes it a strong representation of left-right balance. The Prime Minister’s message is inspiring and motivational, making this speech an ideal conclusion to the National Economic Summit.</p>
+<p><strong>Overall scores</strong></p>
 <ul>
-<li>Scroll down in the git browser window and click “Generate token”</li>
-<li>Copy the generated PAT to your clipboard</li>
-<li>to store the PAT, execute <code>gitcreds::gitcreds_set()</code> and paste your PAT to the console and click <code>Enter</code></li>
-<li>Now, you should be all set to pull and push from RStudio to GitHub</li>
+<li>Speech 1: 4</li>
+<li>Speech 2: 5</li>
+<li>Speech 3: 6</li>
 </ul>
-<p>2.3. Create an R project for your collaborative project with version control:</p>
-<p>In R Studio go to,</p>
-<ul>
-<li><p>File &gt; New Project &gt; <code>Version Control</code></p></li>
-<li><p>Choose <code>git</code></p></li>
-<li><p>Give your project a directory name, indicate the <code>url</code> of your newly created GitHub repository (or, alternatively, the <code>url</code> of your collaborator’s repository)</p></li>
-<li><p>Click <code>Ok</code> to <code>clone</code> the repository to your local RStudio project.</p></li>
-</ul>
-<p><img src="projversion.png" class="img-fluid" style="width:60.0%"></p>
+These speeches demonstrate a clear commitment to social justice, equality, and collective action, while also showcasing effective communication and leadership skills.
+</td>
+</tr>
+</tbody>
+</table>
+<p>Example of open-source LLM’s responses for a text classification task.</p>
+</div>
+</div>
 </section>
-<section id="commit-and-track-changes-in-rstudio-pullpush-to-github" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Commit and track changes in RStudio (Pull/Push to GitHub)</h1>
-<p>3.1. In the top right corner of your RStudio project, go to the <code>git</code> panel</p>
-<p><img src="projgit.png" class="img-fluid" style="width:80.0%"></p>
-<p>3.2. <strong>ALWAYS</strong> click <code>Pull</code> first to clone and track changes previously pushed to your GitHub repository (e.g., from collaborators)</p>
-<p>3.3. Once you are done with your most recent changes, click on <code>Commit</code>, review your changes, <code>Stage</code> them by clicking all boxes for accepted changes, and confirm with <code>Commit</code>.</p>
-<p>3.4. Once <code>Commit</code> is done, you still have to push changes (click <code>Push</code>). Only then, your changes are sent to your GitHub repository.</p>
-<p><strong>🎉</strong> <strong>Well done, you are set to enter the next level of co-authoring workflows!</strong></p>
+<section id="conclusion" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Conclusion</h1>
+<p>This short tutorial demonstrates how to use an open-source LLM in R for text analysis tasks. We used the <code>llama3.2:1b</code> model provided by <code>Ollama</code> and the <code>rollama</code> package to run the LLM as a locally stored open-source model. We then used a loop function to ask the LLM for solving text classification tasks with a small corpus of political speeches. In your own research, you can use this approach to classify much larger amounts of text data or generate text based on prompts. If you want to learn more about how to use AI for text analysis, check out my <a href="https://instats.org/seminar/using-ai-for-text-analysis-an-introduct2">“Using AI for Text Analysis - Introduction” workshop</a> - available as live-streamed workshop or on demand.</p>
 
 
 

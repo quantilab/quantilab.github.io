@@ -4,7 +4,7 @@ description: |
   We warmly invite you to contribute to this section, please [contact us](mailto:seraphine.maerz@unimelb.edu.au) if you would like to publish your tutorials, suggestions, and tips here.
 listing:
   contents: blog
-  sort: "date asc"
+  sort: "date dsc"
   type: default
   categories: false
   sort-ui: false

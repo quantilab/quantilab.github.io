@@ -1,0 +1,132 @@
+---
+title: "How to use an open-source LLM in R for text analysis tasks"
+author: "Seraphine F. Maerz"
+date: "01/27/2025"
+categories: [news, text-as-data, text-analysis, LLM, R, rollama, Ollama]
+draft: false
+number-sections: true
+toc: true
+---
+
+# How to use an open-source LLM in R for text analysis tasks {-}
+
+*This tutorial provides some basic code in R to get started with using open-source LLMs for text analysis tasks.*
+
+![AI generated image](llm.png)
+
+# Tools and packages
+
+In this brief tutorial, we will use `llama3.2:1b` for text analysis tasks - an open-source "mini" LLM provided by `Ollama`. We will work with the `rollama` package developed by [Johannes B. Gruber and Maximilian Weber](https://jbgruber.github.io/rollama/) to run the `llama3.2:1b` as a locally stored open-source LLM. The `rollama` package wraps the `Ollama` API, enabling the use of [Ollama's](https://ollama.com/) free and open-source LLMs directly in R. 
+
+# Precautions 
+
+**Remember: While locally stored open-source LLMs are a much more secure and privacy-friendly way than closed models, there might be still ethical concerns and risks involved, especially if you work with sensitive data. Therefore, always be aware of the data you use and the potential consequences of your analysis and make sure to enable the necessary safeguards to protect privacy and security. In addition, be aware that the license to use [Ollama](https://ollama.com/) models comes along with adhering to specific regulations to avoid misuse. For more information about data security, precautions, ethical concerns, and responsible usage of LLMs, check out the content of the ["Using AI for Text Analysis - Introduction" workshop.](https://instats.org/seminar/using-ai-for-text-analysis-an-introduct2)**
+
+# Running the LLM in R
+
+We will first install the `Ollama` app (outside of R) from [https://ollama.com/download](https://ollama.com/download) and then load it in R. Then, we install and load the `rollama` package in R and ping `Ollama` to ensure connectivity. We then download the model `llama3.2:1b` for text analysis tasks. Although it is a comparatively small LLM, this can take some time, depending on your machine. Once `llama3.2:1b` is downloaded, we use a loop function to ask the LLM for solving text classification tasks. 
+
+In this tutorial, we will work with a relatively small corpus of 264 speeches of the current Australian Prime Minister Anthony Albanese which I had scraped from the [official website of the PM](https://anthonyalbanese.com.au/). If you want to replicate this tutorial, [please download the speech corpus here](https://github.com/quantilab/sharezone/tree/main/OnlineTutorialData).
+
+We will ask the LLM to classify the speeches on a left-right political values scale, ranging from 0 to 6. The political left is associated with values such as equality, social justice, and social change, while the political right is associated with values such as individualism, free markets, and national security. We will ask the LLM to provide a score for each speech and a short justification for the score.
+
+```{{r}}
+#| label: llama
+#| include: false
+#| echo: false
+#| eval: false
+
+# FIRST: Install Ollama application on your machine (outside of R)
+# Ollama is available for Linux, macOS, and Windows, and can be downloaded from:
+# https://ollama.com/download
+
+# Do not forget to run ollama.
+# If you installed Ollama using the Windows/Mac installer, 
+# you can simply start Ollama from your start menu/after unzipping it.
+
+# SECOND: Install R package rollama 
+#install.packages("rollama")
+
+# Load the rollama package and ping Ollama to ensure connectivity.
+library(rollama)
+ping_ollama()
+# if everything works as it should, you should see the following in your console:
+# Ollama (v0.4.2) is running at <http://localhost:11434>!
+
+# install the light-weight model of Ollama, llama3.2:1b
+# this took only around 2 minutes to install on my machine (a quite new MacBook Pro),
+# it might take longer on older machines
+#pull_model("llama3.2:1b")
+
+# NOTE: llama3.2:1b is a comparatively small LLM (only 1 billion parameters compared to over 1 trillion of gpt-o4)
+# and might not be as powerful as other LLMs, but it is a good starting point for educational purposes
+# for more advanced tasks, you might want to use larger models
+
+# let's do a simple test with the model
+query("What is the capital of Australia.", model = "llama3.2:1b")
+
+# load the speech corpus and transform it to a data frame with the quanteda package
+# make sure the quanteda package is installed
+#install.packages("quanteda")
+load("speech_corpus.RData")
+speeches <- quanteda::convert(speech_corpus, to = c("data.frame"),)
+# for this tutorial, we will only use the first 5 speeches (it takes a while to classify all speeches)
+speeches_5 <- speeches[1:5,]
+# let's create a new column for the LLM's responses
+speeches_5$llama <- NA
+
+# loop function to ask the LLM for classifying speeches
+for (i in 1:nrow(speeches_5)) {
+  print(i)
+  question <- "TASK: You are a political scientist. Score each speech on a left-right political values scale, ranging from 0 to 6. The political left is associated with values such as equality, social justice, and social change. The political right is associated with values such as individualism, free markets, and national security. Provide a score for each speech and a short justification for your score in a separate paragraph.
+  
+SCORING METRIC:
+6 : extremely left
+5 : mostly left
+4 : slightly left
+3 : neither right or left
+2 : slightly right
+1 : mostly right
+0 : extremely right
+  
+RESPONSE GUIDELINE:
+Think carefully about balancing left-right criteria for an accurate score. Consider the speaker's arguments, values, and policy proposals. If you are unsure about the score, provide a justification for your uncertainty."
+  speech <- speeches_5[i,2]  # in column 2 are all speeches stored in our data   
+  question <- paste(question, speech)
+  result <- query(question, model = "llama3.2:1b")
+  print(result)
+  speeches_5$llama[i] <- result$message$content
+}
+
+# let's save the results
+save(speeches_5, file = "Data/speeches_5.RData")
+
+# the results are stored in the speeches_5 data frame 
+# in our newly created llama column
+# let's print the results for speech 5 as an example:
+
+```
+
+```{r}
+#| label: llama_example
+#| echo: false
+#| warning: false
+#| message: false
+#| fig.cap: "Example of open-source LLM's responses for a text classification task."
+
+# let's print llama's responses for speech 5 as an example
+library(knitr)
+library(tidyverse)
+load("speeches_5.RData")
+speeches_5[5,] %>%
+  select(Responses=llama) %>%
+  knitr::kable(format = "html")
+
+```
+
+
+
+# Conclusion
+
+This short tutorial demonstrates how to use an open-source LLM in R for text analysis tasks. We used the `llama3.2:1b` model provided by `Ollama` and the `rollama` package to run the LLM as a locally stored open-source model. We then used a loop function to ask the LLM for solving text classification tasks with a small corpus of political speeches. In your own research, you can use this approach to classify much larger amounts of text data or generate text based on prompts. If you want to learn more about how to use AI for text analysis, check out my ["Using AI for Text Analysis - Introduction" workshop](https://instats.org/seminar/using-ai-for-text-analysis-an-introduct2) - available as live-streamed workshop or on demand.
+
