@@ -14,6 +14,8 @@ website:
   navbar:
     pinned: true
     right:
+      - text: "Job Postings"
+        href: sessions/JobListingAndrew.pdf
       - text: "Online Tutorials"
         href: blog.qmd
       - text: "Sharezone"
