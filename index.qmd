@@ -38,6 +38,6 @@ We meet in [Linkway, 4th floor John Medley Building](https://maps.unimelb.edu.au
 | 31/03/25 | 12:00-13:00     |       [Regression Discontinuity Design](sessions/QuantLunch_Mitra.pdf)       |                [Dr. Amrita Mitra](https://fbe.unimelb.edu.au/our-people/staff/management-and-marketing/amrita-mitra2)                |
 | 14/04/25 | 12:00-13:00     |       [Shut up and git]()       |                [Dr. Tomasz Woźniak](https://github.com/donotdespair)                |
 | 28/04/25 | 12:00-13:00     |       [Corpus Linguistics Approaches to Textual Analysis with AntConc]()       |                [Dr. Haeun (Hannah) Kim](https://findanexpert.unimelb.edu.au/profile/1095908-haeun-kim)                |
-| 12/05/25 | 12:00-13:00     |       [Measuring Social Phenomena Using Text Data (tbc)]()       |                [Dr. Maxim Ananyev](https://ananyevm.github.io/)   
+| 12/05/25 | 12:00-13:00     |       [Measuring Social Phenomena Using Text Data](sessions/QuantLunch_Maxim.pdf)       |                [Dr. Maxim Ananyev](https://ananyevm.github.io/)   
 | 26/05/25 | 12:00-13:00     |       [Python for Social Science Research: Tips, Tricks, and Lessons Learned]()       |                [Dr. Daniel Russo-Batterham](https://findanexpert.unimelb.edu.au/profile/551741-daniel-russo-batterham)                |
 | 28/07/25 | 12:00-13:00     |       [Introduction to Structural Modelling for Social Scientists Using R Packages bsvars and bsvarSIGNs]()       |                [Dr. Tomasz Woźniak](https://github.com/donotdespair)                |
