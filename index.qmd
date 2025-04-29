@@ -24,7 +24,7 @@ Come and join us for our bi-weekly *QuantLunches* on the campus of the Universit
 Please let us know if you want to [contribute](https://github.com/quantilab/sharezone/issues/1) a seminar during one of our future *QuantLunches*!
 :::
 
-# Schedule for 2025/1 {#sec-schedule} 
+# Schedule for 2025 {#sec-schedule} 
 
 We meet in [Linkway, 4th floor John Medley Building](https://maps.unimelb.edu.au/parkville/building/191). For the time being: **Please bring your own lunch!** We hope to be able to provide free lunch in the near future again.
 
@@ -37,6 +37,6 @@ We meet in [Linkway, 4th floor John Medley Building](https://maps.unimelb.edu.au
 | 20/03/25 | 09:30-12:30     |       [Partner event at Melbourne Connect: Get started with R](https://rduevents.unimelb.edu.au/event/r-hass)       |                [MDAP Melbourne Data Analytics Platform](https://rduevents.unimelb.edu.au/event/r-hass)                |
 | 31/03/25 | 12:00-13:00     |       [Regression Discontinuity Design](sessions/QuantLunch_Mitra.pdf)       |                [Dr. Amrita Mitra](https://fbe.unimelb.edu.au/our-people/staff/management-and-marketing/amrita-mitra2)                |
 | 14/04/25 | 12:00-13:00     |       [Shut up and git](sessions/QuantLunch_Tomasz.pdf)       |                [Dr. Tomasz Woźniak](https://github.com/donotdespair)                |
-| 12/05/25 | 12:00-13:00     |       [Measuring Social Phenomena Using Text Data](sessions/QuantLunch_Maxim.pdf)       |                [Dr. Maxim Ananyev](https://ananyevm.github.io/)   
+| 12/05/25 | 12:00-13:00     |       [Quantitative Text Analysis for Social Sciences](sessions/QuantLunch_Maxim.pdf)       |                [Dr. Maxim Ananyev](https://ananyevm.github.io/)   
 | 26/05/25 | 12:00-13:00     |       [Python for Social Science Research: Tips, Tricks, and Lessons Learned]()       |                [Dr. Daniel Russo-Batterham](https://findanexpert.unimelb.edu.au/profile/551741-daniel-russo-batterham)                |
 | 28/07/25 | 12:00-13:00     |       [Introduction to Structural Modelling for Social Scientists Using R Packages bsvars and bsvarSIGNs]()       |                [Dr. Tomasz Woźniak](https://github.com/donotdespair)                |
