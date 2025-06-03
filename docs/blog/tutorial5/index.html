@@ -447,7 +447,7 @@ window.Quarto = {
 <span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>corpus <span class="ot">&lt;-</span> corpus <span class="sc">%&gt;%</span></span>
 <span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  quanteda.tidy<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">llm_score_gpt =</span> <span class="fu">ai_score</span>(text, <span class="at">chat_fn =</span> chat_openai,</span>
 <span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>                 <span class="at">api_args =</span> <span class="fu">list</span>(<span class="at">temperature =</span> <span class="dv">0</span>, <span class="at">seed =</span> <span class="dv">42</span>), <span class="at">scale =</span> scale))</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(corpus, <span class="at">file =</span> <span class="st">"corpus.RData"</span>)</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co"># OPTION 2: using an open-source LLM with Ollama (for free)</span></span>
 <span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>corpus <span class="ot">&lt;-</span> corpus <span class="sc">%&gt;%</span></span>
 <span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  quanteda.tidy<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">llm_score_llama =</span> <span class="fu">ai_score</span>(text, <span class="at">chat_fn =</span> chat_ollama, </span>

@@ -195,7 +195,7 @@ scale <- "TASK: You are a political scientist.
 corpus <- corpus %>%
   quanteda.tidy::mutate(llm_score_gpt = ai_score(text, chat_fn = chat_openai,
                  api_args = list(temperature = 0, seed = 42), scale = scale))
-save(corpus, file = "corpus.RData")
+
 # OPTION 2: using an open-source LLM with Ollama (for free)
 corpus <- corpus %>%
   quanteda.tidy::mutate(llm_score_llama = ai_score(text, chat_fn = chat_ollama, 
