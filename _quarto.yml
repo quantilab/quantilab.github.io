@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!/blog/tutorial5/TutorialQuantedallm.qmd"
 
 website:
   page-navigation: true
