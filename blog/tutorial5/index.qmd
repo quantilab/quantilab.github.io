@@ -1,0 +1,243 @@
+---
+title: "How to use quanteda.llm for text analysis in R"
+author: "Seraphine F. Maerz"
+date: "06/03/2025"
+categories: [news, text-as-data, text-analysis, LLM, R, quanteda.llm, quanteda, openAI, Ollama]
+draft: false
+number-sections: true
+toc: true
+project:
+  render:
+    - "!TutorialQuantedallm.qmd"
+---
+
+# How to use quanteda.llm for text analysis in R {-}
+
+*This tutorial provides some basic code in R to get started with using the quanteda.llm package for text analysis in R.*
+
+![](quantedallm.png)
+
+# Working with R, RStudio, and Quarto files
+
+**You can download the Quarto file for this tutorial [here](TutorialQuantedallm.qmd)**.
+
+In this tutorial, we will work with the `quanteda.llm` package to perform text analysis tasks such as summarizing and scaling a large corpus of texts using either a closed (Option 1) or an open-source LLM (Option 2). Option 1 requires signing up for the OpenAI playground (not for free), while Option 2 uses the `Ollama` application to download an open-source LLM (which is free). **The turorial is suitable for beginners and intermediate R users.**
+
+If you are new to R and RStudio, you can find a great introduction to R and RStudio [on instats](https://instats.org/seminar/introduction-to-r-with-rstudio-free-1-h3). For better visibility, I suggest you go to `Tools` -\> `Global Options` -\> `Appearance` -\> `Editor theme` and select `Cobalt` or `Solarized Dark` or any other theme that you like. In the tutorial, I will briefly explain core features of RStudio and how to handle Quarto files.
+
+Quarto enables you to weave together content and executable code into really nice research papers in various formats. To learn more about Quarto see <https://quarto.org> or check out my workshop on Quarto available [on instats](https://instats.org/seminar/quarto-in-r-studio-writing-reproducible2). When you click the **Render** button, a document will be generated that includes both content and (the output of) embedded code. This improves both readability and usability of your script. You can also easily add notes to this script while we are going through it. Go to the settings symbol beside the `Render` button to select that the **preview of the document** is shown in the Viewer pane.
+
+# Precautions 
+
+**Remember: Closed LLMs such as OpenAI's GPT-4o are not free to use and require a subscription. They also come with ethical concerns and risks, especially when it comes to data privacy and security. Therefore, always be aware of the data you use and the potential consequences of your analysis and make sure to enable the necessary safeguards to protect privacy and security. In addition, be aware that the license to use OpenAI models comes along with adhering to specific regulations to avoid misuse. While locally stored open-source LLMs are a much more secure and privacy-friendly way than closed models, there might be still ethical concerns and risks involved, especially if you work with sensitive data. Therefore, always be aware of the data you use and the potential consequences of your analysis and make sure to enable the necessary safeguards to protect privacy and security. In addition, be aware that the license to use [Ollama](https://ollama.com/) models comes along with adhering to specific regulations to avoid misuse.**
+
+
+# Preparations OPTION 1: Using OpenAI's GPT-4o (not for free)
+
+We will use the OpenAI API as an example of a closed LLM, also known as ChatGPT. There are other services available (for example, Claude, Google Gemini, Meta AI Services, etc.) and which service (if at all) you want to use is up to you. Note that the OpenAI API is a paid service. You can find more information on pricing here: <https://platform.openai.com/pricing> If you do not want to sign up for the OpenAI API, you can move on to **Option 2** below, which uses an open-source LLM with the `Ollama` application (which is free).
+
+To use the OpenAI API, you need to sign up for an account on OpenAI playground and get an API key. Please follow these steps:
+
+1.  Go to the OpenAI playground: [https://platform.openai.com/playground>](https://platform.openai.com/playground)
+2.  Click on `Sign up` in the top right corner
+3.  Fill in your details and confirm `Sign up`
+4.  Click now on the `Settings` icon in the top right corner
+5.  Go to `Billing` and **provide your billing information** (otherwise it won't work)
+6.  Once your billing information is complete, you can create a `new project` (top left corner, click on `Default Project`)
+7.  Click on `Dashboard` in the top right corner
+8.  Click on `API keys` in the left side panel at the bottom
+9.  Click on `Create new secret key`
+10. **Copy** the key before you close the window
+
+Once you copied the key, you should **save it somewhere safe and accessible.** For security reasons, you won’t be able to view it again through your OpenAI account. If you lose it, you will need to regenerate it. Keep your API key safe and do not share it with others. If you suspect that your key has been compromised, you can regenerate it in the dashboard. **Be aware that you will be charged for any usage of the API via your key.**
+
+### Configuring your OpenAI API key in RStudio
+
+To interact with the OpenAI API, it's required to have a valid `OPENAI_API_KEY` environment variable in R. You can establish this environment variable globally by including it in the so-called .Renviron file. This approach ensures that the environment variable persists across all your R sessions as the Shiny app runs in the background. Here is a set of commands to open the .Renviron file for modification:
+
+```{r}
+#| eval: false
+require(usethis)
+edit_r_environ()
+```
+
+Add the following line to .Renviron, replacing "APIKEY" with your actual API key: OPENAI_API_KEY="APIKEY". You need to restart your R session for the changes to take effect. You can do this by clicking on the `Session` menu in RStudio and selecting `Restart R`.
+
+**Caution:** If you're using version control systems like GitHub or GitLab, remember to include .Renviron in your .gitignore file to prevent exposing your API key! To maintain the privacy of your data when using gptstudio, do not highlight, include in a prompt, or otherwise upload any sensitive data, code, or text that should remain confidential.
+
+
+# Preparations OPTION 2: Using an open-source LLM with Ollama (for free)
+
+We first install the `Ollama` app (outside of R) from [https://ollama.com/download](https://ollama.com/download). Then, we install and load the `rollama` package in R and ping `Ollama` to ensure connectivity. We then download the model `llama3.2:1b` for text analysis tasks. Although it is a comparatively small LLM, this can take some time, depending on your machine. 
+
+```{r}
+#| echo: true
+#| eval: false
+
+# FIRST: Install Ollama application on your machine (outside of R)
+# Ollama is available for Linux, macOS, and Windows, and can be downloaded from:
+# https://ollama.com/download
+
+# Do not forget to run ollama.
+# If you installed Ollama using the Windows/Mac installer, 
+# you can simply start Ollama from your start menu/after unzipping it.
+
+# SECOND: Install R package rollama 
+#install.packages("rollama")
+
+# Load the rollama package and ping Ollama to ensure connectivity.
+library(rollama)
+ping_ollama()
+# if everything works as it should, 
+# you should see the following in your console:
+# Ollama (v0.4.2) is running at <http://localhost:11434>!
+
+# install the light-weight model of Ollama, llama3.2:1b
+# this took only around 2 minutes to install on my machine 
+# (a quite new MacBook Pro),
+# it might take longer on older machines
+#pull_model("llama3.2:1b")
+
+# NOTE: llama3.2:1b is a comparatively small LLM 
+# (only 1 billion parameters compared to over 1 trillion of gpt-o4)
+# and might not be as powerful as other LLMs, 
+# but it is a good starting point for educational purposes
+# for more advanced tasks, you might want to use larger models
+# which you can pull with the command pull_model("model_name")
+
+# let's do a simple test with the model
+query("What is the capital of Australia.", model = "llama3.2:1b")
+
+```
+
+
+# Using quanteda.llm for text analysis tasks
+
+The following is a quick demonstration of some of the core functions of the `quanteda.llm` package, which is designed to work with [quanteda](https://quanteda.io/) corpus and features as well as large language models (LLMs) for text analysis tasks. For example, the package provides functions to summarize texts, score texts based on a scale, and validate the LLM's responses. The package is currently [being developed by Seraphine F. Maerz and Kenneth Benoit](https://github.com/quanteda/quanteda.llm) and is not yet available on CRAN, but you can install it from GitHub using the `pak` package. Stay tuned for more updates and features in the future!
+
+The `quanteda.llm` package is designed to work with any LLM that can be accessed via the [ellmer chat function](https://ellmer.tidyverse.org/reference/index.html), so you can use it with other LLMs as well. 
+
+## Getting text summaries
+
+```{r}
+#| echo: true
+#| eval: false
+
+# loading packages 
+# (install them if you haven't already)
+library(quanteda)
+#pak::pak("quanteda/quanteda.llm")
+#pak::pak("quanteda/quanteda.tidy")
+library(quanteda.llm)
+library(quanteda.tidy)
+library(tidyverse)
+library(ellmer)
+
+# load a corpus of US presidential inaugural speeches as a sample text corpus
+# (this corpus is included in the quanteda package)
+corpus <- quanteda::data_corpus_inaugural
+# subset the corpus to only include only the first 5 speeches 
+# for demonstration purposes
+corpus <- corpus[1:5]
+# segment the corpus into smaller chunks as some LLMs have 
+# a limit on the number of tokens they can process at once
+# you can indicate in the function the maximum number of tokens per chunk
+corpus <- quanteda::corpus_chunk(corpus, 1000)
+
+# use the ai_summarize function of quanteda.llm to summarize the texts
+
+# OPTION 1: using OpenAI's GPT-4o (not for free)
+corpus <- corpus %>%
+  quanteda.tidy::mutate(llm_sum_gpt = ai_summarize(text, chat_fn = chat_openai,
+           api_args = list(temperature = 0, seed = 42), summary_length = "20"))
+# Note: The `temperature` parameter controls the randomness of 
+# the model's output (0-1). The `seed` parameter ensures that the results 
+# are reproducible (to some extent), see here for more details on the parameters: 
+# https://ellmer.tidyverse.org/reference/index.html
+
+# OPTION 2: using an open-source LLM with Ollama (for free)
+corpus <- corpus %>%
+  quanteda.tidy::mutate(llm_sum_llama = ai_summarize(text, chat_fn = chat_ollama, 
+                                 model = "llama3.2:1b", summary_length = "20"))
+
+# view the summaries generated by both models 
+# added as docvars (meta data) to the quanteda corpus
+summary(corpus)
+
+```
+
+## Scoring texts based on a scale
+
+```{r}
+#| echo: true
+#| eval: false
+
+# ai_score
+scale <- "TASK: You are a political scientist. 
+  Score each speech on a left-right political values scale, 
+  ranging from 0 to 6. 
+  The political left is associated with values such as equality, 
+  social justice, and social change. 
+  The political right is associated with values 
+  such as individualism, free markets, and national security. 
+  Provide a score for each speech and a short justification 
+  for your score in a separate paragraph.
+  
+  SCORING METRIC:
+  6 : extremely left
+  5 : mostly left
+  4 : slightly left
+  3 : neither right or left
+  2 : slightly right
+  1 : mostly right
+  0 : extremely right
+  
+  RESPONSE GUIDELINE:
+  Think carefully about balancing left-right criteria for an accurate score. 
+  Consider the speaker's arguments, values, and policy proposals. 
+  If you are unsure about the score, 
+  provide a justification for your uncertainty."
+  
+# use the ai_score function of quanteda.llm to summarize the texts
+
+# OPTION 1: using OpenAI's GPT-4o (not for free)
+corpus <- corpus %>%
+  quanteda.tidy::mutate(llm_score_gpt = ai_score(text, chat_fn = chat_openai,
+                 api_args = list(temperature = 0, seed = 42), scale = scale))
+save(corpus, file = "corpus.RData")
+# OPTION 2: using an open-source LLM with Ollama (for free)
+corpus <- corpus %>%
+  quanteda.tidy::mutate(llm_score_llama = ai_score(text, chat_fn = chat_ollama, 
+                                      model = "llama3.2:1b", scale = scale))
+
+# view the scores, added as docvars (meta data) to the quanteda corpus
+summary(corpus)
+
+```
+
+## Validating LLM's responses
+
+```{r}
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+
+# use the ai_validate function to manually check 
+# the gpt responses regarding the scoring task
+# NOTE: this will start an easy-to-use Shiny app
+# validation input is temporarily saved in the working directory
+corpus <- corpus %>%
+   quanteda.tidy::mutate(llm_val = ai_validate(text, llm_score_gpt))
+
+# the validation outcome is added as docvars (meta data) to the quanteda corpus
+docvars(corpus)
+
+```
+
+![](validate.png)
+
+# Conclusion
+
+This short tutorial demonstrates how to use a closed or open-source LLM in R for text analysis tasks. We used openAI's `gpt-4o` and the `llama3.2:1b` model provided by `Ollama` to test core functions of the `quanteda.llm` package to summarize texts, score texts based on a scale, and validate the LLMs' responses. In your own research, you can use this approach to classify much larger amounts of text with different closed and open-source LLMs. If you want to learn more about how to **integrate LLMs into text analysis processes** and your RStudio workflows or **fine-tune open-source LLMs in Python**, [check out my workshops live-streamed in July](https://instats.org/structuredcourse/using-ai-for-text-analysis-basic-and-ad2).
+
