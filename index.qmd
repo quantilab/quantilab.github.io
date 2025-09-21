@@ -14,19 +14,22 @@ about:
 
 *QuantLab* is a new network group aiming to bring together social scientists at the [University of Melbourne](https://arts.unimelb.edu.au/school-of-social-and-political-sciences) and beyond to share insights in quantitative methods and research.
 
-Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), *QuantLab* is an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars]() (schedule below) as well as [online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for [exchange](https://github.com/quantilab/sharezone/issues) and [code sharing](https://github.com/quantilab/sharezone) (R, Stata, Python, etc.). 
+Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), *QuantLab* is an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars]() (schedule below) as well as [free online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for exchange and code sharing (R, Stata, Python, etc.). 
 
 We collaborate with [Instats](https://instats.org/) to provide online training sessions on the latest tools and techniques in quantitative research, see our instats workshops [here](https://instats.org/expert/quantlab?exmode=true).
 
-Come and join us for our bi-weekly *QuantLunches* on the campus of the University of Melbourne, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au) 
+Come and join us for our *Quant events* on the campus of the University of Melbourne, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au) 
 
 
-Please let us know if you want to [contribute](https://github.com/quantilab/sharezone/issues/1) a seminar during one of our future *QuantLunches*!
 :::
 
-# Schedule for 2025 {#sec-schedule} 
+# Schedule 2026 {#sec-schedule}
 
-We meet in [Linkway, 4th floor John Medley Building](https://maps.unimelb.edu.au/parkville/building/191). For the time being: **Please bring your own lunch!** We hope to be able to provide free lunch in the near future again.
+We plan to launch our 2026 schedule - a new series on **AI for Social Sciences** - in late 2025. Stay tuned and please let us know if you would like to present a session on this topic!
+
+# Schedule 2025 {#sec-schedule} 
+
+We meet in [Linkway, 4th floor John Medley Building](https://maps.unimelb.edu.au/parkville/building/191). 
 
 |   Date   | Time            |                                         Topic                                          |                          Presenter                           |
 |:-------:|-----------|:--------------------------------:|:----------------:|
@@ -41,3 +44,19 @@ We meet in [Linkway, 4th floor John Medley Building](https://maps.unimelb.edu.au
 | 26/05/25 | 12:00-13:00     |       [Python for Social Science Research: Tips, Tricks, and Lessons Learned](sessions/QuantLunch_Daniel.pdf)       |                [Dr. Daniel Russo-Batterham](https://findanexpert.unimelb.edu.au/profile/551741-daniel-russo-batterham)                |
 | 28/07/25 | 12:00-13:00     |       [Introduction to Structural Modelling for Social Scientists Using R Packages bsvars and bsvarSIGNs](sessions/QuantLunch_Tomasz2.pdf)       |                [Dr. Tomasz Woźniak](https://github.com/donotdespair)                |
 | 11/08/25 | 12:00-13:00     |       [Building Your Own RAG Pipeline from Scratch!](sessions/QuantLunch_Taylor.pdf)       |                [Taylor Ey](https://melbourneinstitute.unimelb.edu.au/staff/research/staff-listings/taylor-ey)                |
+
+
+# Schedule 2024 {#sec-schedule} 
+
+We meet in [Arts West Research Lounge](https://link.mazemap.com/C7N0Gq3W). **Lunch is included** and kindly sponsored by the [School of Social and Political Science](https://arts.unimelb.edu.au/school-of-social-and-political-sciences).
+
+|   Date   | Time            |                                         Topic                                          |                          Presenter                           |
+|:-------:|-----------|:--------------------------------:|:----------------:|
+| 05/08/24 | **11:30**-13:00 | **Launch of QuantLab** **🎉** [Intro to R and Quarto ](blog/tutorial3/index.qmd) |               [Seraphine F. Maerz](https://seraphinem.github.io), [Irma Mooi-Reci](https://irmamooireci.com/)              |
+| 26/08/24 | 12:00-13:00     |                  [Using Stata for panel data](sessions/QuantLunch_Mooi.pdf)                  |                        [Irma Mooi-Reci](https://irmamooireci.com/)                        |
+| 09/09/24 | 12:00-13:00     |       [Spatial econometrics: An introduction](sessions/QuantLunch_Goldring.pdf)       |                [Ed Goldring](https://www.edwardgoldring.com/)                |
+|   10/09/24    | 10:00-11:30| An Introduction to Computational Social Science (**online event** within Social Science weeks, [register here)](https://socialsciencesweek.org.au/event/an-introduction-to-computational-social-science/)  | [Jason Thompson](https://findanexpert.unimelb.edu.au/profile/769805-jason-thompson) ([MCDS](https://science.unimelb.edu.au/mcds)) |
+| 07/10/24 | 10:00-16:00     |                Quarto in RStudio: Writing Reproducible & Dynamic Research Papers (**online event** with *Instats*, [register here](https://instats.org/seminar/quarto-in-r-studio-writing-reproducible2), free of charge for all people from UniMelb)             |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
+| 14/10/24 | 12:00-13:00     |                [Quantitative text analysis in R](sessions/QuantLunch4.pdf)               |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
+| 28/10/24 | 12:00-13:00     |          Structural Equation Modeling (SEM) in Stata           |                       [Harry Ganzeboom](http://www.harryganzeboom.nl/index.htm)                        |
+| 26/11/24 | 10:00-16:00     |                Using AI for Text Analysis in R (**online event** with *Instats*, [register here](https://instats.org/seminar/using-ai-for-text-analysis-in-r4), free of charge for all people from UniMelb)             |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
