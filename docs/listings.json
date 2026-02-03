@@ -1,7 +1,20 @@
 [
   {
+    "listing": "/blog/tutorial6/index.html",
+    "items": []
+  },
+  {
+    "listing": "/blog/tutorial4/index.html",
+    "items": []
+  },
+  {
+    "listing": "/blog/tutorial2/index.html",
+    "items": []
+  },
+  {
     "listing": "/blog.html",
     "items": [
+      "/blog/tutorial6/index.html",
       "/blog/tutorial5/index.html",
       "/blog/tutorial4/index.html",
       "/blog/tutorial2/index.html",
@@ -10,22 +23,11 @@
     ]
   },
   {
-    "listing": "/seminars24/index.html",
-    "items": [
-      "/seminars24/project_1/index.html",
-      "/seminars24/project_2/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/tutorial4/index.html",
-    "items": []
-  },
-  {
     "listing": "/blog/tutorial1/index.html",
     "items": []
   },
   {
-    "listing": "/blog/tutorial2/index.html",
+    "listing": "/blog/tutorial3/index.html",
     "items": []
   },
   {
@@ -33,15 +35,10 @@
     "items": []
   },
   {
-    "listing": "/blog/tutorial5/TutorialQuanteda.llm.html",
-    "items": []
-  },
-  {
-    "listing": "/blog/tutorial5/Tutorial/TutorialQuanteda.llm.html",
-    "items": []
-  },
-  {
-    "listing": "/blog/tutorial5/TutorialQuantedallm.html",
-    "items": []
+    "listing": "/seminars24/index.html",
+    "items": [
+      "/seminars24/project_1/index.html",
+      "/seminars24/project_2/index.html"
+    ]
   }
 ]
