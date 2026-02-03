@@ -15,7 +15,9 @@ project:
 
 *This tutorial provides some basic code in R to get started with using the quanteda.llm package for text analysis in R.*
 
-![](quantedallm.png)
+::: {.text-center}
+![](quantedallm.png){width=280 fig-align="center" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 1.5rem auto;"}
+:::
 
 # Working with R, RStudio, and Quarto files
 

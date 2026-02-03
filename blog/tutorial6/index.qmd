@@ -1,0 +1,96 @@
+---
+title: "Coding texts with LLMs using quallmer"
+author: "Seraphine F. Maerz"
+date: "02/04/2026"
+categories: [text-as-data, text-analysis, LLM, R, quallmer, qualitative coding]
+draft: false
+number-sections: true
+toc: true
+---
+
+# Coding texts with LLMs using quallmer {-}
+
+*This tutorial introduces the `quallmer` package for coding texts with Large Language Models (LLMs) in R — a flexible tool for qualitative analysis at scale.*
+
+::: {.text-center}
+![](quallmer_logo.png){width=220 fig-align="center" style="margin: 1.5rem auto;"}
+:::
+
+# What is quallmer?
+
+The [`quallmer`](https://quallmer.github.io/quallmer/) package provides a streamlined way to leverage LLMs for coding texts while maintaining the rigour and transparency of traditional qualitative approaches. 
+
+**Key features:**
+
+- **Flexible codebooks** — Create custom coding schemes tailored to your research questions
+- **Structured outputs** — Get consistent results from LLMs across large text corpora
+- **Transparent workflows** — Document and reproduce your coding process with the *quallmer trail*
+
+Working with the package requires no prior experience with R or LLMs, making it accessible for social scientists from various backgrounds. Only little code is needed to set up and run your analyses.
+
+# Quick start
+
+Install and load the required packages:
+
+```{r}
+#| label: install
+#| eval: false
+
+# Install quallmer from GitHub
+pak::pak("quallmer/quallmer")
+
+library(quanteda)
+library(quallmer)
+```
+
+# The power of custom codebooks
+
+The core strength of `quallmer` lies in its flexible codebook system. A codebook defines:
+
+- **Instructions** — What you want the LLM to do
+- **Schema** — The structure of the output you expect
+- **Role** — The perspective the LLM should take
+
+Here's a simple example that scores texts for sentiment:
+
+```{r}
+#| label: example
+#| eval: false
+
+# Load sample corpus
+# For example, the inaugural speeches corpus from quanteda, which contains US presidential inaugural addresses
+corpus <- quanteda::data_corpus_inaugural
+
+# Create a custom codebook
+my_codebook <- qlm_codebook(
+  name = "Sentiment Analysis",
+  instructions = "Rate the overall sentiment of this text as positive,
+                  negative, or neutral. Provide a brief explanation.",
+  schema = type_object(
+    sentiment = type_enum("Sentiment", c("positive", "negative", "neutral")),
+    explanation = type_string("Brief explanation")
+  ),
+  role = "You are an expert in sentiment analysis."
+)
+
+# Code the corpus
+results <- qlm_code(
+  corpus,
+  codebook = my_codebook,
+  model = "openai/gpt-4o-mini",
+  params = params(temperature = 0)
+)
+
+results
+# The results will contain the sentiment scores and explanations for each of the inaugural speeches.
+```
+
+You can adapt this pattern for any coding task — topic classification, ideological scoring, frame analysis, and more. The `qlm_codebook()` function gives you full control over how the LLM interprets and structures its responses.
+
+# Transparent and replicable workflows
+
+A useful feature of `quallmer` is the **quallmer trail** — a comprehensive record of your coding process that ensures transparency and reproducibility. The trail captures your codebook specifications, model parameters, and results, making it easy to document your methodology and share it with others.
+
+# Learn more
+
+Visit the [quallmer website](https://quallmer.github.io/quallmer/) for detailed documentation, tutorials, and examples to get started with quallmer.

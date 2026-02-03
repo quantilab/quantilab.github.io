@@ -8,16 +8,23 @@ project:
 website:
   page-navigation: true
   title: "QuantLab"
+  description: "Quantitative Methods Network for Social Scientists"
 
   page-footer:
-    left: "&copy; Copyright 2025, Seraphine F. Maerz"
-    center: "We acknowledge and pay respect to the Traditional Owners of the unceded lands on which we work, learn, and live."
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
- 
+    left: "&copy; 2024-2026 QuantLab"
+    center: "We acknowledge the Traditional Owners of the unceded lands on which we work, learn, and live."
+    right: "Built with [Quarto](https://quarto.org/)"
+
   navbar:
     pinned: true
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Schedule"
+        href: index.qmd#sec-schedule2026
     right:
-      - text: "Online Tutorials"
+      - text: "Tutorials"
         href: blog.qmd
       - text: "Sharezone"
         href: https://github.com/quantilab/sharezone/tree/main
@@ -25,20 +32,13 @@ website:
         href: https://github.com/quantilab/sharezone/issues
       - icon: github
         href: https://github.com/quantilab
-    
- 
-
-      
-
-      
-
-
 
 format:
   html:
-    theme: cerulean
+    theme:
+      light: cerulean
     css: styles.css
     toc: true
+    toc-depth: 2
     page-layout: full
-
-
+    link-external-newwindow: true

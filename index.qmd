@@ -9,54 +9,63 @@ about:
 
 ::: {#hero-heading}
 
+# Welcome to QuantLab
 
-# Welcome!
+**QuantLab** is a network bringing together social scientists at the [University of Melbourne](https://arts.unimelb.edu.au/school-of-social-and-political-sciences) and beyond to share insights in quantitative methods and research.
 
-*QuantLab* is a new network group aiming to bring together social scientists at the [University of Melbourne](https://arts.unimelb.edu.au/school-of-social-and-political-sciences) and beyond to share insights in quantitative methods and research.
+Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), QuantLab is an inclusive network that welcomes everyone — from students to established researchers — interested in learning about quantitative methods and computational techniques.
 
-Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), *QuantLab* is an inclusive network that welcomes everyone interested in learning (more) about new quantitative methods and computational techniques. We believe in knowledge sharing and offer [learning seminars]() (schedule below) as well as [free online tutorials](blog.qmd) about innovations in data management and analysis, and a platform for exchange and code sharing (R, Stata, Python, etc.). 
+We offer hands-on seminars where you can learn cutting-edge methods, [free online tutorials](blog.qmd) with step-by-step guides on data management and reproducible research, and a [code repository](https://github.com/quantilab/sharezone/tree/main) with ready-to-use scripts in R, Stata, and Python (work in progress). Most importantly, we provide a space to connect with fellow students and researchers, share ideas as well as knowledge, and collaborate.
 
-We collaborate with [Instats](https://instats.org/) to provide online training sessions on the latest tools and techniques in quantitative research, see our instats workshops [here](https://instats.org/expert/quantlab?exmode=true).
-
-Come and join us for our *Quant events* on the campus of the University of Melbourne, [RSVP here!](mailto:seraphine.maerz@unimelb.edu.au) 
-
+[RSVP for our next event](mailto:seraphine.maerz@unimelb.edu.au){.btn .btn-primary}
 
 :::
 
-# Schedule 2026 {#sec-schedule}
+# Schedule 2026 {#sec-schedule2026}
 
-We plan to launch our 2026 schedule - a new series on **AI for Social Sciences** - in late 2025. Stay tuned and please let us know if you would like to present a session on this topic!
+Our 2026 series focuses on **AI for Social Sciences**. We meet on the last Monday of each month, 12:00–13:00, at the [Old Arts Atrium Meeting Room](https://maps.unimelb.edu.au/point?identifier=PAR;149;2;213). Some of our events are kindly sponsored by the [Melbourne Institute](https://melbourneinstitute.unimelb.edu.au/) with lunch provided. Please [RSVP](mailto:seraphine.maerz@unimelb.edu.au) to secure your spot.
 
-# Schedule 2025 {#sec-schedule} 
+|   Date   | Topic | Presenter |
+|:--------:|:------|:----------|
+| 31/03/26 | **Analysing Qualitative Data with Large Language Models (LLMs):** From small, exploratory coding to large-scale yet in-depth qualitative analysis, with replicable workflows | [Dr. Seraphine F. Maerz](https://seraphinem.github.io/), SSPS |
+| 28/04/26 | **Upgrading Policy / Documentation Analysis with AI:** Learn how to extract and process information from large policy databases efficiently using AI | [Dr. Jan Kabatek](https://www.jankabatek.com/), Melbourne Institute |
+| 26/05/26 | **Prototyping and Co-design with AI:** Learn the process of fast-iterations and co-design with AI as a moment of data collection | [Dr. Fabio Mattioli](https://findanexpert.unimelb.edu.au/profile/802134-fabio-mattioli), SSPS |
+| | **Semester Break** | |
+| 28/07/26 | **Upgrading Your Research Workflows with AI:** Learn how to Extract-Transform-Load (ETL) large qualitative data using AI for improved efficiency and effectiveness | [MDAP](https://www.unimelb.edu.au/mdap) (TBC) |
+| 25/08/26 | **Synthetic Data for Social Science Research:** Learn what synthetic data is, how closely they can represent the 'true' data and understand the ethical considerations | [Prof. Irma Mooi-Reci](https://irmamooireci.com/), SSPS |
+| 29/09/26 | **Creating Your Own Chatbot:** Learn how to set up your own Retrieve-Augment-Generate (RAG) Pipelines | [Taylor Ey](https://melbourneinstitute.unimelb.edu.au/staff/research/staff-listings/taylor-ey), Melbourne Institute |
+| 27/10/26 | **Forecasting with AI:** Learn how to use AI for forecasting social and political phenomena, understand the differences between traditional forecasting methods and AI-based approaches | [MDAP](https://www.unimelb.edu.au/mdap) (TBC) |
 
-We meet in [Linkway, 4th floor John Medley Building](https://maps.unimelb.edu.au/parkville/building/191). 
+# Schedule 2025 {#sec-schedule2025}
 
-|   Date   | Time            |                                         Topic                                          |                          Presenter                           |
-|:-------:|-----------|:--------------------------------:|:----------------:|
-| 03/02/25 | **14:00**-15:00 (no lunch) | [Intro to Causal Inference and Treatment Effects](sessions/QuantLunch_Huber.pdf) |               [Dr. Chuck Huber, Director of Statistical Outreach, StataCorp LLC](https://blog.stata.com/author/chuber/)              |
-| 11/02/25 | 03:00-09:00     |                  Using AI for Text Analysis: An Introduction (**online event**, free for all people from UniMelb, [register here](https://instats.org/seminar/using-ai-for-text-analysis-an-introduct2)                  |                        [Dr. Seraphine F. Maerz](https://seraphinem.github.io/)                        |
-| 18/02/25 | 10:00-16:00     |                  Using AI for Text Analysis: Advanced Applications (**online event**, free for all people from UniMelb, [register here](https://instats.org/seminar/using-ai-for-text-analysis-an-introduct2)                  |                        [Dr. Seraphine F. Maerz](https://seraphinem.github.io/)                        |
-| 03/03/25 | 12:00-13:00     |                  Our new collaboration with [Instats](https://instats.org/) and [Introduction to version control with Git](sessions/QuantLunch_MQuiroga.pdf)                  |                       [Prof. Michael Zyphur](https://instats.org/), [Dr. Mar Quiroga](https://www.unimelb.edu.au/mdap/about-us)                        |             |
-| 20/03/25 | 09:30-12:30     |       [Partner event at Melbourne Connect: Get started with R](https://rduevents.unimelb.edu.au/event/r-hass)       |                [MDAP Melbourne Data Analytics Platform](https://rduevents.unimelb.edu.au/event/r-hass)                |
-| 31/03/25 | 12:00-13:00     |       [Regression Discontinuity Design](sessions/QuantLunch_Mitra.pdf)       |                [Dr. Amrita Mitra](https://fbe.unimelb.edu.au/our-people/staff/management-and-marketing/amrita-mitra2)                |
-| 14/04/25 | 12:00-13:00     |       [Shut up and git](sessions/QuantLunch_Tomasz.pdf)       |                [Dr. Tomasz Woźniak](https://github.com/donotdespair)                |
-| 12/05/25 | 12:00-13:00     |       [Quantitative Text Analysis for Social Sciences](sessions/QuantLunch_Maxim.pdf)       |                [Dr. Maxim Ananyev](https://ananyevm.github.io/)   
-| 26/05/25 | 12:00-13:00     |       [Python for Social Science Research: Tips, Tricks, and Lessons Learned](sessions/QuantLunch_Daniel.pdf)       |                [Dr. Daniel Russo-Batterham](https://findanexpert.unimelb.edu.au/profile/551741-daniel-russo-batterham)                |
-| 28/07/25 | 12:00-13:00     |       [Introduction to Structural Modelling for Social Scientists Using R Packages bsvars and bsvarSIGNs](sessions/QuantLunch_Tomasz2.pdf)       |                [Dr. Tomasz Woźniak](https://github.com/donotdespair)                |
-| 11/08/25 | 12:00-13:00     |       [Building Your Own RAG Pipeline from Scratch!](sessions/QuantLunch_Taylor.pdf)       |                [Taylor Ey](https://melbourneinstitute.unimelb.edu.au/staff/research/staff-listings/taylor-ey)                |
+We meet in [Linkway, 4th floor John Medley Building](https://maps.unimelb.edu.au/parkville/building/191).
+
+|   Date   | Time | Topic | Presenter |
+|:--------:|:-----|:------|:----------|
+| 03/02/25 | 14:00-15:00 | [Intro to Causal Inference and Treatment Effects](sessions/QuantLunch_Huber.pdf) | [Dr. Chuck Huber](https://blog.stata.com/author/chuber/), StataCorp LLC |
+| 11/02/25 | 03:00-09:00 | Using AI for Text Analysis: An Introduction (*online*) | [Dr. Seraphine F. Maerz](https://seraphinem.github.io/) |
+| 18/02/25 | 10:00-16:00 | Using AI for Text Analysis: Advanced Applications (*online*) | [Dr. Seraphine F. Maerz](https://seraphinem.github.io/) |
+| 03/03/25 | 12:00-13:00 | [Introduction to Version Control with Git](sessions/QuantLunch_MQuiroga.pdf) | Prof. Michael Zyphur, [Dr. Mar Quiroga](https://www.unimelb.edu.au/mdap/about-us) |
+| 20/03/25 | 09:30-12:30 | [Partner Event: Get Started with R](https://rduevents.unimelb.edu.au/event/r-hass) | [MDAP](https://www.unimelb.edu.au/mdap) |
+| 31/03/25 | 12:00-13:00 | [Regression Discontinuity Design](sessions/QuantLunch_Mitra.pdf) | [Dr. Amrita Mitra](https://fbe.unimelb.edu.au/our-people/staff/management-and-marketing/amrita-mitra2) |
+| 14/04/25 | 12:00-13:00 | [Shut Up and Git](sessions/QuantLunch_Tomasz.pdf) | [Dr. Tomasz Woźniak](https://github.com/donotdespair) |
+| 12/05/25 | 12:00-13:00 | [Quantitative Text Analysis for Social Sciences](sessions/QuantLunch_Maxim.pdf) | [Dr. Maxim Ananyev](https://ananyevm.github.io/) |
+| 26/05/25 | 12:00-13:00 | [Python for Social Science Research](sessions/QuantLunch_Daniel.pdf) | [Dr. Daniel Russo-Batterham](https://findanexpert.unimelb.edu.au/profile/551741-daniel-russo-batterham) |
+| 28/07/25 | 12:00-13:00 | [Structural Modelling Using R (bsvars & bsvarSIGNs)](sessions/QuantLunch_Tomasz2.pdf) | [Dr. Tomasz Woźniak](https://github.com/donotdespair) |
+| 11/08/25 | 12:00-13:00 | [Building Your Own RAG Pipeline from Scratch!](sessions/QuantLunch_Taylor.pdf) | [Taylor Ey](https://melbourneinstitute.unimelb.edu.au/staff/research/staff-listings/taylor-ey) |
 
 
-# Schedule 2024 {#sec-schedule} 
+# Schedule 2024 {#sec-schedule2024}
 
-We meet in [Arts West Research Lounge](https://link.mazemap.com/C7N0Gq3W). **Lunch is included** and kindly sponsored by the [School of Social and Political Science](https://arts.unimelb.edu.au/school-of-social-and-political-sciences).
+We met in [Arts West Research Lounge](https://link.mazemap.com/C7N0Gq3W). Lunch was kindly sponsored by the [School of Social and Political Science](https://arts.unimelb.edu.au/school-of-social-and-political-sciences).
 
-|   Date   | Time            |                                         Topic                                          |                          Presenter                           |
-|:-------:|-----------|:--------------------------------:|:----------------:|
-| 05/08/24 | **11:30**-13:00 | **Launch of QuantLab** **🎉** [Intro to R and Quarto ](blog/tutorial3/index.qmd) |               [Seraphine F. Maerz](https://seraphinem.github.io), [Irma Mooi-Reci](https://irmamooireci.com/)              |
-| 26/08/24 | 12:00-13:00     |                  [Using Stata for panel data](sessions/QuantLunch_Mooi.pdf)                  |                        [Irma Mooi-Reci](https://irmamooireci.com/)                        |
-| 09/09/24 | 12:00-13:00     |       [Spatial econometrics: An introduction](sessions/QuantLunch_Goldring.pdf)       |                [Ed Goldring](https://www.edwardgoldring.com/)                |
-|   10/09/24    | 10:00-11:30| An Introduction to Computational Social Science (**online event** within Social Science weeks, [register here)](https://socialsciencesweek.org.au/event/an-introduction-to-computational-social-science/)  | [Jason Thompson](https://findanexpert.unimelb.edu.au/profile/769805-jason-thompson) ([MCDS](https://science.unimelb.edu.au/mcds)) |
-| 07/10/24 | 10:00-16:00     |                Quarto in RStudio: Writing Reproducible & Dynamic Research Papers (**online event** with *Instats*, [register here](https://instats.org/seminar/quarto-in-r-studio-writing-reproducible2), free of charge for all people from UniMelb)             |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
-| 14/10/24 | 12:00-13:00     |                [Quantitative text analysis in R](sessions/QuantLunch4.pdf)               |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
-| 28/10/24 | 12:00-13:00     |          Structural Equation Modeling (SEM) in Stata           |                       [Harry Ganzeboom](http://www.harryganzeboom.nl/index.htm)                        |
-| 26/11/24 | 10:00-16:00     |                Using AI for Text Analysis in R (**online event** with *Instats*, [register here](https://instats.org/seminar/using-ai-for-text-analysis-in-r4), free of charge for all people from UniMelb)             |                      [Seraphine F. Maerz](https://seraphinem.github.io)                     |
+|   Date   | Time | Topic | Presenter |
+|:--------:|:-----|:------|:----------|
+| 05/08/24 | 11:30-13:00 | **Launch of QuantLab** [Intro to R and Quarto](blog/tutorial3/index.qmd) | [Seraphine F. Maerz](https://seraphinem.github.io), [Irma Mooi-Reci](https://irmamooireci.com/) |
+| 26/08/24 | 12:00-13:00 | [Using Stata for Panel Data](sessions/QuantLunch_Mooi.pdf) | [Irma Mooi-Reci](https://irmamooireci.com/) |
+| 09/09/24 | 12:00-13:00 | [Spatial Econometrics: An Introduction](sessions/QuantLunch_Goldring.pdf) | [Ed Goldring](https://www.edwardgoldring.com/) |
+| 10/09/24 | 10:00-11:30 | Introduction to Computational Social Science (*online*, Social Science Week) | [Jason Thompson](https://findanexpert.unimelb.edu.au/profile/769805-jason-thompson), [MCDS](https://science.unimelb.edu.au/mcds) |
+| 07/10/24 | 10:00-16:00 | Quarto in RStudio (*online*) | [Seraphine F. Maerz](https://seraphinem.github.io) |
+| 14/10/24 | 12:00-13:00 | [Quantitative Text Analysis in R](sessions/QuantLunch4.pdf) | [Seraphine F. Maerz](https://seraphinem.github.io) |
+| 28/10/24 | 12:00-13:00 | Structural Equation Modeling (SEM) in Stata | [Harry Ganzeboom](http://www.harryganzeboom.nl/index.htm) |
+| 26/11/24 | 10:00-16:00 | Using AI for Text Analysis in R (*online*) | [Seraphine F. Maerz](https://seraphinem.github.io) |

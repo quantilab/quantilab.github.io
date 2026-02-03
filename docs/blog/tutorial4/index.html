@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a78bc22c21c5275f96438b53095d57b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3405eb2cd25431ae6684dd634ade2368.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -182,10 +182,20 @@ window.Quarto = {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#sec-schedule2026"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Online Tutorials</span></a>
+<span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/quantilab/sharezone/tree/main"> 
@@ -252,7 +262,7 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#how-to-use-an-open-source-llm-in-r-for-text-analysis-tasks" id="toc-how-to-use-an-open-source-llm-in-r-for-text-analysis-tasks" class="nav-link active" data-scroll-target="#how-to-use-an-open-source-llm-in-r-for-text-analysis-tasks">How to use an open-source LLM in R for text analysis tasks</a></li>
   <li><a href="#tools-and-packages" id="toc-tools-and-packages" class="nav-link" data-scroll-target="#tools-and-packages"><span class="header-section-number">1</span> Tools and packages</a></li>
   <li><a href="#precautions" id="toc-precautions" class="nav-link" data-scroll-target="#precautions"><span class="header-section-number">2</span> Precautions</a></li>
@@ -533,6 +543,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -850,13 +865,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Copyright 2025, Seraphine F. Maerz</p>
+<p>© 2024-2026 QuantLab, University of Melbourne</p>
 </div>   
     <div class="nav-footer-center">
-<p>We acknowledge and pay respect to the Traditional Owners of the unceded lands on which we work, learn, and live.</p>
+<p>We acknowledge the Traditional Owners of the unceded lands on which we work, learn, and live.</p>
 </div>
     <div class="nav-footer-right">
-<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
 </div>
   </div>
 </footer>
