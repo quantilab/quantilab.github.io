@@ -1,5 +1,6 @@
 ---
 title: "How to use an open-source LLM in R for text analysis tasks"
+description: "Get started with open-source LLMs for text analysis using Ollama and the rollama package in R - free, private, and locally stored."
 author: "Seraphine F. Maerz"
 date: "01/27/2025"
 categories: [news, text-as-data, text-analysis, LLM, R, rollama, Ollama]
@@ -129,4 +130,17 @@ speeches_5[5,] %>%
 # Conclusion
 
 This short tutorial demonstrates how to use an open-source LLM in R for text analysis tasks. We used the `llama3.2:1b` model provided by `Ollama` and the `rollama` package to run the LLM as a locally stored open-source model. We then used a loop function to ask the LLM for solving text classification tasks with a small corpus of political speeches. In your own research, you can use this approach to classify much larger amounts of text data or generate text based on prompts. If you want to learn more about how to use AI for text analysis, check out my ["Using AI for Text Analysis - Introduction" workshop](https://instats.org/seminar/using-ai-for-text-analysis-an-introduct2) - available as live-streamed workshop or on demand.
+
+::: {.tutorial-nav}
+::: {.prev}
+[Previous Tutorial]{.nav-label}
+
+[Writing Papers with Quarto](../tutorial3/index.qmd){.nav-title}
+:::
+::: {.next}
+[Next Tutorial]{.nav-label}
+
+[quanteda.llm for Text Analysis](../tutorial5/index.qmd){.nav-title}
+:::
+:::
 

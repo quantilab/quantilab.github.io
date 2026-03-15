@@ -1,6 +1,6 @@
 ---
 title: "How to code your own personal website with Quarto in less than 30 minutes and for free!"
-descritpion: "A short tutorial"
+description: "Learn how to build and deploy your own personal website with Quarto and GitHub in less than 30 minutes - no previous experience required."
 author: "Seraphine F. Maerz"
 date: "07/21/2024"
 categories: [news, website, tech, quarto, academic]
@@ -13,7 +13,7 @@ toc: true
 
 *This tutorial provides a focused guide on how to code and publish your own personal website with Quarto and GitHub. No previous knowledge required. Shouldn't take longer than 30 minutes (basic version).*
 
-![](thumbnail.png)
+![Tutorial thumbnail showing a personal website example](thumbnail.png)
 
 \
 
@@ -23,7 +23,7 @@ As an academic, I often feel like I am working as a freelancer. While I am not r
 
 [GitHub](https://github.com/) is a great platform for code sharing and collaborative research projects. You can also use it to host your personal website for free without having any previous experience with handling GitHub. It is very easy. Simply register as a new user. **Be mindful when selecting your username** as this will also become part of your website address. For example, my username is *SeraphineM*, so my personal website lives at <https://seraphinem.github.io>. Once you created your GitHub account, click on the left side the green button labelled `Create repository` (see screenshot below). Give this repository the exact same name you used as username and add `.github.io`. For example, in my case I called the repository `SeraphineM/SeraphineM.github.io`.
 
-![](rep1.png){width=30%}
+![GitHub interface showing the Create repository button](rep1.png){width=30%}
 
 # Install R and R Studio
 
@@ -49,8 +49,8 @@ In R Studio go to,
 
 3.  Give your project a directory name, pick a location on your laptop, and select the template `Personal` from the drop-down menu.
 
-![](proj1.png){width=30%}
-![](proj2.png){width=30%}
+![RStudio New Project dialog](proj1.png){width=30%}
+![Selecting qtwAcademic template in RStudio](proj2.png){width=30%}
 
 # Adjust and personalize the template
 
@@ -77,10 +77,18 @@ Clicking `Render` in your R Studio project builds your website only locally. In 
 
 Then, go to your repository and click on `uploading an existing file` (see screenshot below). Drag all the files in your main website folder (all!) into the field on GitHub and, after they are all uploaded, click `commit changes` at the bottom of the page. 
 
-![](rep2.png){width=50%}
+![GitHub interface showing upload an existing file option](rep2.png){width=50%}
 
 # Publish it!
 
 One last step before your website goes online: once you commited the changes to your GitHub repository, click on `settings` (top menu), then `pages` (side menu), and configure in the section Branch `main` and `/docs` (see screenshot below) and click `Save`. After a few minutes, you should be able to see your website deployed in the first section. Click on `visit site` to have a look and enjoy, well done! 🎉
 
-![](rep3.png){width=50%}
+![GitHub Pages settings showing branch and folder configuration](rep3.png){width=50%}
+
+::: {.tutorial-nav}
+::: {.next}
+[Next Tutorial]{.nav-label}
+
+[GitHub for Collaborative Projects](../tutorial2/index.qmd){.nav-title}
+:::
+:::

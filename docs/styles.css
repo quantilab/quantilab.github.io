@@ -1,35 +1,122 @@
-/* QuantLab Website Styles */
+/* QuantLab Website Styles - Blue/White Theme */
 
-/* Typography improvements */
+/* ===========================================
+   CSS VARIABLES - Blue/White Color Scheme
+   =========================================== */
+:root {
+  /* Primary blues (from logo) */
+  --ql-blue: #3498db;
+  --ql-blue-dark: #2980b9;
+  --ql-blue-darker: #1a5276;
+  --ql-navy: #0d3b66;
+
+  /* Colors */
+  --ql-bg: #ffffff;
+  --ql-bg-alt: #f0f7fc;
+  --ql-bg-card: #ffffff;
+  --ql-text: #1a2533;
+  --ql-text-muted: #5a6d7e;
+  --ql-border: #d4e5f7;
+
+  /* Accent */
+  --ql-accent: #e8f4fc;
+}
+
+/* ===========================================
+   BASE STYLES
+   =========================================== */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
+  color: var(--ql-text);
+  background-color: var(--ql-bg);
 }
 
-/* Header styling */
+/* Headers */
 h1, h2, h3 {
-  color: #2c3e50;
+  color: var(--ql-text);
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 h1 {
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid var(--ql-blue);
   padding-bottom: 0.5rem;
 }
 
-/* Hero section styling */
+/* Links */
+a {
+  color: var(--ql-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ql-blue-dark);
+  text-decoration: underline;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===========================================
+   NAVBAR - Blue gradient
+   =========================================== */
+.navbar {
+  background: linear-gradient(135deg, var(--ql-navy) 0%, var(--ql-blue-darker) 100%) !important;
+  box-shadow: 0 2px 12px rgba(13, 59, 102, 0.3);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Navbar icons */
+.navbar .bi-search,
+.navbar .bi {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* ===========================================
+   HERO SECTION
+   =========================================== */
 #hero-heading {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--ql-bg-alt) 0%, var(--ql-accent) 100%);
   padding: 2rem;
   border-radius: 12px;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+  border: 1px solid var(--ql-border);
 }
 
 #hero-heading h1 {
-  color: #2c3e50;
+  color: var(--ql-text);
   font-size: 2.2rem;
   border-bottom: none;
   margin-bottom: 1rem;
@@ -44,10 +131,26 @@ h1 {
   padding: 0.3rem 0;
 }
 
-/* Button styling */
+/* Profile image */
+.about-image {
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.25);
+  border: 4px solid white;
+}
+
+/* Card sections */
+.quarto-about-trestles {
+  background: var(--ql-bg-card);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* ===========================================
+   BUTTONS
+   =========================================== */
 .btn-primary {
-  background-color: #3498db;
-  border-color: #3498db;
+  background-color: var(--ql-blue);
+  border-color: var(--ql-blue);
   padding: 0.6rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
@@ -57,13 +160,15 @@ h1 {
 }
 
 .btn-primary:hover {
-  background-color: #2980b9;
-  border-color: #2980b9;
+  background-color: var(--ql-blue-dark);
+  border-color: var(--ql-blue-dark);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
-/* Table styling for schedules */
+/* ===========================================
+   TABLES
+   =========================================== */
 table {
   width: 100%;
   margin: 1.5rem 0;
@@ -71,11 +176,12 @@ table {
   border-spacing: 0;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(52, 152, 219, 0.1);
+  border: 1px solid var(--ql-border);
 }
 
 thead {
-  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  background: linear-gradient(135deg, var(--ql-blue) 0%, var(--ql-blue-dark) 100%);
   color: white;
 }
 
@@ -89,75 +195,179 @@ thead th {
 
 tbody tr {
   transition: background-color 0.2s ease;
+  background-color: var(--ql-bg);
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: var(--ql-bg-alt);
 }
 
 tbody tr:hover {
-  background-color: #e8f4fc;
+  background-color: var(--ql-accent);
 }
 
 td {
   padding: 0.85rem 0.75rem;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid var(--ql-border);
   vertical-align: top;
 }
 
 /* Topic title styling */
 .topic-title {
   font-weight: 500;
-  color: #2c3e50;
+  color: var(--ql-text);
 }
 
-/* Link styling */
-a {
-  color: #3498db;
-  text-decoration: none;
-  transition: color 0.2s ease;
+/* Schedule year headers */
+h1[id^="sec-schedule"] {
+  margin-top: 3rem;
+  color: var(--ql-text);
 }
 
-a:hover {
-  color: #2980b9;
-  text-decoration: underline;
+/* Semester break row styling */
+.semester-break,
+tbody tr td:only-child {
+  background-color: var(--ql-accent) !important;
+  font-style: italic;
+  text-align: center;
 }
 
-/* Navbar styling */
-.navbar {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-
-/* Footer styling */
+/* ===========================================
+   FOOTER
+   =========================================== */
 .page-footer {
   margin-top: 3rem;
   padding: 1.5rem 0;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+  background-color: var(--ql-bg-alt);
+  border-top: 1px solid var(--ql-border);
   font-size: 0.9rem;
-  color: #6c757d;
+  color: var(--ql-text-muted);
 }
 
-/* Profile image in hero */
-.about-image {
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border: 4px solid white;
+/* ===========================================
+   TUTORIAL NAVIGATION
+   =========================================== */
+.tutorial-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ql-border);
+  gap: 1rem;
 }
 
-/* Card-like sections */
-.quarto-about-trestles {
+.tutorial-nav a {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  background: var(--ql-bg-alt);
+  border: 1px solid var(--ql-border);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  max-width: 45%;
+}
+
+.tutorial-nav a:hover {
+  background: var(--ql-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+  text-decoration: none;
+  border-color: var(--ql-blue);
+}
+
+.tutorial-nav .nav-label {
+  font-size: 0.85rem;
+  color: var(--ql-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.tutorial-nav .nav-title {
+  font-weight: 500;
+  color: var(--ql-blue);
+}
+
+.tutorial-nav .prev {
+  text-align: left;
+}
+
+.tutorial-nav .next {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* ===========================================
+   NEWSLETTER - Compact
+   =========================================== */
+.newsletter-compact {
+  background: linear-gradient(135deg, var(--ql-blue) 0%, var(--ql-blue-dark) 100%);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.newsletter-form-compact {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter-form-compact .newsletter-label {
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.newsletter-form-compact input[type="email"] {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  min-width: 160px;
+  outline: none;
   background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
+  color: var(--ql-navy);
 }
 
-/* Responsive adjustments */
+.newsletter-form-compact input[type="email"]::placeholder {
+  color: var(--ql-text-muted);
+}
+
+.newsletter-form-compact input[type="email"]:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-form-compact button {
+  padding: 0.25rem 0.6rem;
+  background-color: white;
+  color: var(--ql-blue-dark);
+  border: none;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.newsletter-form-compact button:hover {
+  background-color: var(--ql-bg-alt);
+  transform: translateY(-1px);
+}
+
+.newsletter-form-compact .newsletter-privacy {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.7rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
 @media (max-width: 768px) {
   table {
     font-size: 0.9rem;
@@ -170,33 +380,14 @@ a:hover {
   #hero-heading {
     padding: 1.5rem;
   }
-}
 
-/* Schedule year headers */
-h1:has(+ table), h1[id^="sec-schedule"] {
-  margin-top: 3rem;
-  color: #2c3e50;
-}
+  .newsletter-form-compact {
+    flex-direction: column;
+  }
 
-/* Semester break row styling */
-tbody tr td:only-child,
-tbody tr:has(td:contains("Semester Break")) {
-  background-color: #fef9e7;
-  font-style: italic;
-  text-align: center;
-}
-
-/* Online event badge styling */
-em:contains("online") {
-  background-color: #e8f6f3;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+  .newsletter-form-compact input[type="email"] {
+    width: 100%;
+  }
 }
 
 /* Content max-width for readability */

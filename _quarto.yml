@@ -9,6 +9,12 @@ website:
   page-navigation: true
   title: "QuantLab"
   description: "Quantitative Methods Network for Social Scientists"
+  favicon: profile.png
+
+  # Enable search
+  search:
+    location: navbar
+    type: overlay
 
   page-footer:
     left: "&copy; 2024-2026 QuantLab"
@@ -35,8 +41,7 @@ website:
 
 format:
   html:
-    theme:
-      light: cerulean
+    theme: cerulean
     css: styles.css
     toc: true
     toc-depth: 2

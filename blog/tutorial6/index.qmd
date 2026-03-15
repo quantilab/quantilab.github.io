@@ -1,5 +1,6 @@
 ---
 title: "Coding texts with LLMs using quallmer"
+description: "Introduction to the quallmer package for LLM-based qualitative coding in R - flexible codebooks, structured outputs, and transparent workflows."
 author: "Seraphine F. Maerz"
 date: "02/04/2026"
 categories: [text-as-data, text-analysis, LLM, R, quallmer, qualitative coding]
@@ -13,7 +14,7 @@ toc: true
 *This tutorial introduces the `quallmer` package for coding texts with Large Language Models (LLMs) in R — a flexible tool for qualitative analysis at scale.*
 
 ::: {.text-center}
-![](quallmer_logo.png){width=220 fig-align="center" style="margin: 1.5rem auto;"}
+![quallmer package logo](quallmer_logo.png){width=220 fig-align="center" style="margin: 1.5rem auto;"}
 :::
 
 # What is quallmer?
@@ -94,3 +95,11 @@ A useful feature of `quallmer` is the **quallmer trail** — a comprehensive rec
 # Learn more
 
 Visit the [quallmer website](https://quallmer.github.io/quallmer/) for detailed documentation, tutorials, and examples to get started with quallmer.
+
+::: {.tutorial-nav}
+::: {.prev}
+[Previous Tutorial]{.nav-label}
+
+[quanteda.llm for Text Analysis](../tutorial5/index.qmd){.nav-title}
+:::
+:::

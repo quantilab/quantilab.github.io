@@ -1,5 +1,6 @@
 ---
 title: "How to use quanteda.llm for text analysis in R"
+description: "Use the quanteda.llm package for LLM-powered text analysis - summarize, score, and validate large text corpora with OpenAI or Ollama."
 author: "Seraphine F. Maerz"
 date: "06/03/2025"
 categories: [news, text-as-data, text-analysis, LLM, R, quanteda.llm, quanteda, openAI, Ollama]
@@ -16,7 +17,7 @@ project:
 *This tutorial provides some basic code in R to get started with using the quanteda.llm package for text analysis in R.*
 
 ::: {.text-center}
-![](quantedallm.png){width=280 fig-align="center" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 1.5rem auto;"}
+![quanteda.llm package logo](quantedallm.png){width=280 fig-align="center" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 1.5rem auto;"}
 :::
 
 # Working with R, RStudio, and Quarto files
@@ -237,9 +238,22 @@ docvars(corpus)
 
 ```
 
-![](validate.png)
+![Screenshot of the ai_validate Shiny app for manual validation](validate.png)
 
 # Conclusion
 
 This short tutorial demonstrates how to use a closed or open-source LLM in R for text analysis tasks. We used openAI's `gpt-4o` and the `llama3.2:1b` model provided by `Ollama` to test core functions of the `quanteda.llm` package to summarize texts, score texts based on a scale, and validate the LLMs' responses. In your own research, you can use this approach to classify much larger amounts of text with different closed and open-source LLMs. If you want to learn more about how to **integrate LLMs into text analysis processes** and your RStudio workflows or **fine-tune open-source LLMs in Python**, [check out my workshops live-streamed in July](https://instats.org/structuredcourse/using-ai-for-text-analysis-basic-and-ad2).
+
+::: {.tutorial-nav}
+::: {.prev}
+[Previous Tutorial]{.nav-label}
+
+[Open-source LLMs in R](../tutorial4/index.qmd){.nav-title}
+:::
+::: {.next}
+[Next Tutorial]{.nav-label}
+
+[Coding texts with quallmer](../tutorial6/index.qmd){.nav-title}
+:::
+:::
 

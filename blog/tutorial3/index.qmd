@@ -1,5 +1,6 @@
 ---
 title: "How to use R Studio with Quarto to write nice papers ready for submission in whatever format"
+description: "Learn to create beautiful Quarto documents combining code, analysis, and narrative - output to PDF, Word, or HTML with ease."
 author: "Seraphine F. Maerz"
 date: "08/04/2024"
 categories: [news, paper, tech, quarto, academic, pandoc, workflow, R Markdown]
@@ -12,7 +13,7 @@ toc: true
 
 *This is a short and fun tutorial on how to create beautiful Quarto documents that effectively combine code, analysis, and narrative. No previous knowledge required. The tutorial covers only the very basics to get started with writing nice papers using Quarto. For further tutorials, hints, and tips, see for example [here](https://quarto.org/docs/get-started/hello/rstudio.html).*
 
-![](thumbnail.png)
+![Tutorial thumbnail showing Quarto paper workflow](thumbnail.png)
 
 \
 
@@ -32,7 +33,7 @@ In R Studio go to,
 
 3.  Give your project a directory name, pick a location on your laptop.
 
-![](projpaper.png){width="40%"}
+![RStudio New Project dialog for creating a Quarto Project](projpaper.png){width="40%"}
 
 # Start writing your paper in the file with the ending .qmd
 
@@ -164,4 +165,17 @@ modelsummary(m1, estimate = "{estimate}{stars}") # for getting a nice table with
 
 After these four basic steps, you might like to adjust your paper further. For example, you can add a `.csl` file to your folder and add it to the `YAML` header to automatically get journal-specific formatting and citation styles for your paper. You can also format your `pdf` file differently than your `.docx` (yes, some journals still accept only `.docx` files in old-fashioned formatting, don't ask me why). Quarto has a lot to offer for us academics and clicking `Render` and looking at your nice paper is fun!
 
-![](examples.png)
+![Example Quarto paper outputs in PDF and Word formats](examples.png)
+
+::: {.tutorial-nav}
+::: {.prev}
+[Previous Tutorial]{.nav-label}
+
+[GitHub for Collaborative Projects](../tutorial2/index.qmd){.nav-title}
+:::
+::: {.next}
+[Next Tutorial]{.nav-label}
+
+[Open-source LLMs in R](../tutorial4/index.qmd){.nav-title}
+:::
+:::
