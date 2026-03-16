@@ -321,26 +321,7 @@ tbody tr td:only-child {
   font-size: 0.8rem;
 }
 
-.newsletter-form-compact input[type="email"] {
-  padding: 0.25rem 0.5rem;
-  border: none;
-  border-radius: 3px;
-  font-size: 0.8rem;
-  min-width: 160px;
-  outline: none;
-  background: white;
-  color: var(--ql-navy);
-}
-
-.newsletter-form-compact input[type="email"]::placeholder {
-  color: var(--ql-text-muted);
-}
-
-.newsletter-form-compact input[type="email"]:focus {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
-}
-
-.newsletter-form-compact button {
+.newsletter-form-compact .subscribe-button {
   padding: 0.25rem 0.6rem;
   background-color: white;
   color: var(--ql-blue-dark);
@@ -350,9 +331,10 @@ tbody tr td:only-child {
   font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 
-.newsletter-form-compact button:hover {
+.newsletter-form-compact .subscribe-button:hover {
   background-color: var(--ql-bg-alt);
   transform: translateY(-1px);
 }
@@ -383,10 +365,6 @@ tbody tr td:only-child {
 
   .newsletter-form-compact {
     flex-direction: column;
-  }
-
-  .newsletter-form-compact input[type="email"] {
-    width: 100%;
   }
 }
 

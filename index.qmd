@@ -20,12 +20,11 @@ We offer hands-on seminars where you can learn cutting-edge methods, [free onlin
 :::
 
 ::: {.newsletter-compact}
-<form action="https://buttondown.com/api/emails/embed-subscribe/quantlab" method="post" class="newsletter-form-compact">
+<div class="newsletter-form-compact">
   <span class="newsletter-label">Stay updated:</span>
-  <input type="email" name="email" placeholder="Your email" required>
-  <button type="submit">Subscribe</button>
-  <span class="newsletter-privacy">We respect your privacy. Unsubscribe anytime.</span>
-</form>
+  <a href="mailto:seraphine.maerz@unimelb.edu.au?subject=QuantLab%20Email%20List%20Subscription&body=Hi%2C%20please%20add%20me%20to%20the%20QuantLab%20email%20list." class="subscribe-button">Subscribe via Email</a>
+  <span class="newsletter-privacy">We maintain our mailing list manually and respect your privacy.</span>
+</div>
 :::
 
 # Schedule 2026 {#sec-schedule2026}
