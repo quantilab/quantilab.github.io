@@ -375,21 +375,21 @@
     "href": "sharezone/index.html",
     "title": "Sharezone",
     "section": "",
-    "text": "Download slides, tutorials, and code from our QuantLunch sessions.\n\n\n2026\n\n\n\nAnalysing Qualitative Data with LLMs\n31 Mar 2026 | Dr. Seraphine F. Maerz\nView Slides Download PDF\n\n\n\n\n\n\nQuallmer Tutorial\nHands-on: Analyzing Political Speeches with LLMs\nView Tutorial Download QMD\n\n\n\n\n\n\n\nArchive (2024-2025)\nLooking for older session materials? Find slides and resources from previous years on our GitHub repository.\nBrowse Archive on GitHub\n\n\n\nContribute\nHave resources to share? Open an issue or reach out to Seraphine Maerz."
+    "text": "Download slides, tutorials, and code from our QuantLunch sessions.\n\n\n2026\n\n\n\nAnalysing Qualitative Data with LLMs\n31 Mar 2026 | Dr. Seraphine F. Maerz\nView Slides\n\n\n\n\n\n\nQuallmer Tutorial\nHands-on: Analyzing Political Speeches with LLMs\nView Tutorial Download QMD\n\n\n\n\n\n\n\nArchive (2024-2025)\nLooking for older session materials? Find slides and resources from previous years on our GitHub repository.\nBrowse Archive on GitHub\n\n\n\nContribute\nHave resources to share? Open an issue or reach out to Seraphine Maerz."
   },
   {
     "objectID": "sharezone/quallmer_slides.html#about-this-workshop",
     "href": "sharezone/quallmer_slides.html#about-this-workshop",
     "title": "Analysing qualitative data with LLMs",
     "section": "About This Workshop",
-    "text": "About This Workshop\nGoals:\n\nUnderstand what quallmer does and why it matters\nLearn the core workflow (5 steps)\nDemo: Replicate a real research example\nKnow how to validate and document your analysis\n\n\n\n\n\n\n\nMaterials\n\n\nquallmer.github.io/quallmer"
+    "text": "About This Workshop\nGoals:\n\nUnderstand how quallmer can help you use LLMs for qualitative coding\nLearn the core workflow (5 steps)\nDemo: Replicate a real research example\nKnow how to validate and document your analysis\n\n\n\n\n\n\n\nMaterials\n\n\n\nquallmer.github.io/quallmer\nSlides and tutorial available on QuantLab website"
   },
   {
     "objectID": "sharezone/quallmer_slides.html#about-me",
     "href": "sharezone/quallmer_slides.html#about-me",
     "title": "Analysing qualitative data with LLMs",
-    "section": "About Me",
-    "text": "About Me\n\nSenior Lecturer in Political Science (Research Methods) at University of Melbourne\nResearch: Democracy, authoritarianism, language of political leaders\nCo-founder of QuantLab\nDeveloper of quallmer (with Ken Benoit)\n\nMotivation: Fight for democracy, making quantitative methods more accessible\nWebsite: seraphinem.github.io"
+    "section": "",
+    "text": "Senior Lecturer in Political Science (Research Methods) at University of Melbourne\nResearch: Democracy, authoritarianism, language of political leaders\nCo-founder of QuantLab\nDeveloper of quallmer (with Ken Benoit)\n\nMotivation: Fight for democracy, making quantitative methods more accessible\nWebsite: seraphinem.github.io"
   },
   {
     "objectID": "sharezone/quallmer_slides.html#pre-llm-text-analysis",
@@ -403,21 +403,21 @@
     "href": "sharezone/quallmer_slides.html#pre-llm-vs.-llm-approaches",
     "title": "Analysing qualitative data with LLMs",
     "section": "Pre-LLM vs. LLM Approaches",
-    "text": "Pre-LLM vs. LLM Approaches\n\n\nTraditional:\n\nDictionary methods\nTopic models\nSupervised learning\n\n\nLLM-based:\n\nZero-shot classification\nContext-aware\nCan explain reasoning\n\n\nAll (text) models are wrong – but some are useful!"
+    "text": "Pre-LLM vs. LLM Approaches\n\n\nTraditional “text-as-data” approaches:\n\nDictionary methods\nTopic models\nSupervised learning\n\n\nLLM-based:\n\nZero-shot classification\nContext-aware\nCan explain reasoning\n\n\n\nAll (text) models are wrong – but some are useful!"
   },
   {
     "objectID": "sharezone/quallmer_slides.html#why-use-llms-for-research",
     "href": "sharezone/quallmer_slides.html#why-use-llms-for-research",
     "title": "Analysing qualitative data with LLMs",
     "section": "Why Use LLMs for Research?",
-    "text": "Why Use LLMs for Research?\n\n\n\nChallenge\nTraditional\nLLM-Based\n\n\n\n\nContext\nLimited\nStrong\n\n\nTraining data\nOften needed\nUsually not\n\n\nCost\nCan be high\nVariable (depends on API)\n\n\nNuance\nStruggles\nBetter\n\n\nReproducibility\nStrong\nNot 100%\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nLLMs produce language – not truth! Validation is essential."
+    "text": "Why Use LLMs for Research?\n\n\n\nChallenge\nTraditional\nLLM-Based\n\n\n\n\nContext\nLimited\nStrong\n\n\nTraining data\nOften needed\nUsually not\n\n\nCost\nCan be high\nVariable (depends on API)\n\n\nNuance\nStruggles\nBetter\n\n\nReproducibility\nStrong\nNot 100%\n\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nLLMs produce language – not truth! Validation is essential."
   },
   {
     "objectID": "sharezone/quallmer_slides.html#data-security-ethical-considerations",
     "href": "sharezone/quallmer_slides.html#data-security-ethical-considerations",
     "title": "Analysing qualitative data with LLMs",
     "section": "Data Security & Ethical Considerations",
-    "text": "Data Security & Ethical Considerations\nKey concerns when using LLMs:\n\nPrivacy – Sensitive data uploaded to external servers (closed LLMs)\nReproducibility – Same prompts can give different responses\nBias & fairness – Models may reflect training data biases\nTransparency – Training data often unknown (closed LLMs)\nResource consumption – Environmental impact of large models\n\n\nReminder: Use open-source LLMs for sensitive data; provide traceability; always validate!"
+    "text": "Data Security & Ethical Considerations\nKey concerns when using LLMs:\n\nPrivacy – Sensitive data uploaded to external servers (closed LLMs)\nReproducibility – Same prompts can give different responses\nBias & fairness – Models may reflect training data biases\nTransparency – Training data often unknown (closed LLMs)\nResource consumption – Environmental impact of large models\n\n. . .\nReminder: Use open-source LLMs for sensitive data; provide traceability; always validate!"
   },
   {
     "objectID": "sharezone/quallmer_slides.html#what-is-quallmer",
@@ -445,7 +445,7 @@
     "href": "sharezone/quallmer_slides.html#illiberalism-in-political-speeches",
     "title": "Analysing qualitative data with LLMs",
     "section": "Illiberalism in Political Speeches",
-    "text": "Illiberalism in Political Speeches\nOriginal Study: Maerz & Schneider (2020), Quality & Quantity: “Comparing public communication in democracies and autocracies”\n\nCorpus of 4,740 speeches by 40 heads of government in 27 countries\n\n\nKey Findings:\n\nAutocratic leaders use more illiberal language\nSome political leaders in formal democracies also use illiberal language (correlation with backsliding)\n\nOur Goal here: Replicate using LLMs instead of a dictionary/topic model approach."
+    "text": "Illiberalism in Political Speeches\nOriginal Study: Maerz & Schneider (2020), Quality & Quantity: “Comparing public communication in democracies and autocracies”\n\nCorpus of 4,740 speeches by 40 heads of government in 27 countries\n\n. . .\nKey Findings:\n\nAutocratic leaders use more illiberal language\nSome political leaders in formal democracies also use illiberal language (correlation with backsliding)\n\nOur Goal here: Replicate using LLMs instead of a dictionary/topic model approach."
   },
   {
     "objectID": "sharezone/quallmer_slides.html#the-data",
@@ -466,14 +466,14 @@
     "href": "sharezone/quallmer_slides.html#schema-options",
     "title": "Analysing qualitative data with LLMs",
     "section": "Schema Options",
-    "text": "Schema Options\nThe schema defines what the LLM returns:\n\n\n\nType\nUse for\nExample\n\n\n\n\ntype_integer()\nFixed categories\nc(\"pos\", \"neg\", \"neutral\")\n\n\ntype_string()\nText/explanations\n\"Brief explanation\"\n\n\ntype_number()\nNumber scores\n-10 to +10\n\n\ntype_boolean()\nYes/no questions\nTRUE/FALSE\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe schema is flexible – you can ask for multiple fields and also nest objects for more complex outputs – it can be nicely tailored to your research question. Think carefully about what you want to get back from the LLM, the schema will guide the response format and content!"
+    "text": "Schema Options\nThe schema defines what the LLM returns:\n\n\n\nType\nUse for\nExample\n\n\n\n\ntype_integer()\nFixed categories\nc(\"pos\", \"neg\", \"neutral\")\n\n\ntype_string()\nText/explanations\n\"Brief explanation\"\n\n\ntype_number()\nNumber scores\n-10 to +10\n\n\ntype_boolean()\nYes/no questions\nTRUE/FALSE\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe schema is flexible – you can ask for multiple fields and also nest objects for more complex outputs – it can be nicely tailored to your research question. Think carefully about what you want to get back from the LLM, the schema will guide the response format and content!"
   },
   {
     "objectID": "sharezone/quallmer_slides.html#step-2-code-the-speeches",
     "href": "sharezone/quallmer_slides.html#step-2-code-the-speeches",
     "title": "Analysing qualitative data with LLMs",
     "section": "Step 2: Code the Speeches",
-    "text": "Step 2: Code the Speeches\n\n# Create named vector (names become .id in output)\ntexts &lt;- setNames(data_speeches_ms2020$text, data_speeches_ms2020$.id)\n\ncoded_speeches &lt;- qlm_code(\n  texts,\n  codebook = codebook_ideology,\n  model = \"openai/gpt-4o-mini\"\n)\n\nhead(coded_speeches)\n\n\n\n\n\n\n\nAPI Key Required\n\n\nSys.setenv(OPENAI_API_KEY = \"your-key-here\")\nHow to get your API key"
+    "text": "Step 2: Code the Speeches\n\n# Create named vector (names become .id in output)\ntexts &lt;- setNames(data_speeches_ms2020$text, data_speeches_ms2020$.id)\n\ncoded_speeches &lt;- qlm_code(\n  texts,\n  codebook = codebook_ideology,\n  model = \"openai/gpt-4o-mini\"\n)\n\nhead(coded_speeches)\n\n\n\n\n\n\n\nAPI Key Required\n\n\n\nSys.setenv(OPENAI_API_KEY = \"your-key-here\")\nHow to get your API key"
   },
   {
     "objectID": "sharezone/quallmer_slides.html#understanding-the-output",
@@ -515,14 +515,14 @@
     "href": "sharezone/quallmer_slides.html#validation-is-key",
     "title": "Analysing qualitative data with LLMs",
     "section": "Validation is Key!",
-    "text": "Validation is Key!\nThree types:\n\nGold standard – Compare to human codings (accuracy, precision, recall, F1)\nIntercoder reliability – Compare multiple LLMs (Krippendorff’s alpha, Cohen’s kappa)\nManual review – Spot-check outputs with quallmer.app, focus on disagreements\n\n\n\n\n\n\n\nquallmer.app\n\n\nInteractive Shiny app for annotation & validation (also on CRAN):\ninstall.packages(\"quallmer.app\")\nquallmer.app::qlm_app()"
+    "text": "Validation is Key!\nThree types:\n\nGold standard – Compare to human codings (accuracy, precision, recall, F1)\nIntercoder reliability – Compare multiple LLMs (Krippendorff’s alpha, Cohen’s kappa)\nManual review – Spot-check outputs with quallmer.app, focus on disagreements\n\n\n\n\n\n\n\nquallmer.app\n\n\n\nInteractive Shiny app for annotation & validation (also on CRAN):\ninstall.packages(\"quallmer.app\")\nquallmer.app::qlm_app()"
   },
   {
     "objectID": "sharezone/quallmer_slides.html#open-vs.-closed-llms",
     "href": "sharezone/quallmer_slides.html#open-vs.-closed-llms",
     "title": "Analysing qualitative data with LLMs",
     "section": "Open vs. Closed LLMs",
-    "text": "Open vs. Closed LLMs\n\n\nClosed (OpenAI, Claude)\n\nHigher performance\nUser-friendly\nPrivacy concerns\n\n\nOpen (Llama, Ollama)\n\nFull control\nBetter for sensitive data\nMore reproducible, fine-tuning options\n\n\nquallmer supports both!"
+    "text": "Open vs. Closed LLMs\n\n\nClosed (OpenAI, Claude)\n\nHigher performance\nUser-friendly\nPrivacy concerns\n\n\nOpen (Llama, Ollama)\n\nFull control\nBetter for sensitive data\nMore reproducible, fine-tuning options\n\n\n\nquallmer supports both!"
   },
   {
     "objectID": "sharezone/quallmer_slides.html#tips-for-good-codebooks",
@@ -579,5 +579,40 @@
     "title": "Hands-On Tutorial: Analyzing Political Speeches",
     "section": "Combine with Metadata",
     "text": "Combine with Metadata\n\ncoded_with_meta &lt;- data_speeches_ms2020 |&gt;\n  select(.id, speaker, country, regime, dictionary_score = score) |&gt;\n  left_join(\n    coded_speeches |&gt;\n      as.data.frame() |&gt;\n      select(.id, llm_score = score, explanation),\n    by = \".id\"\n  )\n\n# View by regime type\ncoded_with_meta |&gt;\n  group_by(regime) |&gt;\n  summarise(n = n(), mean_llm = mean(llm_score, na.rm = TRUE))"
+  },
+  {
+    "objectID": "sharezone/quallmer_slides.html",
+    "href": "sharezone/quallmer_slides.html",
+    "title": "Analysing qualitative data with LLMs",
+    "section": "",
+    "text": "Senior Lecturer in Political Science (Research Methods) at University of Melbourne\nResearch: Democracy, authoritarianism, language of political leaders\nCo-founder of QuantLab\nDeveloper of quallmer (with Ken Benoit)\n\nMotivation: Fight for democracy, making quantitative methods more accessible\nWebsite: seraphinem.github.io"
+  },
+  {
+    "objectID": "sharezone/quallmer_slides.html#the-quant-qual-dilemma",
+    "href": "sharezone/quallmer_slides.html#the-quant-qual-dilemma",
+    "title": "Analysing qualitative data with LLMs",
+    "section": "The Quant-Qual Dilemma",
+    "text": "The Quant-Qual Dilemma\n\n\nQuantitative\n\nLarge N, generalizability\nReplicable & transparent\nStatistical rigor\n\nBut: Lacks depth, context, nuance\n\nQualitative\n\nRich detail & context\nCaptures complexity\nDiscovers unexpected patterns\n\nBut: Small N, labor-intensive, harder to generalize\n\n\n. . .\n\n\n\n\n\n\nLLMs as a Bridge?\n\n\n\nLLMs could combine scale & replicability with contextual understanding — but only if:\n\nResults are validated against human judgment\nThe process is transparent and documented\nWe maintain audit trails for rigor and replicability\n\n\n\nquallmer was developed with this vision — grounded in established insights from qualitative research methodology."
+  },
+  {
+    "objectID": "sharezone/quallmer_slides.html#quality-in-qualitative-research",
+    "href": "sharezone/quallmer_slides.html#quality-in-qualitative-research",
+    "title": "Analysing qualitative data with LLMs",
+    "section": "Quality in Qualitative Research",
+    "text": "Quality in Qualitative Research\n\n\n\n\n\nLincoln & Guba’s (1985) trustworthiness criteria and the importance of audit trails for transparency and rigor in qualitative research, Seale, C. (1999). Guiding ideals. In The Quality of Qualitative Research (pp. 32-50). SAGE Publications Ltd.\n\n\n\n\nLincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. Sage."
+  },
+  {
+    "objectID": "sharezone/quallmer_slides.html#pre-llm-quantitative-text-analysis",
+    "href": "sharezone/quallmer_slides.html#pre-llm-quantitative-text-analysis",
+    "title": "Analysing qualitative data with LLMs",
+    "section": "Pre-LLM Quantitative Text Analysis",
+    "text": "Pre-LLM Quantitative Text Analysis\n\n\n\n\n\n\nflowchart TB\n    A[Corpus of documents] --&gt; B[Document-feature matrix&lt;br&gt;'Bag of Words']\n    B --&gt; C[Supervised&lt;br&gt;known categories]\n    B --&gt; D[Unsupervised&lt;br&gt;unknown categories]\n    C --&gt; E[Dictionary &&lt;br&gt;Sentiment]\n    C --&gt; F[Wordscores &&lt;br&gt;Classifiers]\n    D --&gt; G[Topic Models]\n    D --&gt; H[Wordfish]\n\n    B --&gt; I[Word Embeddings&lt;br&gt;Word2Vec, GloVe]\n    I -.-&gt; J[Transformers&lt;br&gt;Attention mechanism]\n    J -.-&gt; K[Large Language&lt;br&gt;Models]\n\n    style A fill:#b8d4e8,stroke:#333\n    style B fill:#b8d4e8,stroke:#333\n    style C fill:#b8d4e8,stroke:#333\n    style D fill:#b8d4e8,stroke:#333\n    style E fill:#b8d4e8,stroke:#333\n    style F fill:#b8d4e8,stroke:#333\n    style G fill:#b8d4e8,stroke:#333\n    style H fill:#b8d4e8,stroke:#333\n    style I fill:#b8d4e8,stroke:#333\n    style J fill:#f0e68c,stroke:#333\n    style K fill:#f0e68c,stroke:#333"
+  },
+  {
+    "objectID": "sharezone/quallmer_slides.html#next-quantlab-on-april-28-12-1pm",
+    "href": "sharezone/quallmer_slides.html#next-quantlab-on-april-28-12-1pm",
+    "title": "Analysing qualitative data with LLMs",
+    "section": "Next QuantLab on April 28, 12-1pm",
+    "text": "Next QuantLab on April 28, 12-1pm\nUpgrading Policy / Documentation Analysis with AI: Learn how to extract and process information from large policy databases efficiently using AI\nwith Dr. Jan Kabatek from the Melbourne Institute\nStay tuned for more upcoming sessions of our “AI for Social Science” series:\nquantilab.github.io\nAll welcome!"
   }
 ]

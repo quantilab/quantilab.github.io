@@ -17,7 +17,7 @@ Download slides, tutorials, and code from our QuantLunch sessions.
 **31 Mar 2026** | Dr. Seraphine F. Maerz
 
 [View Slides](quallmer_slides.html){.btn .btn-primary}
-[Download PDF](../sessions/QuantLunch1_26_new.pdf){.btn .btn-outline-primary}
+
 :::
 :::
 

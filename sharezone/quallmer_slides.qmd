@@ -18,21 +18,6 @@ format:
     smaller: true
 ---
 
-
-## About This Workshop
-
-**Goals:**
-
-- Understand what quallmer does and why it matters
-- Learn the core workflow (5 steps)
-- Demo: Replicate a real research example
-- Know how to validate and document your analysis
-
-::: {.callout-tip}
-## Materials
-[quallmer.github.io/quallmer](https://quallmer.github.io/quallmer)
-:::
-
 ## About Me
 
 - Senior Lecturer in Political Science (Research Methods) at University of Melbourne
@@ -44,9 +29,81 @@ format:
 
 Website: [seraphinem.github.io](https://seraphinem.github.io)
 
+
+## About This Workshop
+
+**Goals:**
+
+- Understand how quallmer can help you use LLMs for qualitative coding
+- Learn the core workflow (5 steps)
+- Demo: Replicate a real research example
+- Know how to validate and document your analysis
+
+::: {.callout-tip}
+## Materials
+[quallmer.github.io/quallmer](https://quallmer.github.io/quallmer)
+
+[Slides and tutorial available on QuantLab website](https://quantilab.github.io/)
+:::
+
+## The Quant-Qual Dilemma
+
+::: {.columns}
+::: {.column width="50%"}
+**Quantitative**
+
+- Large N, generalizability
+- Replicable & transparent
+- Statistical rigor
+
+*But:* Lacks depth, context, nuance
+:::
+
+::: {.column width="50%"}
+**Qualitative**
+
+- Rich detail & context
+- Captures complexity
+- Discovers unexpected patterns
+
+*But:* Small N, labor-intensive, harder to generalize
+:::
+:::
+
+. . .
+
+::: {.callout-note}
+## LLMs as a Bridge?
+LLMs could combine **scale & replicability** with **contextual understanding** — but only if:
+
+- Results are **validated** against human judgment
+- The process is **transparent** and documented
+- We maintain **audit trails** for rigor and replicability
+:::
+
+**quallmer** was developed with this vision — grounded in established insights from qualitative research methodology.
+
+## Quality in Qualitative Research
+
+::: {.columns}
+::: {.column width="40%"}
+![](pics/naturalistic.jpg){width=60%}
+:::
+
+::: {.column width="60%"}
+![](pics/quality.png){width=100%}
+
+Lincoln & Guba's (1985) **trustworthiness criteria** and the importance of **audit trails** for transparency and rigor in qualitative research, Seale, C. (1999). Guiding ideals. In The Quality of Qualitative Research (pp. 32-50). SAGE Publications Ltd.
+:::
+:::
+
+::: aside
+Lincoln, Y. S., & Guba, E. G. (1985). *Naturalistic Inquiry*. Sage.
+:::
+
 # Part 1: Introduction to text analysis with LLMs
 
-## Pre-LLM Text Analysis
+## Pre-LLM Quantitative Text Analysis
 
 ::: {.center}
 ```{mermaid}
@@ -84,7 +141,7 @@ flowchart TB
 
 ::: {.columns}
 ::: {.column width="50%"}
-**Traditional:**
+**Traditional "text-as-data" approaches:**
 
 - Dictionary methods
 - Topic models
@@ -452,6 +509,25 @@ quallmer.app::qlm_app()
 
 **Happy coding with quallmer!**
 
+
+## Next QuantLab on April 28, 12-1pm
+
+**Upgrading Policy / Documentation Analysis with AI: Learn how to extract and process information from large policy databases efficiently using AI**
+
+with **Dr. Jan Kabatek** from the Melbourne Institute
+
+
+\vspace{1em}
+
+Stay tuned for more upcoming sessions of our "AI for Social Science" series:
+
+[quantilab.github.io](https://quantilab.github.io/)
+
+All welcome!
+
+
+
+
 ## References
 
 ::: {.smaller}
@@ -459,5 +535,4 @@ quallmer.app::qlm_app()
 
 - Maerz, S. F., & Schneider, C. Q. (2020). [Comparing public communication in democracies and autocracies](https://link.springer.com/article/10.1007/s11135-019-00885-7). *Quality & Quantity*, 54, 517-545.
 :::
-
 
