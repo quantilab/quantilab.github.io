@@ -1,0 +1,463 @@
+---
+title: "Analysing qualitative data with LLMs"
+subtitle: "An introduction to the quallmer toolbox"
+author: "Seraphine F. Maerz"
+date: today
+lightbox: true
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    logo: pics/logo.png
+    footer: "quallmer.github.io/quallmer"
+    incremental: false
+    transition: fade
+    highlight-style: github
+    code-line-numbers: false
+    code-overflow: wrap
+    smaller: true
+---
+
+
+## About This Workshop
+
+**Goals:**
+
+- Understand what quallmer does and why it matters
+- Learn the core workflow (5 steps)
+- Demo: Replicate a real research example
+- Know how to validate and document your analysis
+
+::: {.callout-tip}
+## Materials
+[quallmer.github.io/quallmer](https://quallmer.github.io/quallmer)
+:::
+
+## About Me
+
+- Senior Lecturer in Political Science (Research Methods) at University of Melbourne
+- Research: Democracy, authoritarianism, language of political leaders
+- Co-founder of [QuantLab](https://quantilab.github.io/)
+- Developer of **quallmer** (with Ken Benoit)
+
+**Motivation:** Fight for democracy, making quantitative methods more accessible
+
+Website: [seraphinem.github.io](https://seraphinem.github.io)
+
+# Part 1: Introduction to text analysis with LLMs
+
+## Pre-LLM Text Analysis
+
+::: {.center}
+```{mermaid}
+%%| fig-width: 10
+flowchart TB
+    A[Corpus of documents] --> B[Document-feature matrix<br>'Bag of Words']
+    B --> C[Supervised<br>known categories]
+    B --> D[Unsupervised<br>unknown categories]
+    C --> E[Dictionary &<br>Sentiment]
+    C --> F[Wordscores &<br>Classifiers]
+    D --> G[Topic Models]
+    D --> H[Wordfish]
+
+    B --> I[Word Embeddings<br>Word2Vec, GloVe]
+    I -.-> J[Transformers<br>Attention mechanism]
+    J -.-> K[Large Language<br>Models]
+
+    style A fill:#b8d4e8,stroke:#333
+    style B fill:#b8d4e8,stroke:#333
+    style C fill:#b8d4e8,stroke:#333
+    style D fill:#b8d4e8,stroke:#333
+    style E fill:#b8d4e8,stroke:#333
+    style F fill:#b8d4e8,stroke:#333
+    style G fill:#b8d4e8,stroke:#333
+    style H fill:#b8d4e8,stroke:#333
+    style I fill:#b8d4e8,stroke:#333
+    style J fill:#f0e68c,stroke:#333
+    style K fill:#f0e68c,stroke:#333
+```
+:::
+
+
+
+## Pre-LLM vs. LLM Approaches
+
+::: {.columns}
+::: {.column width="50%"}
+**Traditional:**
+
+- Dictionary methods
+- Topic models
+- Supervised learning
+:::
+
+::: {.column width="50%"}
+**LLM-based:**
+
+- Zero-shot classification
+- Context-aware
+- Can explain reasoning
+:::
+:::
+
+**All (text) models are wrong -- but some are useful!**
+
+## Why Use LLMs for Research?
+
+| Challenge | Traditional | LLM-Based |
+|-----------|-------------|-----------|
+| Context | Limited | Strong |
+| Training data | Often needed | Usually not |
+| Cost | Can be high | Variable (depends on API) |
+| Nuance | Struggles | Better |
+| Reproducibility | Strong | Not 100% |
+
+. . .
+
+::: {.callout-important}
+LLMs produce language -- not truth! **Validation is essential.**
+:::
+
+## Data Security & Ethical Considerations
+
+
+**Key concerns when using LLMs:**
+
+- **Privacy** -- Sensitive data uploaded to external servers (closed LLMs)
+- **Reproducibility** -- Same prompts can give different responses
+- **Bias & fairness** -- Models may reflect training data biases
+- **Transparency** -- Training data often unknown (closed LLMs)
+- **Resource consumption** -- Environmental impact of large models
+
+. . .
+
+**Reminder:** Use open-source LLMs for sensitive data; provide traceability; always validate!
+
+# Part 2: Introducing quallmer
+
+## What is quallmer?
+
+![](pics/logo.png){width=20% fig-align="center"}
+
+An R package for **AI-assisted qualitative coding** -- accessible without deep expertise in R or ML.
+
+**By:** Seraphine F. Maerz & Kenneth Benoit
+
+Available on CRAN:
+
+```r
+install.packages("quallmer")
+```
+
+## The quallmer Philosophy
+
+::: {.columns}
+::: {.column width="50%"}
+**Simplicity**
+
+- Minimal code
+- Clear workflow
+- Made for newcomers to R
+:::
+
+::: {.column width="50%"}
+**Rigor**
+
+- Built-in validation
+- Audit trails
+- Transparency and traceability
+:::
+:::
+
+## The 5-Step Workflow
+
+| Step | Function | Purpose |
+|------|----------|---------|
+| 1 | `qlm_codebook()` | Define coding scheme |
+| 2 | `qlm_code()` | Apply LLM coding |
+| 3 | `qlm_replicate()` | Test robustness |
+| 4 | `qlm_validate()` / `qlm_compare()` | Assess validity & reliability |
+| 5 | `qlm_trail()` | Create audit trail |
+
+
+# Part 3: Example
+
+## Illiberalism in Political Speeches
+
+**Original Study:** Maerz & Schneider (2020), *Quality & Quantity*: "Comparing public communication in democracies and autocracies"
+
+- Corpus of 4,740 speeches by 40 heads of government in 27 countries
+
+. . .
+
+**Key Findings:**
+
+- Autocratic leaders use more illiberal language
+- Some political leaders in formal democracies also use illiberal language (correlation with backsliding)
+
+**Our Goal here:** Replicate using LLMs instead of a dictionary/topic model approach.
+
+## The Data
+
+```{r}
+#| eval: false
+#| echo: true
+library(quallmer)
+library(tidyverse)
+
+# Load data (4,740 speeches) directly from GitHub
+url <- "https://github.com/quallmer/quallmer/raw/main/vignettes/pkgdown/examples/data/data_speeches_ms2020.rds"
+data_speeches_ms2020 <- readRDS(url(url))
+
+head(data_speeches_ms2020)  
+```
+
+| speaker | country | year | regime | text |
+|---------|---------|------|--------|----------------------|
+| Angela Merkel | Germany | 2015 | Democracy | "Today, we are facing a great challenge..." |
+| Vladimir Putin | Russia | 2014 | Autocracy | "The West has been trying to encircle us..." |
+| Viktor Orbán | Hungary | 2018 | Democracy | "We must protect our borders and our culture..." |
+| Kim Jong Un | North Korea | 2019 | Autocracy | "The imperialists are trying to undermine our sovereignty..." |
+
+Note: Example texts are illustrative.
+
+## Step 1: Define the Codebook
+
+```{r}
+#| eval: false
+#| echo: true
+codebook_ideology <- qlm_codebook(
+  name = "Liberal-illiberal rhetoric",
+  instructions = "Analyze rhetorical style of this speech.
+    ILLIBERAL (negative): nationalism, paternalism, order
+    LIBERAL (positive): rights, pluralism, rule of law",
+  schema = type_object(
+    score = type_integer("Score: -10 to +10"),
+    explanation = type_string("Brief explanation")
+  ),
+  role = "You are an expert political scientist."
+)
+```
+
+## Schema Options
+
+The `schema` defines what the LLM returns:
+
+| Type | Use for | Example |
+|------|---------|---------|
+| `type_integer()` | Fixed categories | `c("pos", "neg", "neutral")`|
+| `type_string()` | Text/explanations | `"Brief explanation"` |
+| `type_number()` | Number scores | `-10 to +10` |
+| `type_boolean()` | Yes/no questions | `TRUE/FALSE` |
+
+::: {.callout-tip}
+The schema is flexible -- you can ask for multiple fields and also nest objects for more complex outputs -- it can be nicely tailored to your research question. Think carefully about what you want to get back from the LLM, the schema will guide the response format and content!
+:::
+
+
+## Step 2: Code the Speeches
+
+```{r}
+#| eval: false
+#| echo: true
+# Create named vector (names become .id in output)
+texts <- setNames(data_speeches_ms2020$text, data_speeches_ms2020$.id)
+
+coded_speeches <- qlm_code(
+  texts,
+  codebook = codebook_ideology,
+  model = "openai/gpt-4o-mini"
+)
+
+head(coded_speeches)
+```
+
+::: {.callout-warning}
+## API Key Required
+```r
+Sys.setenv(OPENAI_API_KEY = "your-key-here")
+```
+[How to get your API key](https://quallmer.github.io/quallmer/articles/pkgdown/getting-started/openai.html)
+
+:::
+
+
+## Understanding the Output
+
+Each row contains:
+
+- **score:** LLM's rating (-10 to +10)
+- **explanation:** Why the score was assigned
+
+| doc_id | score | explanation |
+|--------|-------|-------------|
+| speech_001 | -5 | "Strong nationalist themes..." |
+| speech_002 | 7 | "Focus on individual rights..." |
+
+**Key advantage:** We see *why* each score was assigned!
+
+## Step 3: Replicate
+
+```{r}
+#| eval: false
+#| echo: true
+# Replicate with same settings
+replicated <- qlm_replicate(coded_speeches)
+
+# Or with a different model
+replicated_gpt4o <- qlm_replicate(coded_speeches, model = "openai/gpt-4o")
+```
+
+**Why replicate?**
+
+- LLMs can vary in responses
+- Test robustness
+- Compare models
+
+## Step 4: Validate
+
+**Two validation approaches:**
+
+```{r}
+#| eval: false
+#| echo: true
+# Compare LLM to gold standard (human/dictionary codings)
+validation <- qlm_validate(
+  coded_speeches,
+  gold = dictionary_coded,
+  by = "score", level = "interval"
+)
+
+# Compare multiple LLM runs/models (inter-rater reliability)
+comparison <- qlm_compare(
+  coded_gpt4o, coded_gpt4omini,
+  by = "score", level = "interval"
+)
+```
+
+| Value | Agreement |
+|-------|-----------|
+| < 0.40 | Poor |
+| 0.40-0.60 | Moderate |
+| 0.60-0.80 | Substantial |
+| > 0.80 | Almost perfect |
+
+## Replication Results: Ideology Scale
+
+::: {.columns}
+::: {.column width="60%"}
+![Click to enlarge](pics/scale_plot.png){.lightbox width=800%}
+:::
+
+::: {.column width="40%"}
+**LLM advantages:**
+
+- Replicates dictionary results **fast and cost-effectively**
+- Provides **explanations for each score** 
+:::
+:::
+
+## Step 5: Audit Trail
+
+```{r}
+#| eval: false
+#| echo: true
+qlm_trail(coded_speeches, path = "illiberal_analysis")
+
+# Creates:
+# - illiberal_analysis.rds  (R object)
+# - illiberal_analysis.qmd  (documentation)
+```
+
+**Following Lincoln & Guba's (1985) trustworthiness framework, the automatically created report includes:**
+
+- Instrument development (codebook)
+- Process notes & decisions
+- Complete replication code
+
+::: aside
+Lincoln, Y. S., & Guba, E. G. (1985). *Naturalistic Inquiry*. Sage.
+:::
+
+
+# Part 4: Best Practices
+
+## Validation is Key!
+
+**Three types:**
+
+1. **Gold standard** -- Compare to human codings (accuracy, precision, recall, F1)
+2. **Intercoder reliability** -- Compare multiple LLMs (Krippendorff's alpha, Cohen's kappa)
+3. **Manual review** -- Spot-check outputs with [quallmer.app](https://quallmer.github.io/quallmer/articles/pkgdown/tutorials/validate.html), focus on disagreements
+
+::: {.callout-tip}
+## quallmer.app
+Interactive Shiny app for annotation & validation (also on CRAN):
+```r
+install.packages("quallmer.app")
+quallmer.app::qlm_app()
+```
+:::
+
+## Open vs. Closed LLMs
+
+::: {.columns}
+::: {.column width="50%"}
+**Closed** (OpenAI, Claude)
+
+- Higher performance
+- User-friendly
+- Privacy concerns
+:::
+
+::: {.column width="50%"}
+**Open** (Llama, Ollama)
+
+- Full control
+- Better for sensitive data
+- More reproducible, fine-tuning options
+:::
+:::
+
+**quallmer supports both!**
+
+## Tips for Good Codebooks
+
+1. **Be specific** -- Define categories clearly
+2. **Provide examples** -- Show what each category looks like
+3. **Use scales wisely** -- Ordinal vs. categorical
+4. **Include explanation** -- See the LLM's reasoning
+5. **Iterate** -- Test and refine
+
+# Summary
+
+## Key Takeaways
+
+1. **quallmer makes LLM coding accessible** -- 5 functions
+2. **Rigorous workflow** -- Built-in validation
+3. **LLMs complement traditional methods**
+4. **Validation is essential**
+5. **Use audit trails** for transparency and traceability
+
+
+## Questions?
+
+![](pics/logo.png){width=25% fig-align="center"}
+
+- Contact: [seraphinem.github.io](https://seraphinem.github.io)
+- Package website including tutorials: [quallmer.github.io/quallmer](https://quallmer.github.io/quallmer)
+
+
+# Thank You
+
+**Happy coding with quallmer!**
+
+## References
+
+::: {.smaller}
+- Lincoln, Y. S., & Guba, E. G. (1985). *Naturalistic Inquiry*. Sage.
+
+- Maerz, S. F., & Schneider, C. Q. (2020). [Comparing public communication in democracies and autocracies](https://link.springer.com/article/10.1007/s11135-019-00885-7). *Quality & Quantity*, 54, 517-545.
+:::
+
+

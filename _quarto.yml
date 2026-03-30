@@ -33,7 +33,7 @@ website:
       - text: "Tutorials"
         href: blog.qmd
       - text: "Sharezone"
-        href: https://github.com/quantilab/sharezone/tree/main
+        href: sharezone/index.qmd
       - text: "Contribute"
         href: https://github.com/quantilab/sharezone/issues
       - icon: github

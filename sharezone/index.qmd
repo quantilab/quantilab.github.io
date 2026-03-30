@@ -1,0 +1,50 @@
+---
+title: "Sharezone"
+subtitle: "Resources from QuantLab sessions"
+---
+
+Download slides, tutorials, and code from our QuantLunch sessions.
+
+---
+
+# 2026 {#sec-2026}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card}
+### Analysing Qualitative Data with LLMs
+**31 Mar 2026** | Dr. Seraphine F. Maerz
+
+[View Slides](quallmer_slides.html){.btn .btn-primary}
+[Download PDF](../sessions/QuantLunch1_26_new.pdf){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card}
+![](pics/logo.png){width=80%}
+
+### Quallmer Tutorial
+**Hands-on:** Analyzing Political Speeches with LLMs
+
+[View Tutorial](quallmer_tutorial.html){.btn .btn-primary}
+[Download QMD](quallmer_tutorial.qmd){.btn .btn-outline-primary download="quallmer_tutorial.qmd"}
+:::
+:::
+
+:::
+
+---
+
+# Archive (2024-2025)
+
+Looking for older session materials? Find slides and resources from previous years on our GitHub repository.
+
+[Browse Archive on GitHub](https://github.com/quantilab/sharezone/tree/main){.btn .btn-primary}
+
+---
+
+# Contribute
+
+Have resources to share? [Open an issue](https://github.com/quantilab/sharezone/issues) or reach out to [Seraphine Maerz](mailto:seraphine.maerz@unimelb.edu.au).
