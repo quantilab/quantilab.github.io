@@ -375,7 +375,7 @@
     "href": "sharezone/index.html",
     "title": "Sharezone",
     "section": "",
-    "text": "Download slides, tutorials, and code from our QuantLunch sessions.\n\n\n2026\n\n\n\nAnalysing Qualitative Data with LLMs\n31 Mar 2026 | Dr. Seraphine F. Maerz\nView Slides\n\n\n\n\n\n\nQuallmer Tutorial\nHands-on: Analyzing Political Speeches with LLMs\nView Tutorial Download QMD\n\n\n\n\n\nWorkshop at Griffith\nLLM Masterclass | April 2026 (for participants only)\n\n Unlock\n\n\nIncorrect password\n\n\nPreparation Guide (PDF) Tutorial (QMD) Slides (QMD)\n\n\n\n\n\n\n\n\nArchive (2024-2025)\nLooking for older session materials? Find slides and resources from previous years on our GitHub repository.\nBrowse Archive on GitHub\n\n\n\nContribute\nHave resources to share? Open an issue or reach out to Seraphine Maerz."
+    "text": "Download slides, tutorials, and code from our QuantLunch sessions.\n\n\n2026\n\n\n\nAnalysing Qualitative Data with LLMs\n31 Mar 2026 | Dr. Seraphine F. Maerz\nView Slides\n\n\n\n\n\n\nQuallmer Tutorial\nHands-on: Analyzing Political Speeches with LLMs\nView Tutorial Download QMD\n\n\n\n\n\nWorkshop at Griffith\nLLM Masterclass | April 2026 (for participants only)\n\n Unlock\n\n\nIncorrect password\n\n\nPreparation Guide (PDF) Tutorial (QMD) View Slides\n\n\n\n\n\n\n\n\nArchive (2024-2025)\nLooking for older session materials? Find slides and resources from previous years on our GitHub repository.\nBrowse Archive on GitHub\n\n\n\nContribute\nHave resources to share? Open an issue or reach out to Seraphine Maerz."
   },
   {
     "objectID": "sharezone/quallmer_slides.html#about-this-workshop",
@@ -626,8 +626,8 @@
     "objectID": "sharezone/brisbane/quallmer_slides.html#about-this-workshop",
     "href": "sharezone/brisbane/quallmer_slides.html#about-this-workshop",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
-    "section": "",
-    "text": "Goals:\n\nUnderstand basics of LLM-based text analysis\nLearn the core workflow of the quallmer tool (5 steps)\nReplicate a real research example\nStart using quallmer for your own projects\nKnow how to validate and document your analysis\n\n\n\n\n\n\n\nMaterials\n\n\n\nDetailed documentation of the tool: quallmer.github.io/quallmer\nSlides and tutorial available on QuantLab website: quantilab.github.io"
+    "section": "About This Workshop",
+    "text": "About This Workshop\nGoals:\n\nUnderstand basics of LLM-based text analysis\nLearn the core workflow of the quallmer tool (5 steps)\nReplicate a real research example\nStart using quallmer for your own projects\nKnow how to validate and document your analysis\n\n\n\n\n\n\n\nMaterials\n\n\nDetailed documentation of the tool: quallmer.github.io/quallmer\nSlides and tutorial available on QuantLab website: quantilab.github.io"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#about-me",
@@ -641,21 +641,21 @@
     "href": "sharezone/brisbane/quallmer_slides.html#llms-as-qualitative-analysis-tools-recent-contributions",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "LLMs as Qualitative Analysis Tools: Recent Contributions",
-    "text": "LLMs as Qualitative Analysis Tools: Recent Contributions\nA growing body of research demonstrates LLMs’ potential for qualitative text analysis:\n\nBenoit et al. (2026): Using LLMs to analyze political texts through natural language understanding. American Journal of Political Science. LLM-generated party position estimates correlate highly with expert ratings – scalable alternative to human coders.\nHalterman and Keith (2025): Codebook LLMs: Evaluating LLMs as measurement tools for political science concepts. Political Analysis. Systematic evaluation of LLMs for coding political science concepts with codebook guidance.\nHayes (2025): “Conversing” with qualitative data. International Journal of Qualitative Methods. LLMs enable researchers to explore qualitative data in a conversational way.\n\n. . .\n\n\n\n\n\n\nEmerging Consensus\n\n\n\nLLMs can complement (not replace!) traditional methods – but require validation, transparency, and methodological rigor."
+    "text": "LLMs as Qualitative Analysis Tools: Recent Contributions\nA growing body of research demonstrates LLMs’ potential for qualitative text analysis:\n\nBenoit et al. (2026): Using LLMs to analyze political texts through natural language understanding. American Journal of Political Science. LLM-generated party position estimates correlate highly with expert ratings – scalable alternative to human coders.\nHalterman and Keith (2025): Codebook LLMs: Evaluating LLMs as measurement tools for political science concepts. Political Analysis. Systematic evaluation of LLMs for coding political science concepts with codebook guidance.\nHayes (2025): “Conversing” with qualitative data. International Journal of Qualitative Methods. LLMs enable researchers to explore qualitative data in a conversational way.\n\n\n\n\n\n\n\n\nEmerging Consensus\n\n\nLLMs can complement (not replace!) traditional methods – but require validation, transparency, and methodological rigor."
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#the-quant-qual-dilemma",
     "href": "sharezone/brisbane/quallmer_slides.html#the-quant-qual-dilemma",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "The Quant-Qual Dilemma",
-    "text": "The Quant-Qual Dilemma\n\n\nQuantitative\n\nLarge N, generalizability\nReplicable & transparent\nStatistical rigor\n\nBut: Lacks depth, context, nuance\n\nQualitative\n\nRich detail & context\nCaptures complexity\nDiscovers unexpected patterns\n\nBut: Small N, labor-intensive, harder to generalize\n\n\n. . .\n\n\n\n\n\n\nLLMs as a Bridge?\n\n\n\nLLMs could combine scale & replicability with contextual understanding — but only if:\n\nResults are validated against human judgment\nThe process is transparent and documented\nWe maintain audit trails for rigor and replicability\n\n\n\nquallmer was developed with this vision — grounded in established insights from qualitative research methodology."
+    "text": "The Quant-Qual Dilemma\n\n\nQuantitative\n\nLarge N, generalizability\nReplicable & transparent\nStatistical rigor\n\nBut: Lacks depth, context, nuance\n\nQualitative\n\nRich detail & context\nCaptures complexity\nDiscovers unexpected patterns\n\nBut: Small N, labor-intensive, harder to generalize\n\n\n\n\n\n\n\n\nLLMs as a Bridge?\n\n\nLLMs could combine scale & replicability with contextual understanding — but only if:\n\nResults are validated against human judgment\nThe process is transparent and documented\nWe maintain audit trails for rigor and replicability\n\n\n\n\nquallmer was developed with this vision — grounded in established insights from qualitative research methodology."
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#quality-in-qualitative-research",
     "href": "sharezone/brisbane/quallmer_slides.html#quality-in-qualitative-research",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Quality in Qualitative Research",
-    "text": "Quality in Qualitative Research\n\n\n\n\n\nLincoln & Guba’s (1985) trustworthiness criteria and the importance of audit trails for transparency and rigor in qualitative research, Seale, C. (1999). Guiding ideals. In The Quality of Qualitative Research (pp. 32-50). SAGE Publications Ltd.\n\n\n\n\nLincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. Sage."
+    "text": "Quality in Qualitative Research\n\n\n\n\n\nLincoln & Guba’s (1985) trustworthiness criteria and the importance of audit trails for transparency and rigor in qualitative research, Seale, C. (1999). Guiding ideals. In The Quality of Qualitative Research (pp. 32-50). SAGE Publications Ltd.\n\n\n\nLincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. Sage."
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#pre-llm-text-analysis",
@@ -669,49 +669,49 @@
     "href": "sharezone/brisbane/quallmer_slides.html#pre-llm-vs.-llm-approaches",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Pre-LLM vs. LLM Approaches",
-    "text": "Pre-LLM vs. LLM Approaches\n\n\nTraditional:\n\nDictionary methods\nTopic models\nSupervised learning\n\n\nLLM-based:\n\nZero-shot classification\nContext-aware\nCan explain reasoning\n\n\n\nAll (text) models are wrong – but some are useful!"
+    "text": "Pre-LLM vs. LLM Approaches\n\n\nTraditional:\n\nDictionary methods\nTopic models\nSupervised learning\n\n\nLLM-based:\n\nZero-shot classification\nContext-aware\nCan explain reasoning\n\n\nAll (text) models are wrong – but some are useful!"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#why-use-llms-for-research",
     "href": "sharezone/brisbane/quallmer_slides.html#why-use-llms-for-research",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Why Use LLMs for Research?",
-    "text": "Why Use LLMs for Research?\n\n\n\nChallenge\nTraditional\nLLM-Based\n\n\n\n\nContext\nLimited\nStrong\n\n\nTraining data\nOften needed\nUsually not\n\n\nCost\nCan be high\nVariable (depends on API)\n\n\nNuance\nStruggles\nBetter\n\n\nReproducibility\nStrong\nNot 100%\n\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nLLMs produce language – not truth! Validation is essential."
+    "text": "Why Use LLMs for Research?\n\n\n\nChallenge\nTraditional\nLLM-Based\n\n\n\n\nContext\nLimited\nStrong\n\n\nTraining data\nOften needed\nUsually not\n\n\nCost\nCan be high\nVariable (depends on API)\n\n\nNuance\nStruggles\nBetter\n\n\nReproducibility\nStrong\nNot 100%\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nLLMs produce language – not truth! Validation is essential."
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#data-security-ethical-considerations",
     "href": "sharezone/brisbane/quallmer_slides.html#data-security-ethical-considerations",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Data Security & Ethical Considerations",
-    "text": "Data Security & Ethical Considerations\nKey concerns when using LLMs:\n\nPrivacy – Sensitive data uploaded to external servers (closed LLMs)\nReproducibility – Same prompts can give different responses\nBias & fairness – Models may reflect training data biases\nTransparency – Training data often unknown (closed LLMs)\nResource consumption – Environmental impact of large models\n\n. . .\nReminder: Use open-source LLMs for sensitive data; provide traceability; always validate!"
+    "text": "Data Security & Ethical Considerations\nKey concerns when using LLMs:\n\nPrivacy – Sensitive data uploaded to external servers (closed LLMs)\nReproducibility – Same prompts can give different responses\nBias & fairness – Models may reflect training data biases\nTransparency – Training data often unknown (closed LLMs)\nResource consumption – Environmental impact of large models\n\n\nReminder: Use open-source LLMs for sensitive data; provide traceability; always validate!"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#existing-tools",
     "href": "sharezone/brisbane/quallmer_slides.html#existing-tools",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Existing Tools",
-    "text": "Existing Tools\nProprietary QDA software (NVivo, MAXQDA, QDAMiner) have added AI-assisted coding, but:\n\nGUI-only – No code-based workflow, analyses cannot be executed as code\nNot reproducible – Results cannot be straightforwardly replicated\nNo comprehensive audit trails – Partial documentation at best\nOpaque models – NVivo/MAXQDA don’t disclose which model powers their AI\nNot open-source\n\n. . .\nCustom LLM code gives flexibility, but researchers must build infrastructure from scratch:\n\nManaging codebooks\nTracking provenance\nComputing reliability metrics\nDocumenting workflows\n\nThis can distract from substantive research questions."
+    "text": "Existing Tools\nProprietary QDA software (NVivo, MAXQDA, QDAMiner) have added AI-assisted coding, but:\n\nGUI-only – No code-based workflow, analyses cannot be executed as code\nNot reproducible – Results cannot be straightforwardly replicated\nNo comprehensive audit trails – Partial documentation at best\nOpaque models – NVivo/MAXQDA don’t disclose which model powers their AI\nNot open-source\n\n\nCustom LLM code gives flexibility, but researchers must build infrastructure from scratch:\n\nManaging codebooks\nTracking provenance\nComputing reliability metrics\nDocumenting workflows\n\nThis can distract from substantive research questions."
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#working-with-llms-in-r",
     "href": "sharezone/brisbane/quallmer_slides.html#working-with-llms-in-r",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Working with LLMs in R",
-    "text": "Working with LLMs in R\nGeneral-purpose R packages for LLM access:\n\nellmer (Wickham et al., 2025)\nollamar (Lin & Safi, 2025)\nrollama (Gruber & Weber, 2024)\n\nFlexible LLM interfaces – but no qualitative methodology / text analysis support.\n. . .\nText analysis packages:\n\nquanteda (Benoit et al., 2018) – quantitative text analysis, not AI-assisted qualitative coding\n\n. . .\n\n\n\n\n\n\nThe Gap\n\n\n\nNo existing tool addresses the specific methodological requirements of trustworthy qualitative research with LLMs."
+    "text": "Working with LLMs in R\nGeneral-purpose R packages for LLM access:\n\nellmer (Wickham et al., 2025)\nollamar (Lin & Safi, 2025)\nrollama (Gruber & Weber, 2024)\n\nFlexible LLM interfaces – but no qualitative methodology / text analysis support.\n\nText analysis packages:\n\nquanteda (Benoit et al., 2018) – quantitative text analysis, not AI-assisted qualitative coding\n\n\n\n\n\n\n\n\n\nThe Gap\n\n\nNo existing tool addresses the specific methodological requirements of trustworthy qualitative research with LLMs."
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#what-is-quallmer",
     "href": "sharezone/brisbane/quallmer_slides.html#what-is-quallmer",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "What is quallmer?",
-    "text": "What is quallmer?\n\n\n\n\n\nAn R package that enables researchers to apply LLM-assisted qualitative coding while maintaining the rigorous standards of transparency and traceability essential to qualitative research.\n. . .\nKey features:\n\nWorks with texts, images, PDFs, audio, and tabular data\nSupports open-source and proprietary LLMs (OpenAI, Anthropic, Hugging Face, etc.)\nBuilt on the ellmer package (Wickham et al., 2025)\nCo-developed by Seraphine Maerz and Kenneth Benoit\nAvailable on CRAN: install.packages(\"quallmer\")"
+    "text": "What is quallmer?\n\n\n\n\n\nAn R package that enables researchers to apply LLM-assisted qualitative coding while maintaining the rigorous standards of transparency and traceability essential to qualitative research.\n\nKey features:\n\nWorks with texts, images, PDFs, audio, and tabular data\nSupports open-source and proprietary LLMs (OpenAI, Anthropic, Hugging Face, etc.)\nBuilt on the ellmer package (Wickham et al., 2025)\nCo-developed by Seraphine Maerz and Kenneth Benoit\nAvailable on CRAN: install.packages(\"quallmer\")"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#the-quallmer-philosophy",
     "href": "sharezone/brisbane/quallmer_slides.html#the-quallmer-philosophy",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "The quallmer Philosophy",
-    "text": "The quallmer Philosophy\n\n\nSimplicity & Accessibility\n\nMinimal code required\nClear, intuitive workflow\nDesigned for newcomers to R\nComprehensive tutorials and documentation\n\n\nRigor & Transparency\n\nBuilt-in validation tools\nAutomatic audit trails\nFull traceability of decisions\nReproducible analyses\n\n\n\n. . .\n\n\n\n\n\n\nGetting Started\n\n\n\nStep-by-step tutorials available at quallmer.github.io/quallmer"
+    "text": "The quallmer Philosophy\n\n\nSimplicity & Accessibility\n\nMinimal code required\nClear, intuitive workflow\nDesigned for newcomers to R\nComprehensive tutorials and documentation\n\n\nRigor & Transparency\n\nBuilt-in validation tools\nAutomatic audit trails\nFull traceability of decisions\nReproducible analyses\n\n\n\n\n\n\n\n\n\nGetting Started\n\n\nStep-by-step tutorials available at quallmer.github.io/quallmer"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#the-5-step-workflow",
@@ -725,7 +725,7 @@
     "href": "sharezone/brisbane/quallmer_slides.html#the-research-question",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "The Research Question",
-    "text": "The Research Question\nOriginal Study: Maerz & Schneider (2020), Quality & Quantity\n\nCorpus of 4,740 speeches by 40 heads of government in 27 countries\nFinding: Autocratic leaders use more illiberal language; some democratic leaders too (correlation with backsliding)\n\n. . .\nGoal: Replicate using LLMs instead of dictionary/topic model approach\n\nCan LLMs identify liberal-illiberal rhetoric?\nDo they correlate with human/dictionary codings?"
+    "text": "The Research Question\nOriginal Study: Maerz & Schneider (2020), Quality & Quantity\n\nCorpus of 4,740 speeches by 40 heads of government in 27 countries\nFinding: Autocratic leaders use more illiberal language; some democratic leaders too (correlation with backsliding)\n\n\nGoal: Replicate using LLMs instead of dictionary/topic model approach\n\nCan LLMs identify liberal-illiberal rhetoric?\nDo they correlate with human/dictionary codings?"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#step-1-define-the-codebook",
@@ -739,7 +739,7 @@
     "href": "sharezone/brisbane/quallmer_slides.html#schema-options",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Schema Options",
-    "text": "Schema Options\nThe schema defines what the LLM returns:\n\n\n\n\n\n\n\n\nType\nUse for\nExample\n\n\n\n\ntype_integer()\nFixed categories\nc(\"pos\", \"neg\", \"neutral\")\n\n\ntype_string()\nText/explanations\n\"Brief explanation\"\n\n\ntype_number()\nNumber scores\n-10 to +10\n\n\ntype_boolean()\nYes/no questions\nTRUE/FALSE\n\n\ntype_array()\nLists of items\nPersons, relationships, things, etc.\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe schema is flexible – you can ask for multiple fields and also nest objects for more complex outputs – it can be nicely tailored to your research question. Think carefully about what you want to get back from the LLM, the schema will guide the response format and content!"
+    "text": "Schema Options\nThe schema defines what the LLM returns:\n\n\n\n\n\n\n\n\nType\nUse for\nExample\n\n\n\n\ntype_integer()\nFixed categories\nc(\"pos\", \"neg\", \"neutral\")\n\n\ntype_string()\nText/explanations\n\"Brief explanation\"\n\n\ntype_number()\nNumber scores\n-10 to +10\n\n\ntype_boolean()\nYes/no questions\nTRUE/FALSE\n\n\ntype_array()\nLists of items\nPersons, relationships, things, etc.\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe schema is flexible – you can ask for multiple fields and also nest objects for more complex outputs – it can be nicely tailored to your research question. Think carefully about what you want to get back from the LLM, the schema will guide the response format and content!"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#step-2-code-the-data",
@@ -781,14 +781,14 @@
     "href": "sharezone/brisbane/quallmer_slides.html#validation-is-key",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Validation is Key!",
-    "text": "Validation is Key!\nThree types:\n\nGold standard – Compare to human codings\nIntercoder reliability – Compare multiple LLMs\nManual review – Spot-check outputs with quallmer.app\n\n\n\n\n\n\n\nquallmer.app\n\n\n\nInteractive Shiny app for annotation & validation.\ninstall.packages(\"quallmer.app\")\nquallmer.app::qlm_app()"
+    "text": "Validation is Key!\nThree types:\n\nGold standard – Compare to human codings\nIntercoder reliability – Compare multiple LLMs\nManual review – Spot-check outputs with quallmer.app\n\n\n\n\n\n\n\nquallmer.app\n\n\nInteractive Shiny app for annotation & validation.\ninstall.packages(\"quallmer.app\")\nquallmer.app::qlm_app()"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#open-vs.-closed-llms",
     "href": "sharezone/brisbane/quallmer_slides.html#open-vs.-closed-llms",
     "title": "Introduction to AI-assisted Text Analysis with quallmer",
     "section": "Open vs. Closed LLMs",
-    "text": "Open vs. Closed LLMs\n\n\nClosed (OpenAI, Claude)\n\nHigher performance\nUser-friendly\nPrivacy concerns\n\n\nOpen (Llama, Ollama)\n\nFull control\nBetter for sensitive data\nMore reproducible, fine-tuning options\n\n\n\nquallmer supports both!"
+    "text": "Open vs. Closed LLMs\n\n\nClosed (OpenAI, Claude)\n\nHigher performance\nUser-friendly\nPrivacy concerns\n\n\nOpen (Llama, Ollama)\n\nFull control\nBetter for sensitive data\nMore reproducible, fine-tuning options\n\n\nquallmer supports both!"
   },
   {
     "objectID": "sharezone/brisbane/quallmer_slides.html#tips-for-good-codebooks",

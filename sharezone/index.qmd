@@ -48,7 +48,7 @@ Download slides, tutorials, and code from our QuantLunch sessions.
 <div class="download-links" id="griffith-downloads">
 [Preparation Guide (PDF)](brisbane/Preparations_LLM_Masterclass.pdf){.btn .btn-primary download="Preparations_LLM_Masterclass.pdf"}
 [Tutorial (QMD)](brisbane/quallmer_tutorial.qmd){.btn .btn-primary download="quallmer_tutorial.qmd"}
-[Slides (QMD)](brisbane/quallmer_slides.qmd){.btn .btn-primary download="quallmer_slides.qmd"}
+[View Slides](brisbane/quallmer_slides.html){.btn .btn-primary}
 </div>
 
 <script>

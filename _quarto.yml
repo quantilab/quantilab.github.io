@@ -3,6 +3,8 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "sharezone/*.qmd"
+    - "sharezone/brisbane/quallmer_slides.qmd"
     - "!/blog/tutorial5/TutorialQuantedallm.qmd"
 
 website:
