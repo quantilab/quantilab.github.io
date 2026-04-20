@@ -14,7 +14,7 @@ format:
 
 ![](pics/logo.png){width=20%}
 
-<a href="https://raw.githubusercontent.com/quantilab/quantilab.github.io/main/sharezone/quallmer_tutorial.qmd" download="quallmer_tutorial.qmd">Download the tutorial file (.qmd)</a>
+<a href="https://cdn.jsdelivr.net/gh/quantilab/quantilab.github.io@main/sharezone/quallmer_tutorial.qmd" download="quallmer_tutorial.qmd">Download the tutorial file (.qmd)</a>
 
 ## About This Tutorial
 
