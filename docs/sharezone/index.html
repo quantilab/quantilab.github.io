@@ -181,6 +181,43 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </div>
 </div>
+<div class="g-col-12 g-col-md-6 g-col-lg-4">
+<section id="workshop-at-griffith" class="level3 card password-protected">
+<h3 class="anchored" data-anchor-id="workshop-at-griffith">Workshop at Griffith</h3>
+<p><strong>LLM Masterclass</strong> | April 2026 <span class="participants-note">(for participants only)</span></p>
+<div id="griffith-form" class="password-form">
+<p><input type="password" id="griffith-password" placeholder="Enter password"> <button class="btn-unlock" onclick="checkPassword()">Unlock</button></p>
+</div>
+<div id="griffith-error" class="password-error">
+Incorrect password
+</div>
+<div id="griffith-downloads" class="download-links">
+<p><a href="brisbane/Preparations_LLM_Masterclass.pdf" class="btn btn-primary" download="Preparations_LLM_Masterclass.pdf">Preparation Guide (PDF)</a> <a href="../sharezone/brisbane/quallmer_tutorial.html" class="btn btn-primary" download="quallmer_tutorial.qmd">Tutorial (QMD)</a> <a href="../sharezone/brisbane/quallmer_slides.html" class="btn btn-primary" download="quallmer_slides.qmd">Slides (QMD)</a></p>
+</div>
+<script>
+function checkPassword() {
+  var password = document.getElementById('griffith-password').value;
+  var downloads = document.getElementById('griffith-downloads');
+  var error = document.getElementById('griffith-error');
+  var form = document.getElementById('griffith-form');
+
+  if (password === 'quallmer') {
+    downloads.classList.add('visible');
+    form.style.display = 'none';
+    error.classList.remove('visible');
+  } else {
+    error.classList.add('visible');
+  }
+}
+
+document.getElementById('griffith-password').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    checkPassword();
+  }
+});
+</script>
+</section>
+</div>
 </div>
 <hr>
 </section>

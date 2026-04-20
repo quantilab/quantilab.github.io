@@ -375,7 +375,7 @@
     "href": "sharezone/index.html",
     "title": "Sharezone",
     "section": "",
-    "text": "Download slides, tutorials, and code from our QuantLunch sessions.\n\n\n2026\n\n\n\nAnalysing Qualitative Data with LLMs\n31 Mar 2026 | Dr. Seraphine F. Maerz\nView Slides\n\n\n\n\n\n\nQuallmer Tutorial\nHands-on: Analyzing Political Speeches with LLMs\nView Tutorial Download QMD\n\n\n\n\n\n\n\nArchive (2024-2025)\nLooking for older session materials? Find slides and resources from previous years on our GitHub repository.\nBrowse Archive on GitHub\n\n\n\nContribute\nHave resources to share? Open an issue or reach out to Seraphine Maerz."
+    "text": "Download slides, tutorials, and code from our QuantLunch sessions.\n\n\n2026\n\n\n\nAnalysing Qualitative Data with LLMs\n31 Mar 2026 | Dr. Seraphine F. Maerz\nView Slides\n\n\n\n\n\n\nQuallmer Tutorial\nHands-on: Analyzing Political Speeches with LLMs\nView Tutorial Download QMD\n\n\n\n\n\nWorkshop at Griffith\nLLM Masterclass | April 2026 (for participants only)\n\n Unlock\n\n\nIncorrect password\n\n\nPreparation Guide (PDF) Tutorial (QMD) Slides (QMD)\n\n\n\n\n\n\n\n\nArchive (2024-2025)\nLooking for older session materials? Find slides and resources from previous years on our GitHub repository.\nBrowse Archive on GitHub\n\n\n\nContribute\nHave resources to share? Open an issue or reach out to Seraphine Maerz."
   },
   {
     "objectID": "sharezone/quallmer_slides.html#about-this-workshop",
@@ -614,5 +614,334 @@
     "title": "Analysing qualitative data with LLMs",
     "section": "Next QuantLab on April 28, 12-1pm",
     "text": "Next QuantLab on April 28, 12-1pm\nUpgrading Policy / Documentation Analysis with AI: Learn how to extract and process information from large policy databases efficiently using AI\nwith Dr. Jan Kabatek from the Melbourne Institute\nStay tuned for more upcoming sessions of our “AI for Social Science” series:\nquantilab.github.io\nAll welcome!"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html",
+    "href": "sharezone/brisbane/quallmer_slides.html",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "",
+    "text": "Goals:\n\nUnderstand basics of LLM-based text analysis\nLearn the core workflow of the quallmer tool (5 steps)\nReplicate a real research example\nStart using quallmer for your own projects\nKnow how to validate and document your analysis\n\n\n\n\n\n\n\nMaterials\n\n\n\nDetailed documentation of the tool: quallmer.github.io/quallmer\nSlides and tutorial available on QuantLab website: quantilab.github.io"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#about-this-workshop",
+    "href": "sharezone/brisbane/quallmer_slides.html#about-this-workshop",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "",
+    "text": "Goals:\n\nUnderstand basics of LLM-based text analysis\nLearn the core workflow of the quallmer tool (5 steps)\nReplicate a real research example\nStart using quallmer for your own projects\nKnow how to validate and document your analysis\n\n\n\n\n\n\n\nMaterials\n\n\n\nDetailed documentation of the tool: quallmer.github.io/quallmer\nSlides and tutorial available on QuantLab website: quantilab.github.io"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#about-me",
+    "href": "sharezone/brisbane/quallmer_slides.html#about-me",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "About Me",
+    "text": "About Me\n\nSenior Lecturer in Political Science (Research Methods) at University of Melbourne\nResearch: Democracy, authoritarianism, language of political leaders\nCo-founder of QuantLab\nDeveloper of quallmer (with Ken Benoit)\n\nMotivation: Fight for democracy, making quantitative methods more accessible\nWebsite: seraphinem.github.io\nWorkshops on instats on AI-assisted text analysis and fine-tuning LLMs"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#llms-as-qualitative-analysis-tools-recent-contributions",
+    "href": "sharezone/brisbane/quallmer_slides.html#llms-as-qualitative-analysis-tools-recent-contributions",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "LLMs as Qualitative Analysis Tools: Recent Contributions",
+    "text": "LLMs as Qualitative Analysis Tools: Recent Contributions\nA growing body of research demonstrates LLMs’ potential for qualitative text analysis:\n\nBenoit et al. (2026): Using LLMs to analyze political texts through natural language understanding. American Journal of Political Science. LLM-generated party position estimates correlate highly with expert ratings – scalable alternative to human coders.\nHalterman and Keith (2025): Codebook LLMs: Evaluating LLMs as measurement tools for political science concepts. Political Analysis. Systematic evaluation of LLMs for coding political science concepts with codebook guidance.\nHayes (2025): “Conversing” with qualitative data. International Journal of Qualitative Methods. LLMs enable researchers to explore qualitative data in a conversational way.\n\n. . .\n\n\n\n\n\n\nEmerging Consensus\n\n\n\nLLMs can complement (not replace!) traditional methods – but require validation, transparency, and methodological rigor."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#the-quant-qual-dilemma",
+    "href": "sharezone/brisbane/quallmer_slides.html#the-quant-qual-dilemma",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "The Quant-Qual Dilemma",
+    "text": "The Quant-Qual Dilemma\n\n\nQuantitative\n\nLarge N, generalizability\nReplicable & transparent\nStatistical rigor\n\nBut: Lacks depth, context, nuance\n\nQualitative\n\nRich detail & context\nCaptures complexity\nDiscovers unexpected patterns\n\nBut: Small N, labor-intensive, harder to generalize\n\n\n. . .\n\n\n\n\n\n\nLLMs as a Bridge?\n\n\n\nLLMs could combine scale & replicability with contextual understanding — but only if:\n\nResults are validated against human judgment\nThe process is transparent and documented\nWe maintain audit trails for rigor and replicability\n\n\n\nquallmer was developed with this vision — grounded in established insights from qualitative research methodology."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#quality-in-qualitative-research",
+    "href": "sharezone/brisbane/quallmer_slides.html#quality-in-qualitative-research",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Quality in Qualitative Research",
+    "text": "Quality in Qualitative Research\n\n\n\n\n\nLincoln & Guba’s (1985) trustworthiness criteria and the importance of audit trails for transparency and rigor in qualitative research, Seale, C. (1999). Guiding ideals. In The Quality of Qualitative Research (pp. 32-50). SAGE Publications Ltd.\n\n\n\n\nLincoln, Y. S., & Guba, E. G. (1985). Naturalistic Inquiry. Sage."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#pre-llm-text-analysis",
+    "href": "sharezone/brisbane/quallmer_slides.html#pre-llm-text-analysis",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Pre-LLM Text Analysis",
+    "text": "Pre-LLM Text Analysis\n\n\n\n\n\n\nflowchart TB\n    A[Corpus of documents] --&gt; B[Document-feature matrix&lt;br&gt;'Bag of Words']\n    B --&gt; C[Supervised&lt;br&gt;known categories]\n    B --&gt; D[Unsupervised&lt;br&gt;unknown categories]\n    C --&gt; E[Dictionary &&lt;br&gt;Sentiment]\n    C --&gt; F[Wordscores &&lt;br&gt;Classifiers]\n    D --&gt; G[Topic Models]\n    D --&gt; H[Wordfish]\n\n    B --&gt; I[Word Embeddings&lt;br&gt;Word2Vec, GloVe]\n    I -.-&gt; J[Transformers&lt;br&gt;Attention mechanism]\n    J -.-&gt; K[Large Language&lt;br&gt;Models]\n\n    style A fill:#b8d4e8,stroke:#333\n    style B fill:#b8d4e8,stroke:#333\n    style C fill:#b8d4e8,stroke:#333\n    style D fill:#b8d4e8,stroke:#333\n    style E fill:#b8d4e8,stroke:#333\n    style F fill:#b8d4e8,stroke:#333\n    style G fill:#b8d4e8,stroke:#333\n    style H fill:#b8d4e8,stroke:#333\n    style I fill:#b8d4e8,stroke:#333\n    style J fill:#f0e68c,stroke:#333\n    style K fill:#f0e68c,stroke:#333"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#pre-llm-vs.-llm-approaches",
+    "href": "sharezone/brisbane/quallmer_slides.html#pre-llm-vs.-llm-approaches",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Pre-LLM vs. LLM Approaches",
+    "text": "Pre-LLM vs. LLM Approaches\n\n\nTraditional:\n\nDictionary methods\nTopic models\nSupervised learning\n\n\nLLM-based:\n\nZero-shot classification\nContext-aware\nCan explain reasoning\n\n\n\nAll (text) models are wrong – but some are useful!"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#why-use-llms-for-research",
+    "href": "sharezone/brisbane/quallmer_slides.html#why-use-llms-for-research",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Why Use LLMs for Research?",
+    "text": "Why Use LLMs for Research?\n\n\n\nChallenge\nTraditional\nLLM-Based\n\n\n\n\nContext\nLimited\nStrong\n\n\nTraining data\nOften needed\nUsually not\n\n\nCost\nCan be high\nVariable (depends on API)\n\n\nNuance\nStruggles\nBetter\n\n\nReproducibility\nStrong\nNot 100%\n\n\n\n. . .\n\n\n\n\n\n\nImportant\n\n\n\nLLMs produce language – not truth! Validation is essential."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#data-security-ethical-considerations",
+    "href": "sharezone/brisbane/quallmer_slides.html#data-security-ethical-considerations",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Data Security & Ethical Considerations",
+    "text": "Data Security & Ethical Considerations\nKey concerns when using LLMs:\n\nPrivacy – Sensitive data uploaded to external servers (closed LLMs)\nReproducibility – Same prompts can give different responses\nBias & fairness – Models may reflect training data biases\nTransparency – Training data often unknown (closed LLMs)\nResource consumption – Environmental impact of large models\n\n. . .\nReminder: Use open-source LLMs for sensitive data; provide traceability; always validate!"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#existing-tools",
+    "href": "sharezone/brisbane/quallmer_slides.html#existing-tools",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Existing Tools",
+    "text": "Existing Tools\nProprietary QDA software (NVivo, MAXQDA, QDAMiner) have added AI-assisted coding, but:\n\nGUI-only – No code-based workflow, analyses cannot be executed as code\nNot reproducible – Results cannot be straightforwardly replicated\nNo comprehensive audit trails – Partial documentation at best\nOpaque models – NVivo/MAXQDA don’t disclose which model powers their AI\nNot open-source\n\n. . .\nCustom LLM code gives flexibility, but researchers must build infrastructure from scratch:\n\nManaging codebooks\nTracking provenance\nComputing reliability metrics\nDocumenting workflows\n\nThis can distract from substantive research questions."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#working-with-llms-in-r",
+    "href": "sharezone/brisbane/quallmer_slides.html#working-with-llms-in-r",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Working with LLMs in R",
+    "text": "Working with LLMs in R\nGeneral-purpose R packages for LLM access:\n\nellmer (Wickham et al., 2025)\nollamar (Lin & Safi, 2025)\nrollama (Gruber & Weber, 2024)\n\nFlexible LLM interfaces – but no qualitative methodology / text analysis support.\n. . .\nText analysis packages:\n\nquanteda (Benoit et al., 2018) – quantitative text analysis, not AI-assisted qualitative coding\n\n. . .\n\n\n\n\n\n\nThe Gap\n\n\n\nNo existing tool addresses the specific methodological requirements of trustworthy qualitative research with LLMs."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#what-is-quallmer",
+    "href": "sharezone/brisbane/quallmer_slides.html#what-is-quallmer",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "What is quallmer?",
+    "text": "What is quallmer?\n\n\n\n\n\nAn R package that enables researchers to apply LLM-assisted qualitative coding while maintaining the rigorous standards of transparency and traceability essential to qualitative research.\n. . .\nKey features:\n\nWorks with texts, images, PDFs, audio, and tabular data\nSupports open-source and proprietary LLMs (OpenAI, Anthropic, Hugging Face, etc.)\nBuilt on the ellmer package (Wickham et al., 2025)\nCo-developed by Seraphine Maerz and Kenneth Benoit\nAvailable on CRAN: install.packages(\"quallmer\")"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#the-quallmer-philosophy",
+    "href": "sharezone/brisbane/quallmer_slides.html#the-quallmer-philosophy",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "The quallmer Philosophy",
+    "text": "The quallmer Philosophy\n\n\nSimplicity & Accessibility\n\nMinimal code required\nClear, intuitive workflow\nDesigned for newcomers to R\nComprehensive tutorials and documentation\n\n\nRigor & Transparency\n\nBuilt-in validation tools\nAutomatic audit trails\nFull traceability of decisions\nReproducible analyses\n\n\n\n. . .\n\n\n\n\n\n\nGetting Started\n\n\n\nStep-by-step tutorials available at quallmer.github.io/quallmer"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#the-5-step-workflow",
+    "href": "sharezone/brisbane/quallmer_slides.html#the-5-step-workflow",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "The 5-Step Workflow",
+    "text": "The 5-Step Workflow\n\n\n\n\n\n\n\n\nStep\nFunction(s)\nPurpose\n\n\n\n\n1. Define codebook\nqlm_codebook()\nCreate reusable coding schemes with instructions and structured output schema\n\n\n2. Code data\nqlm_code()\nApply codebook to texts, images, PDFs, audio, or tabular data using any supported LLM\n\n\n3. Replicate\nqlm_replicate()\nRe-run coding with different models or parameter settings, preserving provenance chains\n\n\n4. Compare & validate\nqlm_compare(), qlm_validate()\nCompute inter-rater reliability metrics; benchmark against human-coded gold standards\n\n\n5. Audit trail\nqlm_trail()\nGenerate complete audit documentation and executable replication report"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#the-research-question",
+    "href": "sharezone/brisbane/quallmer_slides.html#the-research-question",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "The Research Question",
+    "text": "The Research Question\nOriginal Study: Maerz & Schneider (2020), Quality & Quantity\n\nCorpus of 4,740 speeches by 40 heads of government in 27 countries\nFinding: Autocratic leaders use more illiberal language; some democratic leaders too (correlation with backsliding)\n\n. . .\nGoal: Replicate using LLMs instead of dictionary/topic model approach\n\nCan LLMs identify liberal-illiberal rhetoric?\nDo they correlate with human/dictionary codings?"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#step-1-define-the-codebook",
+    "href": "sharezone/brisbane/quallmer_slides.html#step-1-define-the-codebook",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Step 1: Define the Codebook",
+    "text": "Step 1: Define the Codebook\n\nlibrary(quallmer)\n\ncodebook_ideology &lt;- qlm_codebook(\n  name = \"Liberal-illiberal rhetoric\",\n  instructions = \"Analyze the rhetorical style of this political speech.\n    ILLIBERAL rhetoric (negative scores): nationalism, paternalism, traditionalism.\n    LIBERAL rhetoric (positive scores): individual rights, tolerance, civil liberties.\n    Score 0 = neutral/mixed.\",\n  schema = type_object(\n    score = type_integer(\"Score from -10 (illiberal) to +10 (liberal)\"),\n    explanation = type_string(\"Brief explanation of the score\")\n  )\n)\n\nThe schema defines the structured output – here, the LLM returns both a score and an explanation."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#schema-options",
+    "href": "sharezone/brisbane/quallmer_slides.html#schema-options",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Schema Options",
+    "text": "Schema Options\nThe schema defines what the LLM returns:\n\n\n\n\n\n\n\n\nType\nUse for\nExample\n\n\n\n\ntype_integer()\nFixed categories\nc(\"pos\", \"neg\", \"neutral\")\n\n\ntype_string()\nText/explanations\n\"Brief explanation\"\n\n\ntype_number()\nNumber scores\n-10 to +10\n\n\ntype_boolean()\nYes/no questions\nTRUE/FALSE\n\n\ntype_array()\nLists of items\nPersons, relationships, things, etc.\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe schema is flexible – you can ask for multiple fields and also nest objects for more complex outputs – it can be nicely tailored to your research question. Think carefully about what you want to get back from the LLM, the schema will guide the response format and content!"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#step-2-code-the-data",
+    "href": "sharezone/brisbane/quallmer_slides.html#step-2-code-the-data",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Step 2: Code the Data",
+    "text": "Step 2: Code the Data\n\ncoded_speeches &lt;- qlm_code(\n  speech_corpus,                    # character vector or quanteda corpus\n  codebook = codebook_ideology,     # qlm_codebook object\n  model = \"openai/gpt-4o-mini\",     # provider and model\n  name = \"ideology_coding_run1\"     # user-assigned name\n)\n\nReturns a qlm_coded object with:\n\nCoding results (score, explanation)\nFull metadata (timestamps, model identifiers, codebook used)"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#step-3-replicate",
+    "href": "sharezone/brisbane/quallmer_slides.html#step-3-replicate",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Step 3: Replicate",
+    "text": "Step 3: Replicate\n\n# Replicate with a different model\ncoded_claude &lt;- qlm_replicate(coded_speeches, model = \"anthropic/claude-3-5-sonnet\")\n\n# Or with different parameter settings\ncoded_temp07 &lt;- qlm_replicate(coded_speeches, temperature = 0.7)\n\nProvenance chains link replicated results to their parent analyses."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#step-4-compare-validate",
+    "href": "sharezone/brisbane/quallmer_slides.html#step-4-compare-validate",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Step 4: Compare & Validate",
+    "text": "Step 4: Compare & Validate\n\n# Compare multiple LLM runs (inter-rater reliability)\ncomparison &lt;- qlm_compare(coded_speeches, coded_claude, by = \"score\", level = \"interval\")\n\n# Validate against human-coded gold standard\nvalidation &lt;- qlm_validate(coded_speeches, gold_standard, by = \"score\", level = \"interval\")\n\nMetrics available:\n\nKrippendorff’s alpha, Cohen’s kappa, Fleiss’ kappa\nAccuracy, precision, recall, F1 scores\n\nFor manual review and spot-checking, use the companion quallmer.app Shiny application – see tutorials for details."
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#results-llm-vs.-dictionary-scores",
+    "href": "sharezone/brisbane/quallmer_slides.html#results-llm-vs.-dictionary-scores",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Results: LLM vs. Dictionary Scores",
+    "text": "Results: LLM vs. Dictionary Scores\n\n\n\n\n\nClick to enlarge\n\n\n\nLLM advantages:\n\nReplicates dictionary results fast and cost-effectively\nProvides explanations for each score\nEnables cross-model validation"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#step-5-audit-trail",
+    "href": "sharezone/brisbane/quallmer_slides.html#step-5-audit-trail",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Step 5: Audit Trail",
+    "text": "Step 5: Audit Trail\n\nqlm_trail(coded_speeches, path = \"replication_materials\")\n\n# Creates:\n# - replication_materials.rds  (R object; complete trail data)\n# - replication_materials.qmd  (executable Quarto replication report)\n\nFollowing Lincoln & Guba (1985), the audit trail includes:\n\nInstrument development (codebook definition)\nProcess notes & decisions (model parameters, timestamps)\nParent-child relationships across analyses\nComplete replication code"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#validation-is-key",
+    "href": "sharezone/brisbane/quallmer_slides.html#validation-is-key",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Validation is Key!",
+    "text": "Validation is Key!\nThree types:\n\nGold standard – Compare to human codings\nIntercoder reliability – Compare multiple LLMs\nManual review – Spot-check outputs with quallmer.app\n\n\n\n\n\n\n\nquallmer.app\n\n\n\nInteractive Shiny app for annotation & validation.\ninstall.packages(\"quallmer.app\")\nquallmer.app::qlm_app()"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#open-vs.-closed-llms",
+    "href": "sharezone/brisbane/quallmer_slides.html#open-vs.-closed-llms",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Open vs. Closed LLMs",
+    "text": "Open vs. Closed LLMs\n\n\nClosed (OpenAI, Claude)\n\nHigher performance\nUser-friendly\nPrivacy concerns\n\n\nOpen (Llama, Ollama)\n\nFull control\nBetter for sensitive data\nMore reproducible, fine-tuning options\n\n\n\nquallmer supports both!"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#tips-for-good-codebooks",
+    "href": "sharezone/brisbane/quallmer_slides.html#tips-for-good-codebooks",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Tips for Good Codebooks",
+    "text": "Tips for Good Codebooks\n\nBe specific – Define categories clearly\nProvide examples – Show what each category looks like\nUse scales wisely – Ordinal vs. categorical\nInclude explanation – See the LLM’s reasoning\nIterate – Test and refine"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_slides.html#questions-break",
+    "href": "sharezone/brisbane/quallmer_slides.html#questions-break",
+    "title": "Introduction to AI-assisted Text Analysis with quallmer",
+    "section": "Questions? Break?",
+    "text": "Questions? Break?\n\n\n\n\n\nComing up next:\n\nHands-on tutorial\nReplicating a real research example\nStarting your own project with quallmer\n\nWere you able to prepare for the tutorial? (Installing R/RStudio, Ollama, openai API key?)\n\nTakes 10-15 minutes to set up if you haven’t already – instructions available at QuantLab website: quantilab.github.io / Sharezone"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#install-required-packages",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#install-required-packages",
+    "title": "Hands-on Tutorial",
+    "section": "Install Required Packages",
+    "text": "Install Required Packages\n\n# Install quallmer from CRAN\ninstall.packages(\"quallmer\")\n\n# Other packages we'll use\ninstall.packages(\"quanteda\")   # For sample corpus\ninstall.packages(\"dplyr\")      # For data manipulation"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#load-packages",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#load-packages",
+    "title": "Hands-on Tutorial",
+    "section": "Load Packages",
+    "text": "Load Packages\n\nlibrary(quallmer)\nlibrary(quanteda)\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#set-up-your-api-key",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#set-up-your-api-key",
+    "title": "Hands-on Tutorial",
+    "section": "Set Up Your API Key",
+    "text": "Set Up Your API Key\n\n\n\n\n\n\nAPI Key Required\n\n\n\nYou need an OpenAI API key to run this tutorial. Get one at platform.openai.com.\n\n\n\n# Option 1: Set in your R session\nSys.setenv(OPENAI_API_KEY = \"your-api-key-here\")\n\n# Option 2 (recommended): Add to your .Renviron file\n# Run: usethis::edit_r_environ()\n# Add: OPENAI_API_KEY=your-api-key-here"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#load-sample-data",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#load-sample-data",
+    "title": "Hands-on Tutorial",
+    "section": "Load Sample Data",
+    "text": "Load Sample Data\nWe’ll use US inaugural speeches from the quanteda package – a small corpus perfect for learning.\n\n# Load the five most recent inaugural speeches\ninaugural_texts &lt;- as.character(quanteda::data_corpus_inaugural[56:60])\nnames(inaugural_texts) &lt;- names(quanteda::data_corpus_inaugural[56:60])\n\n# Check what we have\nnames(inaugural_texts)\n# [1] \"2009-Obama\" \"2013-Obama\" \"2017-Trump\" \"2021-Biden\" \"2025-Trump\"\n\n# Preview one speech\nsubstr(inaugural_texts[1], 1, 300)"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#the-qlm_codebook-function",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#the-qlm_codebook-function",
+    "title": "Hands-on Tutorial",
+    "section": "The qlm_codebook() Function",
+    "text": "The qlm_codebook() Function\n\n# Create the codebook\nideology_codebook &lt;- qlm_codebook(\n  name = \"Ideological Scaling\",\n\n  role = \"You are an expert political scientist performing ideological text scaling.\",\n\n  instructions = \"Read each text carefully. Place the text on a -5 to +5 scale\n    for the inclusive-exclusive ideological dimension.\n\n    INCLUSIVE language (-5): Emphasizes equal rights, diversity, pluralism,\n    and protection of minorities.\n\n    EXCLUSIVE language (+5): Emphasizes exclusion of groups, national homogeneity,\n    and restricting rights.\n\n    Score 0 = neutral or mixed rhetoric.\",\n\n  schema = type_object(\n    score = type_integer(\n      \"Ideological position (-5 = inclusive, +5 = exclusive)\"\n    ),\n    explanation = type_string(\n      \"Brief justification for the assigned score, referring to specific text elements\"\n    )\n  )\n)"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#understanding-the-components",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#understanding-the-components",
+    "title": "Hands-on Tutorial",
+    "section": "Understanding the Components",
+    "text": "Understanding the Components\n\n\n\n\n\n\n\n\nComponent\nPurpose\nOur Example\n\n\n\n\nname\nIdentifies the codebook\n“Ideological Scaling”\n\n\nrole\nSets the LLM’s perspective\n“Expert political scientist”\n\n\ninstructions\nTells the LLM what to do\nDimension definition + scoring criteria\n\n\nschema\nDefines output format\nScore (-5 to +5) + explanation\n\n\n\n\n\n\n\n\n\nTips for Good Codebooks\n\n\n\n\nBe specific – Define categories and scales clearly\nProvide context – Explain what each score means\nInclude explanations – Always ask for reasoning (helps you validate!)\nIterate – Test with a few examples and refine"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#schema-options",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#schema-options",
+    "title": "Hands-on Tutorial",
+    "section": "Schema Options",
+    "text": "Schema Options\nThe schema defines what the LLM returns (see ellmer type specifications):\n\n\n\n\n\n\n\n\nType\nUse Case\nExample\n\n\n\n\ntype_boolean()\nYes/no questions\nTRUE/FALSE\n\n\ntype_integer()\nWhole number scores\nScore from -5 to +5\n\n\ntype_number()\nDecimal values\nConfidence score 0.0 to 1.0\n\n\ntype_string()\nText/explanations\n“Brief justification”\n\n\ntype_enum()\nFixed categories\nc(“positive”, “negative”, “neutral”)\n\n\ntype_array()\nLists of items\nNamed entities, themes\n\n\ntype_object()\nStructured data\nCombine multiple fields"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#run-the-analysis",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#run-the-analysis",
+    "title": "Hands-on Tutorial",
+    "section": "Run the Analysis",
+    "text": "Run the Analysis\n\n# Apply the codebook to inaugural speeches\ncoded_run1 &lt;- qlm_code(\n  inaugural_texts,\n  codebook = ideology_codebook,\n  model = \"openai/gpt-4o-mini\",\n  name = \"run1_ideology\"\n)\n\n# View results\ncoded_run1"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#understanding-the-output",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#understanding-the-output",
+    "title": "Hands-on Tutorial",
+    "section": "Understanding the Output",
+    "text": "Understanding the Output\nThe result is a qlm_coded object containing:\n\nCoding results: Score and explanation for each text\nMetadata: Model used, timestamps, codebook reference\nProvenance: Links to parent analyses (for replication)\n\n\n# View as a data frame\nas.data.frame(coded_run1)\n\n# Access specific columns\ncoded_run1$score\ncoded_run1$explanation\n\n\n\n\n\n\n\nYour Turn\n\n\n\n\nRun the code above\nLook at the scores – do they match your intuition?\nRead the explanations – are they reasonable?"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#same-settings-test-reproducibility",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#same-settings-test-reproducibility",
+    "title": "Hands-on Tutorial",
+    "section": "Same Settings (Test Reproducibility)",
+    "text": "Same Settings (Test Reproducibility)\n\n# Replicate with identical settings\ncoded_run2 &lt;- qlm_replicate(\n  coded_run1,\n  name = \"run2_same_settings\"\n)\n\ncoded_run2"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#different-temperature-test-sensitivity",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#different-temperature-test-sensitivity",
+    "title": "Hands-on Tutorial",
+    "section": "Different Temperature (Test Sensitivity)",
+    "text": "Different Temperature (Test Sensitivity)\n\n# Higher temperature = more variation\ncoded_run3 &lt;- qlm_replicate(\n  coded_run1,\n  params = params(temperature = 0.9),\n  name = \"run3_high_temp\"\n)\n\ncoded_run3"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#different-model-test-cross-model-consistency",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#different-model-test-cross-model-consistency",
+    "title": "Hands-on Tutorial",
+    "section": "Different Model (Test Cross-Model Consistency)",
+    "text": "Different Model (Test Cross-Model Consistency)\n\n\n\n\n\n\nUsing Ollama for Local LLMs\n\n\n\nTo use Ollama models, first install Ollama from ollama.com, then pull the model in R:\ninstall.packages(\"rollama\")\nrollama::pull_model(\"llama3.2:1b\")\nOllama runs locally – no API key needed, and your data stays on your machine.\n\n\n\n# Try a local open-source model via Ollama\ncoded_run4 &lt;- qlm_replicate(\n  coded_run1,\n  model = \"ollama/llama3.2:1b\",\n  name = \"run4_llama\"\n)\n\ncoded_run4\n\n\n\n\n\n\n\nWhy Replicate?\n\n\n\n\nSame settings → Tests LLM consistency\nDifferent temperature → Tests sensitivity to randomness\nDifferent models → Tests robustness across LLMs\nMultiple runs → Builds confidence in your results"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#intercoder-reliability-with-qlm_compare",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#intercoder-reliability-with-qlm_compare",
+    "title": "Hands-on Tutorial",
+    "section": "Intercoder Reliability with qlm_compare()",
+    "text": "Intercoder Reliability with qlm_compare()\nCompare multiple LLM runs to measure agreement:\n\n# Compare all four runs\ncomparison &lt;- qlm_compare(\n  coded_run1,\n  coded_run2,\n  coded_run3,\n  coded_run4,\n  by = \"score\",\n  level = \"ordinal\"\n)\n\n# View results\nprint(comparison)"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#understanding-the-metrics",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#understanding-the-metrics",
+    "title": "Hands-on Tutorial",
+    "section": "Understanding the Metrics",
+    "text": "Understanding the Metrics\n\n\n\nMetric\nWhat It Measures\nGood Value\n\n\n\n\nKrippendorff’s alpha\nOverall agreement\n&gt; 0.80\n\n\nFleiss’ kappa\nMulti-rater agreement\n&gt; 0.60\n\n\nPercent agreement\nSimple agreement\n&gt; 80%\n\n\n\n\n\n\n\n\n\nInterpreting Reliability\n\n\n\n\n\n\nValue\nAgreement Level\n\n\n\n\n&lt; 0.40\nPoor\n\n\n0.40 - 0.60\nModerate\n\n\n0.60 - 0.80\nSubstantial\n\n\n&gt; 0.80\nAlmost perfect"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#gold-standard-validation-with-qlm_validate",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#gold-standard-validation-with-qlm_validate",
+    "title": "Hands-on Tutorial",
+    "section": "Gold Standard Validation with qlm_validate()",
+    "text": "Gold Standard Validation with qlm_validate()\nIf you have human-coded data, validate against it:\n\n# Example: Create a gold standard (normally from human coders)\ngold_scores &lt;- data.frame(\n  .id = names(inaugural_texts),\n  score = c(-3, -4, 4, -2, 1)  # Your human-coded scores\n)\ngold_standard &lt;- as_qlm_coded(gold_scores, name = \"human_gold\")\n\n# Validate LLM against gold standard\nvalidation &lt;- qlm_validate(\n  coded_run1,\n  gold = gold_standard,\n  by = \"score\",\n  level = \"ordinal\"\n)\n\nprint(validation)"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#manual-review-with-quallmer.app",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#manual-review-with-quallmer.app",
+    "title": "Hands-on Tutorial",
+    "section": "Manual Review with quallmer.app",
+    "text": "Manual Review with quallmer.app\nFor hands-on validation, use the interactive Shiny app:\n\n# Install and launch the app\ninstall.packages(\"quallmer.app\")\nlibrary(quallmer.app)\nqlm_app()\n\nThe app allows you to:\n\nReview LLM-generated scores and explanations\nMark annotations as valid/invalid\nAdd your own codes for comparison\nCalculate agreement metrics"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#generate-documentation",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#generate-documentation",
+    "title": "Hands-on Tutorial",
+    "section": "Generate Documentation",
+    "text": "Generate Documentation\n\n# Create audit trail from all runs\nqlm_trail(\n  coded_run1,\n  coded_run2,\n  coded_run3,\n  coded_run4,\n  path = \"ideology_analysis\"\n)\n\nThis creates two files:\n\nideology_analysis.rds – Complete R object (all data, reloadable)\nideology_analysis.qmd – Quarto report (human-readable documentation)"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#whats-in-the-audit-trail",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#whats-in-the-audit-trail",
+    "title": "Hands-on Tutorial",
+    "section": "What’s in the Audit Trail?",
+    "text": "What’s in the Audit Trail?\nFollowing Lincoln & Guba’s (1985) trustworthiness framework:\n\n\n\nComponent\nWhat It Documents\n\n\n\n\nCodebook\nExact instructions given to the LLM\n\n\nModel settings\nModel name, temperature, parameters\n\n\nAll inputs\nThe texts that were coded\n\n\nAll outputs\nScores and explanations\n\n\nTimestamps\nWhen each analysis was run\n\n\nProvenance\nParent-child relationships between runs\n\n\nSession info\nPackage versions, R environment"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#exercise-1-create-your-own-codebook",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#exercise-1-create-your-own-codebook",
+    "title": "Hands-on Tutorial",
+    "section": "Exercise 1: Create Your Own Codebook",
+    "text": "Exercise 1: Create Your Own Codebook\nTry a different ideological dimension:\n\n# Example: Populist rhetoric\npopulist_codebook &lt;- qlm_codebook(\n  name = \"Populist Rhetoric\",\n  role = \"You are a political scientist analyzing populist language.\",\n  instructions = \"Score the text on populist rhetoric (0 = not populist, 5 = highly populist).\n    Populist rhetoric includes: anti-elite sentiment, appeals to 'the people',\n    us-vs-them framing, claims of representing the silent majority.\",\n  schema = type_object(\n    score = type_integer(\"Populism score from 0 to 5\"),\n    explanation = type_string(\"Brief justification\")\n  )\n)\n\n# Apply to your data\ncoded_populist &lt;- qlm_code(inaugural_texts, populist_codebook, model = \"openai/gpt-4o-mini\")"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html#exercise-2-full-workflow-practice",
+    "href": "sharezone/brisbane/quallmer_tutorial.html#exercise-2-full-workflow-practice",
+    "title": "Hands-on Tutorial",
+    "section": "Exercise 2: Full Workflow Practice",
+    "text": "Exercise 2: Full Workflow Practice\nRun the complete 5-step workflow on your own texts:\n\nCreate a codebook for your research question\nCode your data with qlm_code()\nReplicate with at least 2 different settings\nCompare runs with qlm_compare()\nGenerate an audit trail"
   }
 ]

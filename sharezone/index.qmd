@@ -33,6 +33,49 @@ Download slides, tutorials, and code from our QuantLunch sessions.
 :::
 :::
 
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .password-protected}
+### Workshop at Griffith
+**LLM Masterclass** | April 2026
+<span class="participants-note">(for participants only)</span>
+
+<div class="password-form" id="griffith-form">
+  <input type="password" id="griffith-password" placeholder="Enter password">
+  <button class="btn-unlock" onclick="checkPassword()">Unlock</button>
+</div>
+<div class="password-error" id="griffith-error">Incorrect password</div>
+
+<div class="download-links" id="griffith-downloads">
+[Preparation Guide (PDF)](brisbane/Preparations_LLM_Masterclass.pdf){.btn .btn-primary download="Preparations_LLM_Masterclass.pdf"}
+[Tutorial (QMD)](brisbane/quallmer_tutorial.qmd){.btn .btn-primary download="quallmer_tutorial.qmd"}
+[Slides (QMD)](brisbane/quallmer_slides.qmd){.btn .btn-primary download="quallmer_slides.qmd"}
+</div>
+
+<script>
+function checkPassword() {
+  var password = document.getElementById('griffith-password').value;
+  var downloads = document.getElementById('griffith-downloads');
+  var error = document.getElementById('griffith-error');
+  var form = document.getElementById('griffith-form');
+
+  if (password === 'quallmer') {
+    downloads.classList.add('visible');
+    form.style.display = 'none';
+    error.classList.remove('visible');
+  } else {
+    error.classList.add('visible');
+  }
+}
+
+document.getElementById('griffith-password').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    checkPassword();
+  }
+});
+</script>
+:::
+:::
+
 :::
 
 ---
