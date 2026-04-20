@@ -375,7 +375,7 @@
     "href": "sharezone/index.html",
     "title": "Sharezone",
     "section": "",
-    "text": "Download slides, tutorials, and code from our QuantLunch sessions.\n\n\n2026\n\n\n\nAnalysing Qualitative Data with LLMs\n31 Mar 2026 | Dr. Seraphine F. Maerz\nView Slides\n\n\n\n\n\n\nQuallmer Tutorial\nHands-on: Analyzing Political Speeches with LLMs\nView Tutorial Download QMD\n\n\n\n\n\nWorkshop at Griffith\nLLM Masterclass | April 2026 (for participants only)\n\n Unlock\n\n\nIncorrect password\n\n\nPreparation Guide (PDF) Tutorial (QMD) View Slides\n\n\n\n\n\n\n\n\nArchive (2024-2025)\nLooking for older session materials? Find slides and resources from previous years on our GitHub repository.\nBrowse Archive on GitHub\n\n\n\nContribute\nHave resources to share? Open an issue or reach out to Seraphine Maerz."
+    "text": "Download slides, tutorials, and code from our QuantLunch sessions.\n\n\n2026\n\n\n\nAnalysing Qualitative Data with LLMs\n31 Mar 2026 | Dr. Seraphine F. Maerz\nView Slides\n\n\n\n\n\n\nQuallmer Tutorial\nHands-on: Analyzing Political Speeches with LLMs\nView Tutorial\n\n\n\n\n\nWorkshop at Griffith\nLLM Masterclass | April 2026 (for participants only)\n\n Unlock\n\n\nIncorrect password\n\n\nPreparation Guide (PDF) View Tutorial (QMD) View Slides\n\n\n\n\n\n\n\n\nArchive (2024-2025)\nLooking for older session materials? Find slides and resources from previous years on our GitHub repository.\nBrowse Archive on GitHub\n\n\n\nContribute\nHave resources to share? Open an issue or reach out to Seraphine Maerz."
   },
   {
     "objectID": "sharezone/quallmer_slides.html#about-this-workshop",
@@ -943,5 +943,19 @@
     "title": "Hands-on Tutorial",
     "section": "Exercise 2: Full Workflow Practice",
     "text": "Exercise 2: Full Workflow Practice\nRun the complete 5-step workflow on your own texts:\n\nCreate a codebook for your research question\nCode your data with qlm_code()\nReplicate with at least 2 different settings\nCompare runs with qlm_compare()\nGenerate an audit trail"
+  },
+  {
+    "objectID": "sharezone/quallmer_tutorial.html",
+    "href": "sharezone/quallmer_tutorial.html",
+    "title": "Hands-On Tutorial: Analyzing Political Speeches",
+    "section": "",
+    "text": "View source (.qmd) | Download source (.qmd)"
+  },
+  {
+    "objectID": "sharezone/brisbane/quallmer_tutorial.html",
+    "href": "sharezone/brisbane/quallmer_tutorial.html",
+    "title": "Hands-on Tutorial",
+    "section": "",
+    "text": "View source (.qmd) | Download source (.qmd)"
   }
 ]

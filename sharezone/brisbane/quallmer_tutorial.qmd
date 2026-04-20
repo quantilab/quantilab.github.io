@@ -15,6 +15,8 @@ format:
 
 ![](pics/logo.png){width=20%}
 
+<a href="https://raw.githubusercontent.com/quantilab/quantilab.github.io/main/sharezone/brisbane/quallmer_tutorial.qmd" download="quallmer_tutorial.qmd">Download the tutorial file (.qmd)</a>
+
 # Welcome!
 
 This tutorial walks you through the **complete quallmer workflow in 5 steps**, using ideology detection in political speeches as our running example.

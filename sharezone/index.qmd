@@ -29,7 +29,6 @@ Download slides, tutorials, and code from our QuantLunch sessions.
 **Hands-on:** Analyzing Political Speeches with LLMs
 
 [View Tutorial](quallmer_tutorial.html){.btn .btn-primary}
-[Download QMD](quallmer_tutorial.qmd){.btn .btn-outline-primary download="quallmer_tutorial.qmd"}
 :::
 :::
 
@@ -47,7 +46,7 @@ Download slides, tutorials, and code from our QuantLunch sessions.
 
 <div class="download-links" id="griffith-downloads">
 [Preparation Guide (PDF)](brisbane/Preparations_LLM_Masterclass.pdf){.btn .btn-primary download="Preparations_LLM_Masterclass.pdf"}
-[Tutorial (QMD)](brisbane/quallmer_tutorial.qmd){.btn .btn-primary download="quallmer_tutorial.qmd"}
+[View Tutorial (QMD)](brisbane/quallmer_tutorial.qmd){.btn .btn-primary}
 [View Slides](brisbane/quallmer_slides.html){.btn .btn-primary}
 </div>
 

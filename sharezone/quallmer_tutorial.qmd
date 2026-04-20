@@ -14,6 +14,8 @@ format:
 
 ![](pics/logo.png){width=20%}
 
+<a href="https://raw.githubusercontent.com/quantilab/quantilab.github.io/main/sharezone/quallmer_tutorial.qmd" download="quallmer_tutorial.qmd">Download the tutorial file (.qmd)</a>
+
 ## About This Tutorial
 
 This tutorial replicates the analysis from [Maerz & Schneider (2020)](https://link.springer.com/article/10.1007/s11135-019-00885-7), which examined liberal vs. illiberal rhetoric in political speeches. The original study used dictionary methods to analyze 4,740 speeches from 40 leaders across 27 countries.
