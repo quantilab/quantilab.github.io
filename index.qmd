@@ -27,20 +27,14 @@ We offer hands-on seminars where you can learn cutting-edge methods, [free onlin
 </div>
 :::
 
-# Schedule 2026 {#sec-schedule2026}
+# Events in 2026 {#sec-schedule2026}
 
-Our 2026 series focuses on **AI for Social Sciences**. We meet on the last TUESDAY of each month, 12:00–13:00, at the [Old Arts Atrium Meeting Room](https://maps.unimelb.edu.au/point?identifier=PAR;149;2;213). Some of our events are kindly sponsored by the [Melbourne Institute](https://melbourneinstitute.unimelb.edu.au/) with lunch provided. Please [RSVP](mailto:seraphine.maerz@unimelb.edu.au) to secure your spot.
 
 |   Date   | Topic | Presenter |
 |:--------:|:------|:----------|
 | 31/03/26 | [**Analysing Qualitative Data with Large Language Models (LLMs):**](sessions/QuantLunch1_26_new.pdf) From small, exploratory coding to large-scale yet in-depth qualitative analysis, with replicable workflows | [Dr. Seraphine F. Maerz](https://seraphinem.github.io/), SSPS |
-| 28/04/26 | **CANCELLED - Upgrading Policy / Documentation Analysis with AI:** Learn how to extract and process information from large policy databases efficiently using AI | [Dr. Jan Kabatek](https://www.jankabatek.com/), Melbourne Institute |
-| 26/05/26 | **Prototyping and Co-design with AI:** Learn the process of fast-iterations and co-design with AI as a moment of data collection | [Dr. Fabio Mattioli](https://findanexpert.unimelb.edu.au/profile/802134-fabio-mattioli), SSPS |
-| | **Semester Break** | |
-| 28/07/26 | **Upgrading Your Research Workflows with AI:** Learn how to Extract-Transform-Load (ETL) large qualitative data using AI for improved efficiency and effectiveness | [MDAP](https://www.unimelb.edu.au/mdap) (TBC) |
-| 25/08/26 | **Synthetic Data for Social Science Research:** Learn what synthetic data is, how closely they can represent the 'true' data and understand the ethical considerations | [Prof. Irma Mooi-Reci](https://irmamooireci.com/), SSPS |
-| 29/09/26 | **Creating Your Own Chatbot:** Learn how to set up your own Retrieve-Augment-Generate (RAG) Pipelines | [Taylor Ey](https://melbourneinstitute.unimelb.edu.au/staff/research/staff-listings/taylor-ey), Melbourne Institute |
-| 27/10/26 | **Forecasting with AI:** Learn how to use AI for forecasting social and political phenomena, understand the differences between traditional forecasting methods and AI-based approaches | [MDAP](https://www.unimelb.edu.au/mdap) (TBC) |
+
+More events will be added soon, so stay tuned!
 
 # Schedule 2025 {#sec-schedule2025}
 
