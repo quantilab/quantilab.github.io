@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Free tutorials on quantitative methods and computational techniques for social scientists. We warmly invite you to contribute to this section — please contact us if you would like to share your tutorials, tips, or suggestions.">
+<meta name="description" content="This page has moved. Tutorials are now part of the merged Sharezone &amp; Tutorials page.">
 
 <title>Online Tutorials – QuantLab</title>
 <style>
@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./profile.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,65 +66,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<meta http-equiv="refresh" content="0; url=sharezone/index.html#sec-tutorials">
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -159,16 +100,8 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
-<span class="menu-text">Tutorials</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./sharezone.html"> 
-<span class="menu-text">Sharezone</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://github.com/quantilab/sharezone/issues"> 
-<span class="menu-text">Contribute</span></a>
+    <a class="nav-link" href="./sharezone/index.html"> 
+<span class="menu-text">Tutorials, Webinars &amp; Sharezone</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/quantilab"> <i class="bi bi-github" role="img">
@@ -199,7 +132,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    <p>Free tutorials on quantitative methods and computational techniques for social scientists. We warmly invite you to contribute to this section — please <a href="mailto:seraphine.maerz@unimelb.edu.au">contact us</a> if you would like to share your tutorials, tips, or suggestions.</p>
+    This page has moved. Tutorials are now part of the merged Sharezone &amp; Tutorials page.
   </div>
 </div>
 
@@ -216,155 +149,11 @@ window.Quarto = {
 </header>
 
 
+<p>The tutorials page has moved. If you are not redirected automatically, please visit <a href="./sharezone/index.html#sec-tutorials">Sharezone &amp; Tutorials</a>.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="dGV4dC1hcy1kYXRhJTJDdGV4dC1hbmFseXNpcyUyQ0xMTSUyQ1IlMkNxdWFsbG1lciUyQ3F1YWxpdGF0aXZlJTIwY29kaW5n" data-listing-date-sort="1770123600000" data-listing-file-modified-sort="1773616963973" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="435">
-<a href="./blog/tutorial6/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/tutorial6/quallmer_logo.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Coding texts with LLMs using quallmer
-</h5>
-<div class="card-text listing-description">
-Introduction to the quallmer package for LLM-based qualitative coding in R - flexible codebooks, structured outputs, and transparent workflows.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Seraphine F. Maerz
-</div>
-<div class="listing-date">
-Feb 4, 2026
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bmV3cyUyQ3RleHQtYXMtZGF0YSUyQ3RleHQtYW5hbHlzaXMlMkNMTE0lMkNSJTJDcXVhbnRlZGEubGxtJTJDcXVhbnRlZGElMkNvcGVuQUklMkNPbGxhbWE=" data-listing-date-sort="1748872800000" data-listing-file-modified-sort="1773616963189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2090">
-<a href="./blog/tutorial5/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/tutorial5/quantedallm.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How to use quanteda.llm for text analysis in R
-</h5>
-<div class="card-text listing-description">
-Use the quanteda.llm package for LLM-powered text analysis - summarize, score, and validate large text corpora with OpenAI or Ollama.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Seraphine F. Maerz
-</div>
-<div class="listing-date">
-Jun 3, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bmV3cyUyQ3RleHQtYXMtZGF0YSUyQ3RleHQtYW5hbHlzaXMlMkNMTE0lMkNSJTJDcm9sbGFtYSUyQ09sbGFtYQ==" data-listing-date-sort="1737896400000" data-listing-file-modified-sort="1773616962437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1022">
-<a href="./blog/tutorial4/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/tutorial4/llm.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How to use an open-source LLM in R for text analysis tasks
-</h5>
-<div class="card-text listing-description">
-Get started with open-source LLMs for text analysis using Ollama and the rollama package in R - free, private, and locally stored.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Seraphine F. Maerz
-</div>
-<div class="listing-date">
-Jan 27, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="bmV3cyUyQ3BhcGVyJTJDdGVjaCUyQ2FjYWRlbWljJTJDd29ya2Zsb3clMkNSU3R1ZGlvJTJDUiUyQ0dpdCUyQ0dpdEh1YiUyQ3ZlcnNpb24lMjBjb250cm9s" data-listing-date-sort="1727877600000" data-listing-file-modified-sort="1773616960792" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="425">
-<a href="./blog/tutorial2/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/tutorial2/thumbnail.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How to use GitHub for collaborative RStudio projects
-</h5>
-<div class="card-text listing-description">
-A minimal 3-step guide to using GitHub for collaborative RStudio projects - share code, data, and work together on research papers.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Seraphine F. Maerz
-</div>
-<div class="listing-date">
-Oct 3, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="bmV3cyUyQ3BhcGVyJTJDdGVjaCUyQ3F1YXJ0byUyQ2FjYWRlbWljJTJDcGFuZG9jJTJDd29ya2Zsb3clMkNSJTIwTWFya2Rvd24=" data-listing-date-sort="1722693600000" data-listing-file-modified-sort="1773616961610" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1095">
-<a href="./blog/tutorial3/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/tutorial3/thumbnail.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How to use R Studio with Quarto to write nice papers ready for submission in whatever format
-</h5>
-<div class="card-text listing-description">
-Learn to create beautiful Quarto documents combining code, analysis, and narrative - output to PDF, Word, or HTML with ease.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Seraphine F. Maerz
-</div>
-<div class="listing-date">
-Aug 4, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="bmV3cyUyQ3dlYnNpdGUlMkN0ZWNoJTJDcXVhcnRvJTJDYWNhZGVtaWM=" data-listing-date-sort="1721484000000" data-listing-file-modified-sort="1773616959816" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="808">
-<a href="./blog/tutorial1/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/tutorial1/thumbnail.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How to code your own personal website with Quarto in less than 30 minutes and for free!
-</h5>
-<div class="card-text listing-description">
-Learn how to build and deploy your own personal website with Quarto and GitHub in less than 30 minutes - no previous experience required.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Seraphine F. Maerz
-</div>
-<div class="listing-date">
-Jul 21, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

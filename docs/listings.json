@@ -1,29 +1,13 @@
 [
   {
-    "listing": "/blog/tutorial6/index.html",
-    "items": []
-  },
-  {
-    "listing": "/blog/tutorial4/index.html",
-    "items": []
-  },
-  {
-    "listing": "/blog/tutorial2/index.html",
-    "items": []
-  },
-  {
-    "listing": "/blog.html",
+    "listing": "/seminars24/index.html",
     "items": [
-      "/blog/tutorial6/index.html",
-      "/blog/tutorial5/index.html",
-      "/blog/tutorial4/index.html",
-      "/blog/tutorial2/index.html",
-      "/blog/tutorial3/index.html",
-      "/blog/tutorial1/index.html"
+      "/seminars24/project_1/index.html",
+      "/seminars24/project_2/index.html"
     ]
   },
   {
-    "listing": "/blog/tutorial1/index.html",
+    "listing": "/blog/tutorial5/index.html",
     "items": []
   },
   {
@@ -31,14 +15,19 @@
     "items": []
   },
   {
-    "listing": "/blog/tutorial5/index.html",
+    "listing": "/blog/tutorial1/index.html",
     "items": []
   },
   {
-    "listing": "/seminars24/index.html",
-    "items": [
-      "/seminars24/project_1/index.html",
-      "/seminars24/project_2/index.html"
-    ]
+    "listing": "/blog/tutorial2/index.html",
+    "items": []
+  },
+  {
+    "listing": "/blog/tutorial4/index.html",
+    "items": []
+  },
+  {
+    "listing": "/blog/tutorial6/index.html",
+    "items": []
   }
 ]

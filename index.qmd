@@ -15,7 +15,7 @@ about:
 
 Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), QuantLab is an inclusive network that welcomes everyone — from students to established researchers — interested in learning about quantitative methods and computational techniques.
 
-We offer hands-on seminars where you can learn cutting-edge methods, [free online tutorials](blog.qmd) with step-by-step guides on data management and reproducible research, and a [sharezone](https://github.com/quantilab/sharezone/tree/main) with ready-to-use scripts in R, Stata, and Python. Most importantly, we provide a space to connect with fellow students and researchers, share ideas as well as knowledge, and collaborate.
+We offer hands-on seminars where you can learn cutting-edge methods, together with [free online tutorials and session materials in our Sharezone](sharezone/index.qmd) — step-by-step guides on data management, reproducible research, and ready-to-use scripts in R, Stata, and Python. Most importantly, we provide a space to connect with fellow students and researchers, share ideas as well as knowledge, and collaborate.
 
 :::
 
@@ -29,12 +29,27 @@ We offer hands-on seminars where you can learn cutting-edge methods, [free onlin
 
 # Events in 2026 {#sec-schedule2026}
 
+## AI in Research – Brown Bag Workshop Series
+
+A new collaboration between the [Melbourne Data Analytics Platform (MDAP)](https://www.unimelb.edu.au/mdap), **QuantLab**, and the **Community of AI in Research (CAIR)**. These monthly lunchtime workshops offer a relaxed, hands-on space to build confidence with AI in research — each session runs from 12–1pm at Melbourne Connect, with an optional drop-in until 1.30pm. Bring your lunch, your laptop, and your curiosity. Open to researchers at all levels and across all disciplines.
+
+**[Register and find full details via the MDAP announcement](https://www.unimelb.edu.au/mdap/news/introducing-ai-in-research-brown-bag-series!)** — see also the [series flyer](sessions/AI_BrownBag_2026.pdf).
+
+|   Date   | Topic | Presenter |
+|:--------:|:------|:----------|
+| 10/08/26 | [**Getting started with AI assistance for research:**](sessions/AI_BrownBag_2026.pdf) A hands-on introduction to using AI confidently in your research workflow. Manhari Room, Melbourne Connect | [Dr. Mel Mistica](https://www.unimelb.edu.au/mdap) (MDAP), [Dr. Seraphine F. Maerz](https://seraphinem.github.io/) (SSPS) |
+| 14/09/26 | [**Equipping AI agents with tools:**](sessions/AI_BrownBag_2026.pdf) A practical walkthrough of giving AI agents the tools they need to get research work done. Manhari Room, Melbourne Connect | [Dr. Daniel Russo-Batterham](https://findanexpert.unimelb.edu.au/profile/551741-daniel-russo-batterham) (MDAP) |
+| 12/10/26 | [**Working with synthetic data:**](sessions/AI_BrownBag_2026.pdf) Generating and using synthetic data for research — when it helps, when it hurts, and how to do it well. Room M13, Melbourne Connect | [Prof. Irma Mooi-Reci](https://irmamooireci.com/) (SSPS) |
+| 09/11/26 | [**How to build your own RAG:**](sessions/AI_BrownBag_2026.pdf) Build a retrieval-augmented generation pipeline from scratch and plug it into your own research materials. Room M01, Melbourne Connect | [Taylor Ey](https://melbourneinstitute.unimelb.edu.au/staff/research/staff-listings/taylor-ey) (Melbourne Institute) |
+| 14/12/26 | [**Analysing historical data with AI:**](sessions/AI_BrownBag_2026.pdf) Applying AI methods to historical sources — practical techniques and pitfalls. Manhari Room, Melbourne Connect | [Dr. David Goodman](https://arts.unimelb.edu.au/school-of-historical-and-philosophical-studies) (SHPS) |
+
+## Other 2026 events
 
 |   Date   | Topic | Presenter |
 |:--------:|:------|:----------|
 | 31/03/26 | [**Analysing Qualitative Data with Large Language Models (LLMs):**](sessions/QuantLunch1_26_new.pdf) From small, exploratory coding to large-scale yet in-depth qualitative analysis, with replicable workflows | [Dr. Seraphine F. Maerz](https://seraphinem.github.io/), SSPS |
 
-More events will be added soon, so stay tuned!
+More events will be added for 2027, stay tuned!
 
 # Schedule 2025 {#sec-schedule2025}
 

@@ -32,12 +32,8 @@ website:
       - text: "Schedule"
         href: index.qmd#sec-schedule2026
     right:
-      - text: "Tutorials"
-        href: blog.qmd
-      - text: "Sharezone"
+      - text: "Tutorials, Webinars & Sharezone"
         href: sharezone/index.qmd
-      - text: "Contribute"
-        href: https://github.com/quantilab/sharezone/issues
       - icon: github
         href: https://github.com/quantilab
 
