@@ -15,6 +15,12 @@ about:
 
 Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Science) and [Irma Mooi-Reci](https://irmamooireci.com/) (Sociology), QuantLab is an inclusive network that welcomes everyone — from students to established researchers — interested in learning about quantitative methods and computational techniques.
 
+**News:** QuantLab is transitioning into a **Tier 2 research group** at the Faculty of Arts, with [Michael Falk](https://findanexpert.unimelb.edu.au/profile/1043380-michael-falk) (Digital Studies) joining as stream leader and [René Rejón](https://findanexpert.unimelb.edu.au/profile/836491-rene-rejon) (Faculty of Arts) as Outreach and Impact Lead. Our work is organised into three research streams:
+
+- **Political Communication and Discourse Analysis** — led by [Seraphine F. Maerz](https://seraphinem.github.io)
+- **Computational Approaches to Workforce Mobility and Inequality** — led by [Irma Mooi-Reci](https://irmamooireci.com/)
+- **Computational Literary Studies** — led by [Michael Falk](https://findanexpert.unimelb.edu.au/profile/1043380-michael-falk)
+
 We offer hands-on seminars where you can learn cutting-edge methods, together with [free online tutorials and session materials in our Sharezone](sharezone/index.qmd) — step-by-step guides on data management, reproducible research, and ready-to-use scripts in R, Stata, and Python. Most importantly, we provide a space to connect with fellow students and researchers, share ideas as well as knowledge, and collaborate.
 
 :::
