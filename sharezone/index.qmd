@@ -7,6 +7,25 @@ Browse our free online tutorials and recorded webinars on quantitative methods a
 
 ---
 
+# AI in Research — Brown Bag Series {#sec-brownbag}
+
+A collaboration between the [Melbourne Data Analytics Platform (MDAP)](https://www.unimelb.edu.au/mdap), **QuantLab**, and the **Community of AI in Research (CAIR)** — monthly lunchtime workshops on using AI in research. Slides and materials from each session are posted here as they become available; see the [full schedule](../index.qmd#sec-schedule2026) for upcoming sessions.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card}
+### Session 1: Getting Started with AI Assistance for Research
+**10 Aug 2026** | Dr. Mel Mistica (MDAP) & Dr. Seraphine F. Maerz (SSPS)
+
+[View Slides](Session1_slides.html){.btn .btn-primary}
+:::
+:::
+
+:::
+
+---
+
 # Free online tutorials & webinars {#sec-tutorials}
 
 Step-by-step guides on data management, reproducible research, and quantitative methods — plus recorded webinars. We warmly invite you to contribute — please [contact us](mailto:seraphine.maerz@unimelb.edu.au) if you would like to share your tutorials, tips, or suggestions.
