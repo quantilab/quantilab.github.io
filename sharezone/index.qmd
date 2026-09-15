@@ -22,6 +22,15 @@ A collaboration between the [Melbourne Data Analytics Platform (MDAP)](https://w
 :::
 :::
 
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card}
+### Session 2: Equipping AI Agents with Tools
+**14 Sep 2026** | Dr. Daniel Russo-Batterham (MDAP)
+
+[View Materials](https://unimelbmdap.github.io/mcp_workshop/){.btn .btn-primary}
+:::
+:::
+
 :::
 
 ---
