@@ -17,7 +17,7 @@ Co-founded by [Seraphine F. Maerz](https://seraphinem.github.io) (Political Scie
 
 Our research is organised into three streams:
 
-- **Political Communication and Computational Discourse Analysis** — led by [Seraphine F. Maerz](https://seraphinem.github.io)
+- **Computational Social Science and Political Communication** — led by [Seraphine F. Maerz](https://seraphinem.github.io)
 - **Computational Approaches to Workforce Mobility and Inequality** — led by [Irma Mooi-Reci](https://irmamooireci.com/)
 - **Computational Literary Studies** — led by [Michael Falk](https://findanexpert.unimelb.edu.au/profile/1043380-michael-falk)
 
